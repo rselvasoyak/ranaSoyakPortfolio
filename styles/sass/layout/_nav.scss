@@ -1,6 +1,6 @@
 @use "../abstract/variables" as *;
 
-.nav{
+nav{
 	    position: fixed;
         position: -webkit-fixed;
 	    top: 0;
@@ -8,15 +8,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1800px;
-        width: 90%;
+        width: 50%;
         height: 5vh;
         padding-left: 2rem;
         padding-right: 2rem;
         border-bottom: 2px solid black;
-        div{
-            padding: 0.5em;
-        }
         .navList{
             display: flex;
             list-style-type: none;

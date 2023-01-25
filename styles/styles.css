@@ -1,4 +1,4 @@
-.nav {
+nav {
   position: fixed;
   position: -webkit-fixed;
   top: 0;
@@ -12,23 +12,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1800px;
-  width: 90%;
+  width: 50%;
   height: 5vh;
   padding-left: 2rem;
   padding-right: 2rem;
   border-bottom: 2px solid black;
 }
-.nav div {
-  padding: 0.5em;
-}
-.nav .navList {
+nav .navList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
-.nav .hamburgerMenu {
+nav .hamburgerMenu {
   padding: 0.3em;
 }
 
