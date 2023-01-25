@@ -1,0 +1,15 @@
+@use "../abstract/variables" as *;
+
+.wrapper {
+    max-width: 2000px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    border-right: 2px solid black;
+    border-left: 2px solid black; 
+}
+
+span {
+    display: block;
+    margin-top: 2rem;
+}

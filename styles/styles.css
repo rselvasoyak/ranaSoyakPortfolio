@@ -1,4 +1,77 @@
-.nav {
+.wrapper {
+  max-width: 2000px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+span {
+  display: block;
+  margin-top: 2rem;
+}
+
+p {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 110px;
+  text-transform: uppercase;
+  text-shadow: red 2px 5px 4px;
+}
+
+.frame1 {
+  max-width: 500px;
+  min-width: 500px;
+  width: 50rem;
+  max-height: 700px;
+  min-height: 600px;
+  height: 39rem;
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+  background-color: red;
+  border-radius: 40%;
+  background-image: url("http://placekitten.com/200/300");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+mark {
+  position: relative;
+  background-color: #F1E3FF;
+}
+
+mark:after {
+  border: 0.1em solid red;
+  border-top: none;
+  border-radius: 1.5em 1em 2em 1.5em;
+  bottom: -0.3em;
+  content: "";
+  left: -0.2em;
+  position: absolute;
+  right: -0.3em;
+  top: -0.1em;
+}
+
+mark:before {
+  border-top: 0.1em solid red;
+  border-radius: 0.5em;
+  border-top-left-radius: 500em;
+  content: "";
+  height: 1em;
+  left: -0.25em;
+  position: absolute;
+  top: -0.28em;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  width: 2em;
+}
+
+nav {
   position: fixed;
   position: -webkit-fixed;
   top: 0;
@@ -12,23 +85,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1800px;
-  width: 90%;
+  width: 50%;
   height: 5vh;
   padding-left: 2rem;
   padding-right: 2rem;
   border-bottom: 2px solid black;
 }
-.nav div {
-  padding: 0.5em;
-}
-.nav .navList {
+nav .navList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
-.nav .hamburgerMenu {
+nav .hamburgerMenu {
   padding: 0.3em;
 }
 
@@ -80,4 +149,36 @@ header .headerContent {
   height: 50vh;
   margin-top: 15rem;
   border: 5px solid red;
+}
+
+.aboutMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  height: 1800px;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  border: 5px solid purple;
+  background-color: #F1E3FF;
+}
+.aboutMe .wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid green;
+}
+.aboutMe .aboutMeContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+  border: 2px solid blue;
 }
