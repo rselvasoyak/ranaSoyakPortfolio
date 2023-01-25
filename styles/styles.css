@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -276,22 +274,6 @@ i {
   font-size: 4rem;
 }
 
-.frame1 {
-  max-width: 500px;
-  min-width: 500px;
-  width: 50rem;
-  max-height: 700px;
-  min-height: 600px;
-  height: 39rem;
-  -webkit-transform: rotate(1deg);
-          transform: rotate(1deg);
-  background-color: red;
-  border-radius: 40%;
-  background-image: url("http://placekitten.com/200/300");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 mark {
   position: relative;
   background-color: #F1E3FF;
@@ -323,7 +305,30 @@ mark:before {
   width: 2em;
 }
 
->>>>>>> 6e4d57d9cb2536a178220f2e6d7b4a94297c670f
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+button:hover, button:focus {
+  color: red;
+  border-bottom: black 3px solid;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: red;
+  padding-bottom: 0.5rem;
+  border-bottom: black 3px solid;
+}
+
 nav {
   position: fixed;
   position: -webkit-fixed;
@@ -339,7 +344,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
-  height: 5vh;
+  height: 10vh;
   padding-left: 2rem;
   padding-right: 2rem;
   border-bottom: 2px solid black;
@@ -355,9 +360,7 @@ nav .hamburgerMenu {
 }
 
 header {
-  border: 5px solid black;
   height: 95vh;
-  background-color: rgb(238, 235, 229);
 }
 header nav {
   position: fixed;
@@ -373,14 +376,17 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1800px;
-  width: 90%;
-  height: 5vh;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid black;
+  max-width: 2000px;
+  width: 100%;
+  height: 10vh;
+  padding: 4rem;
+}
+header .wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(238, 235, 229);
+  height: 100%;
 }
 header .headerContent {
   display: -webkit-box;
@@ -400,79 +406,7 @@ header .headerContent {
           align-items: center;
   max-height: 60vh;
   height: 50vh;
-  margin-top: 15rem;
+  width: 60%;
+  margin-top: 18rem;
   border: 5px solid red;
-}
-
-.aboutMe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 120vh;
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
-  border: 5px solid purple;
-  background-color: #F1E3FF;
-}
-.aboutMe .wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 5px solid green;
-}
-.aboutMe .aboutMeContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 3rem;
-  border: 2px solid blue;
-}
-
-.wrapper {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skills {
-  height: 70vh;
-  background-color: rgb(238, 235, 229);
-  border: 10px solid green;
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
-}
-.skills ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 5px solid red;
-  width: 100%;
-}
-.skills ul li {
-  border: 1px solid orange;
-}
-.skills ul lihover, .skills ul li:focus {
-  color: aqua;
 }

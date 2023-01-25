@@ -6,11 +6,9 @@
 @use "./base/typography";
 
 // Components 
-@use "./components/frames";
 @use "./components/circle";
+@use "./components/linkAndButtons";
 
 //  Layout 
 @use "./layout/nav";
 @use "./layout/header";
-@use "./layout/aboutMe";
-@use"./layout/skills";

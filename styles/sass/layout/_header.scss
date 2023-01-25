@@ -9,14 +9,15 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1800px;
-        width: 90%;
-        height: 5vh;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: 2px solid black;
+        max-width: 2000px;
+        width: 100%;
+        height: 10vh;
+        padding: 4rem;
+    }
+    .wrapper{
+        justify-content: center;
+        background-color: $lightSand;
+        height: 100%;
     }
     .headerContent{
         display: flex;
@@ -26,11 +27,10 @@ header {
         align-items: center;
         max-height: 60vh;
         height: 50vh;
-        margin-top: 15rem;   
+        width: 60%;
+        margin-top: 18rem;   
         border: 5px solid red;                     
     }
 // background-image: url('../../../Ellipse\ 1.svg');
-border: 5px solid black;
 height: 95vh;
-background-color: $lightSand;
 }
