@@ -8,10 +8,12 @@
 // Components 
 @use "./components/frames";
 @use "./components/circle";
+@use "./components/linkAndButtons";
 
 //  Layout 
 @use "./layout/nav";
 @use "./layout/header";
 @use "./layout/aboutMe";
-@use"./layout/skills";
-@use"./layout/projects";
+@use "./layout/skills";
+@use "./layout/projects";
+@use "./layout/contactMe";
