@@ -1,5 +1,16 @@
 @use "./abstract/variables" as *;
 
+// Base 
+@use "./base/setup";
+@use "./base/defaultStyle";
+@use "./base/typography";
+
+// Components 
+@use "./components/frames";
+@use "./components/circle";
+
 //  Layout 
 @use "./layout/nav";
 @use "./layout/header";
+@use "./layout/aboutMe";
+@use"./layout/skills";
