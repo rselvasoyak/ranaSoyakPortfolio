@@ -3,20 +3,27 @@
 .aboutMe{
     display: flex;
     align-items: center;
-    height: 50vh;
-    height: 1800px;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
-    border: 5px solid purple;
+    // border: 5px solid purple;
     background-color: $babyLilac;
     .wrapper{
-        align-items: center;
-        border: 5px solid green;
+        // border: 5px solid green;
+        flex-direction: row;
     }
     .aboutMeContent{
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        margin-left: -10rem;
         padding: 3rem;
-        border: 2px solid blue;
+        z-index: 30;
+       p{
+        padding-left: 7rem;
+        text-align: end;
+       }
     }
 }

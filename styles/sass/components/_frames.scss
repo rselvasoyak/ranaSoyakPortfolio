@@ -1,16 +1,14 @@
 @use "../abstract/variables" as *;
 
  .frame1{ 
-                max-width: 500px;
-                min-width: 500px;
-                width: 50rem;
-                max-height: 700px;
-                min-height: 600px;
-                height: 39rem;
-                transform: rotate(1deg);
-                background-color: red;
-                border-radius: 40%;
-                 background-image: url("http://placekitten.com/200/300");
-                 background-repeat: no-repeat;
-                 background-size: cover;
+               max-width: 500px;
+               min-width: 500px;
+               width: 50rem;
+               height: 39rem;
+               transform: rotate(1deg);
+               background-color: red;
+               border-radius: 40%;
+               background-image: url("http://placekitten.com/200/300");
+               background-repeat: no-repeat;
+               background-size: cover;
             }

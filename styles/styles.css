@@ -258,11 +258,11 @@ p {
 
 h1 {
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 9rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 8rem;
   text-transform: uppercase;
   text-shadow: red 2px 5px 4px;
 }
@@ -270,7 +270,7 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 6rem;
 }
 
 li {
@@ -318,8 +318,6 @@ mark:before {
   max-width: 500px;
   min-width: 500px;
   width: 50rem;
-  max-height: 700px;
-  min-height: 600px;
   height: 39rem;
   -webkit-transform: rotate(1deg);
           transform: rotate(1deg);
@@ -401,7 +399,7 @@ header .headerImage {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  height: 100vh;
+  height: 160vh;
   width: 100vw;
 }
 header .headerContent {
@@ -460,29 +458,35 @@ header .doubleArrowDown {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50vh;
-  height: 1800px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 60vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
-  border: 5px solid purple;
   background-color: #F1E3FF;
 }
 .aboutMe .wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 5px solid green;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .aboutMe .aboutMeContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -10rem;
   padding: 3rem;
-  border: 2px solid blue;
+  z-index: 30;
+}
+.aboutMe .aboutMeContent p {
+  padding-left: 7rem;
+  text-align: end;
 }
 
 .wrapper {
