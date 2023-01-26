@@ -233,8 +233,6 @@ html {
   max-width: 2000px;
   width: 90%;
   margin: 0 auto;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
 }
 
 span {
@@ -377,8 +375,17 @@ header .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("../assets/header.png");
   height: 100%;
+}
+header .headerImage {
+  position: absolute;
+  z-index: -10;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100vh;
+  width: 100vw;
 }
 header .headerContent {
   display: -webkit-box;
