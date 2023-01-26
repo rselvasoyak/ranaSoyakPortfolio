@@ -332,6 +332,19 @@ mark:before {
   background-image: url("http://placekitten.com/200/300");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-box-shadow: -8px 8px rgba(220, 217, 210, 0.8);
+          box-shadow: -8px 8px rgba(220, 217, 210, 0.8);
+}
+
+.carouselPhotos {
+  width: 30vw;
+  height: 60vh;
+  margin-bottom: 5rem;
+  border: 2px solid olivedrab;
+  background-color: olive;
+  border-radius: 5%;
+  -webkit-box-shadow: -5px 5px #CEE1ED;
+          box-shadow: -5px 5px #CEE1ED;
 }
 
 button {
@@ -516,16 +529,35 @@ header .doubleArrowDown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 5px solid red;
   width: 100%;
   margin-bottom: 5rem;
+}
+.skills ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 5px solid pink;
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .skills ul lihover, .skills ul li:focus {
   color: aqua;
