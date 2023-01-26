@@ -283,6 +283,12 @@ i {
   font-size: 4rem;
 }
 
+.carouselNumDisplay {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
 mark {
   position: relative;
   background-color: #F1E3FF;
@@ -532,10 +538,20 @@ header .doubleArrowDown {
 }
 
 .projects {
-  height: 100vh;
   background-color: #CEE1ED;
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
+  margin-top: -10rem;
+  padding-bottom: 1rem;
+}
+.projects .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .projects .carousel {
   display: -webkit-box;
@@ -549,13 +565,21 @@ header .doubleArrowDown {
       -ms-flex-align: center;
           align-items: center;
   width: 65%;
-  height: 80vh;
-  border: 2px solid purple;
+  background-color: rgba(220, 217, 210, 0.6);
+  border-radius: 5%;
+  margin-top: -15rem;
+}
+.projects .carousel img {
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 .projects .carousel .carouselNumDisplay {
-  border: 2px solid navy;
-  height: 5vh;
+  background-color: pink;
+  text-align: center;
   width: 60%;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  margin-top: 5rem;
 }
 .projects .carousel .newCarousel {
   display: -webkit-box;
@@ -571,7 +595,10 @@ header .doubleArrowDown {
 .projects .carousel .carouselPhotos {
   width: 30vw;
   height: 60vh;
+  margin-bottom: 5rem;
   border: 2px solid olivedrab;
+  background-color: olive;
+  border-radius: 5%;
 }
 
 .contactMe {
