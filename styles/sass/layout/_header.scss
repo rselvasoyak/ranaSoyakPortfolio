@@ -1,37 +1,43 @@
 @use "../abstract/variables" as *;
 
 header {
-    nav{
-	    position: fixed;
-        position: -webkit-fixed;
-	    top: 0;
-        z-index: 50;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 2000px;
-        width: 100%;
-        height: 10vh;
-        padding: 4rem;
-        
-    }
+    height: 100vh;
     .wrapper{
         justify-content: center;
-        background-color: $lightSand;
         height: 100%;
+    }
+    .headerImage{
+        position: absolute;
+        z-index: -10;
+        object-fit: cover;
+        object-position: center;
+        height: 100vh;
+        width: 100vw;
     }
     .headerContent{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: space-between;
+        margin-top: 18rem;   
+        border: 5px solid red;  
+    }
+    .greeting{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80%;
+        border: 2px solid blue;
+        text-align: center;
+        h1,h3{
+            margin: .5rem;
+        }
+    }   
+    .doubleArrowDown{
+        display: flex;
         justify-content: center;
         align-items: center;
-        max-height: 60vh;
-        height: 50vh;
-        width: 60%;
-        margin-top: 18rem;   
-        border: 5px solid red;                     
-    }
-// background-image: url('../../../Ellipse\ 1.svg');
-height: 95vh;
+        height: 15%;
+        border: 2px solid purple;
+    }               
 }

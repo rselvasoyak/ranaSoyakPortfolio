@@ -233,8 +233,6 @@ html {
   max-width: 2000px;
   width: 90%;
   margin: 0 auto;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
 }
 
 span {
@@ -258,17 +256,28 @@ p {
   font-size: 22px;
 }
 
+h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
 h2 {
-  font-size: 110px;
+  font-size: 2rem;
   text-transform: uppercase;
   text-shadow: red 2px 5px 4px;
 }
 
 h3 {
+<<<<<<< HEAD
   font-size: 64px;
   text-transform: uppercase;
   text-align: center;
   text-shadow: red 2px 5px 4px;
+=======
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1.5rem;
+>>>>>>> header
 }
 
 li {
@@ -367,10 +376,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  max-width: 2000px;
+  width: 100%;
   height: 10vh;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 4rem;
   border-bottom: 2px solid black;
 }
 nav .navList {
@@ -384,33 +393,23 @@ nav .hamburgerMenu {
 }
 
 header {
-  height: 95vh;
-}
-header nav {
-  position: fixed;
-  position: -webkit-fixed;
-  top: 0;
-  z-index: 50;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 2000px;
-  width: 100%;
-  height: 10vh;
-  padding: 4rem;
+  height: 100vh;
 }
 header .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgb(238, 235, 229);
   height: 100%;
+}
+header .headerImage {
+  position: absolute;
+  z-index: -10;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100vh;
+  width: 100vw;
 }
 header .headerContent {
   display: -webkit-box;
@@ -422,12 +421,41 @@ header .headerContent {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 18rem;
+  border: 5px solid red;
+}
+header .greeting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80%;
+  border: 2px solid blue;
+  text-align: center;
+}
+header .greeting h1, header .greeting h3 {
+  margin: 0.5rem;
+}
+header .doubleArrowDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
   max-height: 60vh;
   height: 50vh;
   width: 60%;
@@ -568,4 +596,8 @@ header .headerContent {
   width: 50%;
   -ms-flex-item-align: center;
       align-self: center;
+=======
+  height: 15%;
+  border: 2px solid purple;
+>>>>>>> header
 }
