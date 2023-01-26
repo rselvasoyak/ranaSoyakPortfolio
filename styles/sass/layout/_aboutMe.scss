@@ -1,27 +1,27 @@
 @use '../abstract/variables' as *;
 
 .aboutMe{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 80vh;
-    // margin-top: 30rem;
-    padding-top: 5rem;
+    padding-top: 1rem;
     padding-bottom: 15rem;
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
-    // border: 5px solid purple;
+    // border-top-left-radius: 20%;
+    // border-top-right-radius: 20%;
+    border-top: 2px solid $darkSemiSand;
     background-color: $babyLilac;
     .wrapper{
-        // border: 5px solid green;
         flex-direction: row;
     }
     .aboutMeContent{
         display: flex;
         align-items: center;
-        margin-left: -10rem;
-        padding: 3rem;
+        margin-left: -5rem;
+        height: 100%;
+        padding-right: 3rem;
+        padding-top: 3rem;
+        margin-left: -7rem;
         z-index: 30;
+        h2{
+            margin: 0;
+        }
        p{
         padding-left: 7rem;
         text-align: end;

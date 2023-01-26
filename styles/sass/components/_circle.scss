@@ -5,7 +5,7 @@ mark {
   background-color: transparent;
 }
 mark:after {
-  border: .10em solid red;
+  border: .10em solid $peach;
   border-top: none;
   border-radius: 1.5em 1em 2em 1.5em;
   bottom: -.3em;
@@ -16,7 +16,7 @@ mark:after {
   top: -.1em;
 }
 mark:before {
-  border-top: .10em solid red;
+  border-top: .10em solid $peach;
   border-radius: .5em;
   border-top-left-radius: 500em;
   content: '';
