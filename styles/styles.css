@@ -291,7 +291,7 @@ i {
 
 mark {
   position: relative;
-  background-color: #F1E3FF;
+  background-color: transparent;
 }
 
 mark:after {
@@ -496,7 +496,7 @@ header .doubleArrowDown {
 }
 
 .skills {
-  background-color: #EEEBE5;
+  background-color: #BFBFBF;
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
   margin-top: -12rem;
@@ -541,7 +541,7 @@ header .doubleArrowDown {
   background-color: #CEE1ED;
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
-  margin-top: -10rem;
+  margin-top: -14rem;
   padding-bottom: 1rem;
 }
 .projects .wrapper {
@@ -565,7 +565,7 @@ header .doubleArrowDown {
       -ms-flex-align: center;
           align-items: center;
   width: 65%;
-  background-color: rgba(220, 217, 210, 0.6);
+  background-color: rgba(220, 217, 210, 0.8);
   border-radius: 5%;
   margin-top: -15rem;
 }
@@ -604,6 +604,23 @@ header .doubleArrowDown {
 .contactMe {
   background-color: #EBB861;
 }
+.contactMe .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contactMe form {
+  width: 60%;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
 .contactMe fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,9 +629,37 @@ header .doubleArrowDown {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.contactMe fieldset .topRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+  height: 3rem;
+}
+.contactMe fieldset input {
+  width: 50%;
+  padding-left: 1.2rem;
+}
+.contactMe fieldset textarea {
+  padding-top: 1.2rem;
+  padding-left: 1.2rem;
 }
 .contactMe fieldset button {
   width: 50%;
+  margin-top: 2rem;
   -ms-flex-item-align: center;
       align-self: center;
+}
+.contactMe fieldset textarea:hover, .contactMe fieldset textarea:focus, .contactMe fieldset input:hover, .contactMe fieldset input:focus {
+  border: #F1E3FF 7px solid;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
