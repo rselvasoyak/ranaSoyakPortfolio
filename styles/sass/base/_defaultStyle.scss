@@ -1,0 +1,27 @@
+@use "../abstract/variables" as *;
+
+.wrapper {
+    display: flex;
+    max-width: 2000px;
+    width: 90%;
+    margin: 0 auto;
+    border-right: 2px solid black;
+    border-left: 2px solid black; 
+}
+
+span {
+    display: block;
+    margin-top: 2rem;
+}
+
+li {
+    list-style-type: none;
+}
+i{
+    &:hover, 
+    &:focus{
+        color: blue;
+        transition-duration: .4s;
+        transition-timing-function: ease-in-out;
+    }
+}

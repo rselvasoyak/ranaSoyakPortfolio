@@ -1,0 +1,23 @@
+@use "../abstract/variables" as *;
+
+nav{
+	    position: fixed;
+        position: -webkit-fixed;
+	    top: 0;
+        z-index: 50;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        height: 10vh;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-bottom: 2px solid black;
+        .navList{
+            display: flex;
+            list-style-type: none;
+        }
+        .hamburgerMenu {
+            padding: 0.3em;
+       }
+    }
