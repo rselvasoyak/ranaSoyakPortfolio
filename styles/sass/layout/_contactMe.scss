@@ -1,0 +1,13 @@
+@use "../abstract/variables" as *;
+
+.contactMe{
+    background-color: $peach;
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        button{
+            width: 50%;
+            align-self: center;
+        }
+    }
+}

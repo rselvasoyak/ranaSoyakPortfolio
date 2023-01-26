@@ -264,6 +264,13 @@ h2 {
   text-shadow: red 2px 5px 4px;
 }
 
+h3 {
+  font-size: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: red 2px 5px 4px;
+}
+
 li {
   font-size: 22px;
   text-transform: uppercase;
@@ -306,6 +313,7 @@ mark:before {
 }
 
 button {
+  text-transform: uppercase;
   background: none;
   color: inherit;
   border: none;
@@ -524,4 +532,22 @@ header .headerContent {
   width: 30vw;
   height: 60vh;
   border: 2px solid olivedrab;
+}
+
+.contactMe {
+  background-color: #EBB861;
+}
+.contactMe fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactMe fieldset button {
+  width: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
 }

@@ -1,6 +1,7 @@
 @use "../abstract/variables" as *;
 // General 
 button {
+	text-transform: uppercase;
     background: none;
 	color: inherit;
 	border: none;
