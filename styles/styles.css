@@ -410,3 +410,118 @@ header .headerContent {
   margin-top: 18rem;
   border: 5px solid red;
 }
+
+.aboutMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  border: 5px solid purple;
+  background-color: #F1E3FF;
+}
+.aboutMe .wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid green;
+}
+.aboutMe .aboutMeContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+  border: 2px solid blue;
+}
+
+.wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills {
+  height: 70vh;
+  background-color: rgb(238, 235, 229);
+  border: 10px solid green;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+}
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid red;
+  width: 100%;
+}
+.skills ul li {
+  border: 1px solid orange;
+}
+.skills ul lihover, .skills ul li:focus {
+  color: aqua;
+}
+
+.projects {
+  height: 100vh;
+  background-color: #CEE1ED;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+}
+.projects .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  height: 80vh;
+  border: 2px solid purple;
+}
+.projects .carousel .carouselNumDisplay {
+  border: 2px solid navy;
+  height: 5vh;
+  width: 60%;
+}
+.projects .carousel .newCarousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.projects .carousel .carouselPhotos {
+  width: 30vw;
+  height: 60vh;
+  border: 2px solid olivedrab;
+}
