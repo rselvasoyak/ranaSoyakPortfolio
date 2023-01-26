@@ -26,3 +26,12 @@ a{
 		border-bottom: black 3px solid;
     }
 }
+i, .skill{
+    &:hover, 
+    &:focus{
+        color: #545629;
+        transition-duration: .5s;
+        transition-timing-function: ease-in-out;
+		transform: scale(1.1);
+    }
+}

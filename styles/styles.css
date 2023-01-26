@@ -244,14 +244,6 @@ li {
   list-style-type: none;
 }
 
-i:hover, i:focus {
-  color: blue;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-}
-
 p {
   font-size: 22px;
 }
@@ -370,6 +362,16 @@ a:hover, a:focus {
   color: red;
   padding-bottom: 0.5rem;
   border-bottom: black 3px solid;
+}
+
+i:hover, i:focus, .skill:hover, .skill:focus {
+  color: #545629;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 nav {
@@ -503,7 +505,7 @@ header .doubleArrowDown {
 }
 
 .skills {
-  background-color: #BFBFBF;
+  background-color: #EEEBE5;
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
   margin-top: -12rem;
@@ -529,25 +531,23 @@ header .doubleArrowDown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 5px solid red;
   width: 100%;
   margin-bottom: 5rem;
 }
-.skills ul li {
+.skills li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 5px solid pink;
-  -ms-flex-preferred-size: 1;
-      flex-basis: 1;
+  -ms-flex-preferred-size: 7%;
+      flex-basis: 7%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -558,9 +558,12 @@ header .doubleArrowDown {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-.skills ul lihover, .skills ul li:focus {
-  color: aqua;
+.skills li:nth-child(5) p, .skills li:nth-child(6) p, .skills li:nth-child(11) p {
+  margin: 0;
+  font-size: 1rem;
 }
 
 .projects {
