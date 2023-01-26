@@ -1,14 +1,24 @@
 @use "../abstract/variables" as *;
 
- .frame1{ 
-               max-width: 450px;
-               min-width: 350px;
-               width: auto;
-               height: 30rem;
-               transform: rotate(1deg);
-               background-color: red;
-               border-radius: 40%;
-               background-image: url("http://placekitten.com/200/300");
-               background-repeat: no-repeat;
-               background-size: cover;
-            }
+.frame1{ 
+      max-width: 450px;
+      min-width: 350px;
+      width: auto;
+      height: 30rem;
+      transform: rotate(1deg);
+      background-color: red;
+      border-radius: 40%;
+      background-image: url("http://placekitten.com/200/300");
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: -8px 8px $darkSemiSand;
+}
+.carouselPhotos{
+      width: 30vw;
+      height: 60vh;
+      margin-bottom: 5rem;
+      border: 2px solid olivedrab;
+      background-color: olive;
+      border-radius: 5%;
+      box-shadow: -5px 5px $babyBlue;
+   }
