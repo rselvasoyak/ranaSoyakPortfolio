@@ -15,12 +15,3 @@ span {
 li {
     list-style-type: none;
 }
-
-i{
-    &:hover, 
-    &:focus{
-        color: blue;
-        transition-duration: .4s;
-        transition-timing-function: ease-in-out;
-    }
-}
