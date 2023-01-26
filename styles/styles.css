@@ -390,17 +390,18 @@ header .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
+  width: 100%;
 }
 header .headerImage {
   position: absolute;
   z-index: -10;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  height: 160vh;
   width: 100vw;
+}
+header .headerImage img {
+  display: block;
+  width: 100%;
 }
 header .headerContent {
   display: -webkit-box;
@@ -415,9 +416,10 @@ header .headerContent {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
-  margin-top: 18rem;
-  border: 5px solid red;
+  width: 80%;
+  margin-top: 30rem;
+  background-color: rgba(249, 249, 249, 0.7);
+  border-radius: 5%;
 }
 header .greeting {
   display: -webkit-box;
@@ -431,7 +433,6 @@ header .greeting {
       -ms-flex-pack: center;
           justify-content: center;
   height: 80%;
-  border: 2px solid blue;
   text-align: center;
 }
 header .greeting h1, header .greeting h3 {
@@ -447,8 +448,7 @@ header .doubleArrowDown {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 15%;
-  border: 2px solid purple;
+  margin-top: 2rem;
 }
 
 .aboutMe {
@@ -460,9 +460,9 @@ header .doubleArrowDown {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-height: 60vh;
+  min-height: 80vh;
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 15rem;
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
   background-color: #F1E3FF;
@@ -489,7 +489,15 @@ header .doubleArrowDown {
   text-align: end;
 }
 
-.wrapper {
+.skills {
+  background-color: #EEEBE5;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  margin-top: -12rem;
+  padding-top: 5rem;
+  padding-bottom: 30rem;
+}
+.skills .wrapper {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -501,13 +509,8 @@ header .doubleArrowDown {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.skills {
-  height: 70vh;
-  background-color: #EEEBE5;
-  border: 10px solid green;
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
+.skills h2 {
+  margin-bottom: 1rem;
 }
 .skills ul {
   display: -webkit-box;
@@ -521,11 +524,8 @@ header .doubleArrowDown {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 5px solid red;
   width: 100%;
-}
-.skills ul li {
-  border: 1px solid orange;
+  margin-bottom: 5rem;
 }
 .skills ul lihover, .skills ul li:focus {
   color: aqua;
