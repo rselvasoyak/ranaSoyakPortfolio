@@ -618,14 +618,6 @@ header .doubleArrowDown {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.projects .carousel .carouselPhotos {
-  width: 30vw;
-  height: 60vh;
-  margin-bottom: 5rem;
-  border: 2px solid olivedrab;
-  background-color: olive;
-  border-radius: 5%;
-}
 
 .contactMe {
   background-color: #EBB861;
