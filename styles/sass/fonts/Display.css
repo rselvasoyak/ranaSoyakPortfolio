@@ -1,5 +1,3 @@
-@use "../abstract/variables" as *;
-
 @font-face {
     font-family: 'Display';
     src: url('fonts/Doppelganger-Display.eot');
