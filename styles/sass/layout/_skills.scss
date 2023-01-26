@@ -1,25 +1,31 @@
 @use "../abstract/variables" as *;
 
-.wrapper{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .skills {
-    height: 70vh;
     background-color: $lightSand;
-    border: 10px solid green;
+    // border: 10px solid green;
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
+    margin-top: -12rem;
+    padding-top: 5rem;
+    padding-bottom: 30rem;
+    .wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        margin-bottom: 1rem;
+    }
     ul{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
         align-items: center;
-        border: 5px solid red;
+        // border: 5px solid red;
         width: 100%;
+        margin-bottom: 5rem;
         li{
-            border: 1px solid orange;
+            // border: 1px solid orange;
             &hover, 
             &:focus{
                 color:aqua;

@@ -4,31 +4,36 @@ header {
     height: 100vh;
     .wrapper{
         justify-content: center;
-        height: 100%;
+        width: 100%;
     }
     .headerImage{
         position: absolute;
         z-index: -10;
         object-fit: cover;
-        object-position: center;
-        height: 160vh;
+        // height: 160vh;
         width: 100vw;
+        img{
+            display: block;
+            width: 100%;
+        }
     }
     .headerContent{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-between;
-        height: 100%;
-        margin-top: 18rem;   
-        border: 5px solid red;  
+        width: 80%;
+        margin-top: 30rem;   
+        // border: 5px solid red;  
+        background-color: rgba($color: #f9f9f9, $alpha: 0.7);
+        border-radius: 5%;
     }
     .greeting{
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 80%;
-        border: 2px solid blue;
+        // border: 2px solid blue;
         text-align: center;
         h1,h3{
             margin: .5rem;
@@ -38,7 +43,8 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 15%;
-        border: 2px solid purple;
+        margin-top: 2rem;
+        // padding-bottom: 2rem;
+        // border: 2px solid purple;
     }               
 }
