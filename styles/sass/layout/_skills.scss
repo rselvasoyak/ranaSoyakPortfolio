@@ -14,15 +14,17 @@
         align-items: center;
     }
     h2{
-        margin-bottom: 1rem;
+        margin-bottom: 1.8rem;
+        margin-top: 2.5rem;
     }
     ul{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-end;
         width: 100%;
-        margin-bottom: 5rem;
+        margin-bottom: 6rem;
+        margin-top: 0;
     }
     li{
         display: flex;
@@ -32,13 +34,13 @@
         justify-content: center;
         padding-left: 1rem;
         padding-right: 1rem;
-        &:nth-child(5),
+        &:nth-child(2),
         &:nth-child(6),
-        &:nth-child(11)
+        &:nth-child(10)
         {
             p{
                 margin:0;
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
         }
     }

@@ -659,7 +659,8 @@ header .greeting h1, header .greeting h3 {
           align-items: center;
 }
 .skills h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
+  margin-top: 2.5rem;
 }
 .skills ul {
   display: -webkit-box;
@@ -670,11 +671,12 @@ header .greeting h1, header .greeting h3 {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 100%;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
+  margin-top: 0;
 }
 .skills li {
   display: -webkit-box;
@@ -695,9 +697,9 @@ header .greeting h1, header .greeting h3 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.skills li:nth-child(5) p, .skills li:nth-child(6) p, .skills li:nth-child(11) p {
+.skills li:nth-child(2) p, .skills li:nth-child(6) p, .skills li:nth-child(10) p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .projects {
