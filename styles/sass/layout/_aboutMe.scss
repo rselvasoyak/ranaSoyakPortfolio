@@ -13,29 +13,29 @@
         width: 60%;
     }
     span{
-        margin-left: 10rem;
-        transform: rotate(45deg);
-        transform-origin: top left;
+        margin-left: 30rem;
+        margin-top: -3rem;
+        transform: rotate(-25deg);
+        font-size: 5rem;
+        font-family: inherit;
+        // transform-origin: top left;
     }
     .aboutMeContent{
         display: flex;
         align-items: center;
-        // margin-left: -5rem;
         border: 2px solid black;
         height: 100%;
-        // padding-right: 3rem;
-        padding-top: 3rem;
-        // margin-left: -7rem;
+        padding-top: 2rem;
         z-index: 30;
         p{
             float: left;
-            // padding-left: 7rem;
-            // text-align: end;
             flex-basis:100%;
+            box-shadow: -8px 8px $lightSand;
         }
     }
     h2{
         margin: 0;
+        margin-bottom: 2rem;
         text-align: center;
     }
 }
