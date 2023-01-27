@@ -12,7 +12,6 @@ button {
     &:hover,
     &:focus{
         color: red;
-		border-bottom: black 3px solid;
     }
 }
 
@@ -23,7 +22,6 @@ a{
     &:focus{
         color: red;
 		padding-bottom: 0.5rem;
-		border-bottom: black 3px solid;
     }
 }
 i, .skill{
