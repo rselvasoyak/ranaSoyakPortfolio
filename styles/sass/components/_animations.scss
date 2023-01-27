@@ -21,3 +21,24 @@
             transform: translate3d(4px, 0, 0);
         }
     }
+
+    // Moving Left Animation
+    @keyframes moveLeft {
+        0% {
+            transform: translateX(-.3rem);
+            transform: translateY(-.3rem);
+
+        }
+        100% {
+            transform: translateX(.7rem);
+        }
+    }
+     @keyframes moveRight {
+        0% {
+            transform: translateX(.3rem);
+            transform: translateY(.3rem);
+        }
+        100% {
+            transform: translateX(.7rem);
+        }
+    }

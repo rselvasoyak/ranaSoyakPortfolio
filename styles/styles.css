@@ -503,6 +503,54 @@ i:hover, i:focus, .skill:hover, .skill:focus {
             transform: translate3d(4px, 0, 0);
   }
 }
+@-webkit-keyframes moveLeft {
+  0% {
+    -webkit-transform: translateX(-0.3rem);
+            transform: translateX(-0.3rem);
+    -webkit-transform: translateY(-0.3rem);
+            transform: translateY(-0.3rem);
+  }
+  100% {
+    -webkit-transform: translateX(0.7rem);
+            transform: translateX(0.7rem);
+  }
+}
+@keyframes moveLeft {
+  0% {
+    -webkit-transform: translateX(-0.3rem);
+            transform: translateX(-0.3rem);
+    -webkit-transform: translateY(-0.3rem);
+            transform: translateY(-0.3rem);
+  }
+  100% {
+    -webkit-transform: translateX(0.7rem);
+            transform: translateX(0.7rem);
+  }
+}
+@-webkit-keyframes moveRight {
+  0% {
+    -webkit-transform: translateX(0.3rem);
+            transform: translateX(0.3rem);
+    -webkit-transform: translateY(0.3rem);
+            transform: translateY(0.3rem);
+  }
+  100% {
+    -webkit-transform: translateX(0.7rem);
+            transform: translateX(0.7rem);
+  }
+}
+@keyframes moveRight {
+  0% {
+    -webkit-transform: translateX(0.3rem);
+            transform: translateX(0.3rem);
+    -webkit-transform: translateY(0.3rem);
+            transform: translateY(0.3rem);
+  }
+  100% {
+    -webkit-transform: translateX(0.7rem);
+            transform: translateX(0.7rem);
+  }
+}
 nav {
   position: fixed;
   position: -webkit-fixed;
@@ -735,11 +783,19 @@ header .greeting h1, header .greeting h3 {
   border-radius: 5%;
   margin-top: -15rem;
 }
-.projects .carousel img {
+.projects img {
   margin-right: 3rem;
   margin-left: 3rem;
 }
-.projects .carousel .carouselNumDisplay {
+.projects a .left {
+  -webkit-animation: moveLeft 0.4s ease-in-out infinite alternate;
+          animation: moveLeft 0.4s ease-in-out infinite alternate;
+}
+.projects a .right {
+  -webkit-animation: moveRight 0.4s ease-in-out infinite alternate;
+          animation: moveRight 0.4s ease-in-out infinite alternate;
+}
+.projects .carouselNumDisplay {
   background-color: pink;
   text-align: center;
   width: 60%;
@@ -747,7 +803,7 @@ header .greeting h1, header .greeting h3 {
   padding-bottom: 1.2rem;
   margin-top: 5rem;
 }
-.projects .carousel .newCarousel {
+.projects .newCarousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
