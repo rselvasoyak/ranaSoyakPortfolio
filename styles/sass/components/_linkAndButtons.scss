@@ -12,11 +12,7 @@ button {
     color: black;
     &:hover,
     &:focus{
-<<<<<<< HEAD
-        color: red;
-=======
         color: rgb(203, 136, 136)
->>>>>>> 93d4e6c5c358e9cc1402c66894a57c2fc7ad3a91
     }
 }
 
@@ -46,6 +42,7 @@ button {
         margin-top: 8rem;
         padding: 1.3rem;
         border: 2px solid $peach;
+        background-color: $lightSand;
         border-radius: 70%;
         box-shadow: -6px 4px $lightPeach;
         animation: moveDown 0.5s infinite alternate;

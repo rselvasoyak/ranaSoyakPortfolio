@@ -1,32 +1,41 @@
 @use '../abstract/variables' as *;
 
 .aboutMe{
-    padding-top: 1rem;
-    padding-bottom: 15rem;
-    // border-top-left-radius: 20%;
-    // border-top-right-radius: 20%;
+    padding-top: 7rem;
+    padding-bottom: 17rem;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
     border-top: 2px solid $darkSemiSand;
     background-color: $babyLilac;
     .wrapper{
-        flex-direction: row;
+        align-items: center;
+        border: 2px solid red;
+        width: 60%;
+    }
+    span{
+        margin-left: 10rem;
+        transform: rotate(45deg);
+        transform-origin: top left;
     }
     .aboutMeContent{
         display: flex;
         align-items: center;
         // margin-left: -5rem;
+        border: 2px solid black;
         height: 100%;
         // padding-right: 3rem;
         padding-top: 3rem;
         // margin-left: -7rem;
         z-index: 30;
-        h2{
-            margin: 0;
+        p{
+            float: left;
+            // padding-left: 7rem;
+            // text-align: end;
+            flex-basis:100%;
         }
-       p{
-            float: right;
-             shape-outside: circle(50%);
-        // padding-left: 7rem;
-        // text-align: end;
-       }
+    }
+    h2{
+        margin: 0;
+        text-align: center;
     }
 }
