@@ -12,10 +12,9 @@
 <body>
 	<header>
 		<div class="wrapper">
-				<img class="headerImage" src="./styles/sass/assets/header4.png" alt="">
-			<nav class="wrapper">
+			<nav>
 				<div class="codeLogo">
-					<a href=".projects">
+					<a href="#projects">
 						<i class="fa-solid fa-code"></i>
 					</a>
 				</div><!-- Code Logo Ending -->
@@ -36,10 +35,10 @@
 					<h1>i am rana soyak</h1>
 					<h3>& i am a front-end developer (others call me magician 🪄)</h3>
 				</div>
-				<div class="doubleArrowDown">
-					<img src="./styles/sass/assets/doubleArrowDown.svg" alt="Double orange arrow pointing downwards to lead to following sections of the page">
-				</div>
 			</section> <!-- Content Section Ending -->
+			<button class="doubleArrowDown">
+				<img src="./styles/sass/assets/doubleArrowDown.svg" alt="Double orange arrow pointing downwards to lead to following sections of the page">
+			</button>
 		</div><!-- Wrapper Ending -->
 	</header>
 	<main>
@@ -73,7 +72,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="projects">
+		<section class="projects" id="projects">
 			<div class="wrapper">
 				<div class="carousel">
 					<!-- carousel slideshow with infinite loop -->
@@ -106,7 +105,7 @@
 						<label for="message" class="sr-only"></label>
 						<textarea name="userMessage" id="message" cols="30" rows="10" placeholder="Hi Rana! Example Message cont..." required></textarea>
 		
-						<button class="submit">get in touch</button>
+						<button class="formButton" type="submit" aria-label="submit the form">get in touch</button>
 					</fieldset>
 				</form>
 			</div>
