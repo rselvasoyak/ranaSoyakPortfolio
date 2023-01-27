@@ -226,6 +226,14 @@ html {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("./sass/assets/header.png");
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,6 +347,8 @@ mark:before {
   background-size: cover;
   -webkit-box-shadow: -8px 8px rgba(220, 217, 210, 0.8);
           box-shadow: -8px 8px rgba(220, 217, 210, 0.8);
+  float: right;
+  shape-outside: circle(50% at 50% 50%);
 }
 
 .carouselPhotos {
@@ -364,9 +374,6 @@ button {
   color: black;
 }
 button:hover, button:focus {
-<<<<<<< HEAD
-  color: red;
-=======
   color: rgb(203, 136, 136);
 }
 
@@ -403,6 +410,7 @@ button:hover, button:focus {
   margin-top: 8rem;
   padding: 1.3rem;
   border: 2px solid #EBB861;
+  background-color: #EEEBE5;
   border-radius: 70%;
   -webkit-box-shadow: -6px 4px #F6E5BD;
           box-shadow: -6px 4px #F6E5BD;
@@ -423,7 +431,6 @@ button:hover, button:focus {
 .doubleArrowDown img {
   -o-object-position: center;
      object-position: center;
->>>>>>> 93d4e6c5c358e9cc1402c66894a57c2fc7ad3a91
 }
 
 a {
@@ -516,10 +523,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
-  padding: 1.5rem 4rem;
-  background: rgba(251, 225, 225, 0.5);
-=======
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 10vh;
@@ -527,7 +530,6 @@ nav {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background: rgba(255, 255, 255, 0.5);
->>>>>>> 93d4e6c5c358e9cc1402c66894a57c2fc7ad3a91
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   -webkit-box-shadow: 8px 8px 8px rgba(220, 217, 210, 0.8);
@@ -595,16 +597,26 @@ header .greeting h1, header .greeting h3 {
 }
 
 .aboutMe {
-  padding-top: 1rem;
-  padding-bottom: 15rem;
+  padding-top: 7rem;
+  padding-bottom: 17rem;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
   border-top: 2px solid rgba(220, 217, 210, 0.8);
   background-color: #F1E3FF;
 }
 .aboutMe .wrapper {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid red;
+  width: 60%;
+}
+.aboutMe span {
+  margin-left: 10rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
 }
 .aboutMe .aboutMeContent {
   display: -webkit-box;
@@ -613,23 +625,27 @@ header .greeting h1, header .greeting h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 2px solid black;
   height: 100%;
   padding-top: 3rem;
   z-index: 30;
 }
-.aboutMe .aboutMeContent h2 {
-  margin: 0;
-}
 .aboutMe .aboutMeContent p {
-  float: right;
-  shape-outside: circle(50%);
+  float: left;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+.aboutMe h2 {
+  margin: 0;
+  text-align: center;
 }
 
 .skills {
   background-color: #EEEBE5;
+  border-top: 2px solid rgba(220, 217, 210, 0.8);
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
-  margin-top: -12rem;
+  margin-top: -10rem;
   padding-top: 5rem;
   padding-bottom: 30rem;
 }
@@ -691,6 +707,7 @@ header .greeting h1, header .greeting h3 {
   background-color: #CEE1ED;
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
+  border-top: 2px solid rgba(220, 217, 210, 0.8);
   margin-top: -14rem;
   padding-bottom: 1rem;
 }
@@ -805,3 +822,8 @@ header .greeting h1, header .greeting h3 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+/* Small Screen phones*/

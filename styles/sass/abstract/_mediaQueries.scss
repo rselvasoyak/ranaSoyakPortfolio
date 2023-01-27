@@ -1,0 +1,18 @@
+@use "./variables" as *;
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+
+/* Small Screen phones*/
+// @media (min-width: 330px) {
+
+// }
