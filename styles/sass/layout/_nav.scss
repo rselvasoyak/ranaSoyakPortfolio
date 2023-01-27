@@ -10,6 +10,8 @@ nav{
         align-items: center;
         padding: 1.5rem 4rem;
         border-bottom: 2px solid black;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(4px);
         .navList{
             display: flex;
             list-style-type: none;
