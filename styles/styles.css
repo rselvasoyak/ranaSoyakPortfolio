@@ -289,6 +289,11 @@ i {
   font-style: italic;
 }
 
+@font-face {
+  font-family: "Display";
+  src: url("fonts/Doppelganger-Display.eot");
+  src: url("fonts/Doppelganger-Display.eot?#iefix") format("embedded-opentype"), url("fonts/Doppelganger-Display.woff2") format("woff2"), url("fonts/Doppelganger-Display.woff") format("woff"), url("fonts/Doppelganger-Display.ttf") format("truetype"), url("fonts/Doppelganger-Display.svg#Display") format("svg");
+}
 mark {
   position: relative;
   background-color: transparent;
