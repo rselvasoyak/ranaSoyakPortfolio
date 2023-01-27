@@ -1,5 +1,5 @@
 @use "../abstract/variables" as *;
-// General 
+// Buttons 
 button {
 	text-transform: uppercase;
     background: none;
@@ -9,21 +9,64 @@ button {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+    color: black;
     &:hover,
     &:focus{
-        color: red;
-		border-bottom: black 3px solid;
+        color: rgb(203, 136, 136)
     }
 }
+
+.formButton{
+    border-radius: 25px;
+    background-color: $darkSemiSand;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        border: 2px solid $babyBlue;
+        transform: scale(1.1);
+        transition-duration: .4s;
+    }
+}
+
+ .doubleArrowDown{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8rem;
+        padding: 1.3rem;
+        border: 2px solid $peach;
+        border-radius: 70%;
+        box-shadow: -6px 4px $lightPeach;
+        animation: moveDown 0.5s infinite alternate;
+        &:hover,
+        &:focus{
+        border: 2px solid $peach;
+        background-color: $lightPeach;
+        border-radius: 50%;
+        transform: scale(1.1);
+        transition-duration: .1s;
+        animation: shake 0.7s;
+        }
+        img{
+            object-position: center;
+        }
+    }        
 
 a{
 	cursor:pointer;  
 	text-decoration: none;
+    color: black;
 	&:hover,
     &:focus{
-        color: red;
+        color: rgb(203, 136, 136);
 		padding-bottom: 0.5rem;
-		border-bottom: black 3px solid;
     }
 }
 i, .skill{
