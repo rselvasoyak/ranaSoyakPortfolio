@@ -90,16 +90,18 @@
 		</section>
 		<section class="contactMe">
 			<div class="wrapper">
-				<h3><span>let's connext &</span> say <mark>hello!</mark></h3>
-				<p>Take a moment to say hi ... something about coffee.</p>
-				<form action="#" method="GET" class="contactForm" name="contactForm">
-					<fieldset>
+				<div class="formContent">
+					<h2><span>let's connext &</span> say <mark class="circle2">hello!</mark></h2>
+					<p>Take a moment to say hi ... something about coffee.</p>
+				</div>
+				<form action="#" method="GET" class="contactForm" name="contactForm" netlify>
+					<fieldset class="roundCorners">
 						<div class="topRow" >
 							<label for="name" class="sr-only"></label>
-							<input type="text" id="name" placeholder="Name" required>
+							<input class="roundCorners" type="text" id="name" placeholder="Name" required>
 							
 							<label for="email" class="sr-only"></label>
-							<input type="email" id="email" placeholder="E-Mail" required>
+							<input  class="roundCorners" type="email" id="email" placeholder="E-Mail" required>
 						</div>
 						
 						<label for="message" class="sr-only"></label>

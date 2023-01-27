@@ -17,8 +17,9 @@ button {
 }
 
 .formButton{
-    border-radius: 25px;
-    background-color: $darkSemiSand;
+    border-radius: 10px;
+    background-color: $lightSand;
+    // border: 2px solid white;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -26,9 +27,11 @@ button {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    text-shadow: .6px .6px .3px;
     &:hover,
     &:focus{
         border: 2px solid $babyBlue;
+        background-color: #b28c99;
         transform: scale(1.1);
         transition-duration: .4s;
     }
