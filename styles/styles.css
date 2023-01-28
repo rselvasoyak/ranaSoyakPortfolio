@@ -268,14 +268,14 @@ p {
 
 h1 {
   text-transform: uppercase;
-  font-size: 11rem;
+  font-size: 12rem;
   font-family: "Doppelganger";
   font-weight: 800;
   text-shadow: #262626 2px 1px 1px;
 }
 
 h2 {
-  font-size: 10rem;
+  font-size: 11rem;
   text-transform: uppercase;
   font-family: "Doppelganger";
   text-shadow: #262626 2px 1px 1.5px;
@@ -327,15 +327,16 @@ mark:after {
 mark:before {
   border-top: 0.1em solid #EBB861;
   border-radius: 0.5em;
-  border-top-left-radius: 500em;
+  border-top-left-radius: 600em;
+  border-top-right-radius: 300em;
   content: "";
   height: 1em;
-  left: -0.25em;
+  left: -0.3em;
   position: absolute;
   top: -0.28em;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
-  width: 2em;
+  width: 1.5em;
 }
 
 .circle2 {
@@ -383,6 +384,7 @@ mark:before {
   background-size: cover;
   -webkit-box-shadow: -8px 8px #9C6DA5;
           box-shadow: -8px 8px #9C6DA5;
+  margin: 3rem;
 }
 .frame1 img {
   width: 100%;
@@ -646,7 +648,7 @@ nav {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 10vh;
+  height: 15vh;
   width: 100%;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -731,7 +733,10 @@ header .greeting h1, header .greeting h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid red;
+  border: 2px solid rgba(220, 217, 210, 0.8);
+  border-radius: 15px;
+  -webkit-box-shadow: -12px 12px 8px #A2A2A2;
+          box-shadow: -12px 12px 8px #A2A2A2;
   width: 60%;
 }
 .aboutMe span {
@@ -749,17 +754,14 @@ header .greeting h1, header .greeting h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid black;
-  height: 100%;
   padding-top: 2rem;
+  margin: 3rem;
   z-index: 30;
 }
 .aboutMe .aboutMeContent p {
   float: left;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  -webkit-box-shadow: -8px 8px #EEEBE5;
-          box-shadow: -8px 8px #EEEBE5;
 }
 .aboutMe h2 {
   margin: 0;
@@ -774,7 +776,7 @@ header .greeting h1, header .greeting h3 {
   border-top-right-radius: 20%;
   margin-top: -10rem;
   padding-top: 5rem;
-  padding-bottom: 30rem;
+  padding-bottom: 35rem;
 }
 .skills .wrapper {
   -webkit-box-orient: vertical;
@@ -950,6 +952,8 @@ header .greeting h1, header .greeting h3 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
 }
 .contactMe .formContent {
   -webkit-box-orient: vertical;
@@ -960,8 +964,6 @@ header .greeting h1, header .greeting h3 {
 }
 .contactMe form {
   width: 50%;
-  margin-top: 6rem;
-  margin-bottom: 5rem;
 }
 .contactMe form p {
   margin-top: 2rem;
@@ -980,6 +982,7 @@ header .greeting h1, header .greeting h3 {
   padding-bottom: 1.5rem;
   border-radius: 15px;
   border: 3px solid #a8657a;
+  padding: 1rem;
 }
 .contactMe fieldset:hover, .contactMe fieldset:focus {
   -webkit-transition: 0.4s;
@@ -1025,6 +1028,7 @@ header .greeting h1, header .greeting h3 {
   text-shadow: 0.4px 0.4px 0.3px;
   font-size: 1.1rem;
   border-radius: 13px;
+  padding: 1.4rem;
 }
 .contactMe fieldset textarea:hover, .contactMe fieldset textarea:focus, .contactMe fieldset input:hover, .contactMe fieldset input:focus {
   outline: none;
@@ -1033,6 +1037,38 @@ header .greeting h1, header .greeting h3 {
   transition: 0.4s;
 }
 
+/* Large tablet and medium desktops */
+@media (max-width: 1200px) {
+  header nav {
+    height: 13vh;
+  }
+  header h1 {
+    font-size: 10rem;
+  }
+  header h2 {
+    font-size: 8rem;
+  }
+  header h3 {
+    font-size: 2.5rem;
+  }
+  header .doubleArrowDown {
+    margin-top: 7.5rem;
+    width: 7rem;
+    height: 7rem;
+  }
+  .aboutMe .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+  }
+  .aboutMe mark {
+    font-size: 9rem;
+    right: -0.3em;
+    top: -0.15em;
+  }
+}
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */

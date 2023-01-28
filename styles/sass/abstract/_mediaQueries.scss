@@ -1,4 +1,41 @@
 @use "./variables" as *;
+/* Large tablet and medium desktops */
+@media (max-width: 1200px) {
+    header{
+        nav{
+            height: 13vh;
+        }
+        h1{
+            font-size: 10rem;
+        }
+        h2{
+            font-size: 8rem;
+        }
+        h3{
+            font-size: 2.5rem;
+        }
+        .doubleArrowDown{
+            margin-top: 7.5rem;
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+    .aboutMe{
+        .wrapper{
+            flex-direction: column;
+            width: 70%;
+        }
+        mark{
+            font-size: 9rem;
+            right: -.3em;
+            top: -.15em;
+        }
+    }
+    .skills{
+        
+    }
+    
+}
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {

@@ -18,18 +18,19 @@ mark:after{
 mark:before {
   border-top: .10em solid $peach;
   border-radius: .5em;
-  border-top-left-radius: 500em;
+  border-top-left-radius: 600em;
+  border-top-right-radius: 300em;;
   content: '';
   height: 1em;
-  left: -.25em;;
+  left: -.30em;;
   position: absolute;
   top: -.28em;
   transform: rotate(-10deg);
-  width: 2em;
+  width: 1.5em;
 }
 
 
-// Dark color cirle
+// Dark color - hand drawn circle
 .circle2{
   position: relative;
   background-color: transparent;

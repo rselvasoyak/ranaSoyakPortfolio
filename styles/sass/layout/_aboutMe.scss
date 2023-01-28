@@ -9,7 +9,9 @@
     background-color: $babyLilac;
     .wrapper{
         align-items: center;
-        border: 2px solid red;
+        border: 2px solid $darkSemiSand;
+        border-radius: 15px;
+        box-shadow: -12px 12px 8px $boxShadow;
         width: 60%;
     }
     span{
@@ -23,14 +25,12 @@
     .aboutMeContent{
         display: flex;
         align-items: center;
-        border: 2px solid black;
-        height: 100%;
         padding-top: 2rem;
-        z-index: 30;
+        margin: 3rem;
+        z-index: 30;    
         p{
             float: left;
             flex-basis:100%;
-            box-shadow: -8px 8px $lightSand;
         }
     }
     h2{
