@@ -466,6 +466,7 @@ button:hover, button:focus {
 .doubleArrowDown img {
   -o-object-position: center;
      object-position: center;
+  width: 100%;
 }
 
 a {
@@ -789,7 +790,6 @@ header .greeting h1, header .greeting h3 {
 }
 .skills li:nth-child(2) p, .skills li:nth-child(6) p, .skills li:nth-child(10) p {
   margin: 0;
-  font-size: 0.9rem;
 }
 
 .projects {
