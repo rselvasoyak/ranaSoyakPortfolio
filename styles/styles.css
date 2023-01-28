@@ -263,6 +263,7 @@ html, body {
 
 p {
   font-size: 2.2rem;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -291,13 +292,13 @@ h3 {
 }
 
 li {
-  font-size: 22px;
+  font-size: 2.2rem;
   text-transform: uppercase;
   text-align: center;
 }
 
 i {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .carouselNumDisplay {
@@ -372,7 +373,7 @@ mark:before {
   max-width: 450px;
   min-width: 350px;
   width: auto;
-  height: 30rem;
+  height: 40rem;
   -webkit-transform: rotate(1deg);
           transform: rotate(1deg);
   background-color: red;
@@ -382,6 +383,9 @@ mark:before {
   background-size: cover;
   -webkit-box-shadow: -8px 8px #9C6DA5;
           box-shadow: -8px 8px #9C6DA5;
+}
+.frame1 img {
+  width: 100%;
 }
 
 .carouselPhotos {
@@ -479,6 +483,9 @@ a:hover, a:focus {
   padding-bottom: 0.5rem;
 }
 
+i, .skill {
+  cursor: pointer;
+}
 i:hover, i:focus, .skill:hover, .skill:focus {
   color: #545629;
   -webkit-transition-duration: 0.5s;
@@ -592,6 +599,36 @@ i:hover, i:focus, .skill:hover, .skill:focus {
   100% {
     -webkit-transform: translateX(0.7rem);
             transform: translateX(0.7rem);
+  }
+}
+@-webkit-keyframes moveUp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+@keyframes moveUp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+@keyframes moveDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
 }
 nav {
@@ -775,8 +812,10 @@ header .greeting h1, header .greeting h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 7%;
-      flex-basis: 7%;
+  -ms-flex-preferred-size: 7.5%;
+      flex-basis: 7.5%;
+  height: 13rem;
+  width: 11rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -784,14 +823,46 @@ header .greeting h1, header .greeting h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #262626;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  border: 3px solid #EEEBE5;
+  border-radius: 50%;
+  background-color: #EBB861;
 }
-.skills li:nth-child(2) p, .skills li:nth-child(6) p, .skills li:nth-child(10) p {
+.skills li p {
   margin: 0;
+  font-size: 1.2rem;
+  width: 50%;
+}
+.skills li:nth-child(even) {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+  -webkit-animation: moveUp 1s ease-in-out infinite alternate;
+          animation: moveUp 1s ease-in-out infinite alternate;
+}
+.skills li:nth-child(even):hover, .skills li:nth-child(even):focus {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+.skills li:nth-child(odd) {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-animation: moveDown 1s ease-in-out infinite alternate;
+          animation: moveDown 1s ease-in-out infinite alternate;
+}
+.skills li:nth-child(odd):hover, .skills li:nth-child(odd):focus {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
 }
 
 .projects {
@@ -876,18 +947,21 @@ header .greeting h1, header .greeting h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .contactMe .formContent {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .contactMe form {
   width: 50%;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
 }
 .contactMe form p {
   margin-top: 2rem;
@@ -948,9 +1022,9 @@ header .greeting h1, header .greeting h3 {
 .contactMe fieldset textarea, .contactMe fieldset input {
   font-style: italic;
   font-weight: 500;
-  text-shadow: 0.6px 0.6px 0.3px;
+  text-shadow: 0.4px 0.4px 0.3px;
   font-size: 1.1rem;
-  border-radius: 15px;
+  border-radius: 13px;
 }
 .contactMe fieldset textarea:hover, .contactMe fieldset textarea:focus, .contactMe fieldset input:hover, .contactMe fieldset input:focus {
   outline: none;

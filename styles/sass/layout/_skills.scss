@@ -28,20 +28,41 @@
     }
     li{
         display: flex;
-        flex-basis: 7%;
+        flex-basis: 7.5%;
+        height: 13rem;
+        width: 11rem;
         flex-direction: column;
         align-items: center;
+        color: $darkGray;
         justify-content: center;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        &:nth-child(2),
-        &:nth-child(6),
-        &:nth-child(10)
-        {
+        border: 3px solid $lightSand;
+        border-radius: 50%;
+        background-color: $peach;
             p{
                 margin:0;
-                // font-size: 0.9rem;
+                font-size: 1.2rem;
+                width: 50%;
             }
+        &:nth-child(even) {
+        transform: translateY(0); 
+        transition: transform 0.7s ease-in-out; 
+        animation: moveUp 1s ease-in-out infinite alternate;
+        }
+
+        &:nth-child(even):hover,
+        &:nth-child(even):focus {
+        transform: translateY(-20px); 
+        }
+
+        &:nth-child(odd) {
+        transform: translateY(0); 
+        transition: transform 0.3s ease-in-out; 
+        animation: moveDown 1s ease-in-out infinite alternate;
+        }
+
+        &:nth-child(odd):hover,
+        &:nth-child(odd):focus {
+        transform: translateY(20px); 
+        }
         }
     }
-}

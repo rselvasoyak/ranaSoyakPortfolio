@@ -75,6 +75,7 @@ a{
     }
 }
 i, .skill{
+    cursor: pointer;
     &:hover, 
     &:focus{
         color: #545629;
