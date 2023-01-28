@@ -232,6 +232,7 @@ html {
 
 body {
   background-color: #EEEBE5;
+  color: #252525;
 }
 
 .wrapper {
@@ -292,13 +293,13 @@ h3 {
 }
 
 li {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
 }
 
 i {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .carouselNumDisplay {
@@ -394,11 +395,8 @@ mark:before {
   width: 30vw;
   height: 60vh;
   margin-bottom: 5rem;
-  border: 2px solid olivedrab;
   background-color: olive;
   border-radius: 5%;
-  -webkit-box-shadow: -5px 5px #CEE1ED;
-          box-shadow: -5px 5px #CEE1ED;
 }
 
 button {
@@ -496,6 +494,16 @@ i:hover, i:focus, .skill:hover, .skill:focus {
           transition-timing-function: ease-in-out;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+button .left {
+  -webkit-animation: moveLeft 0.4s ease-in-out infinite alternate;
+          animation: moveLeft 0.4s ease-in-out infinite alternate;
+}
+
+button .right {
+  -webkit-animation: moveRight 0.4s ease-in-out infinite alternate;
+          animation: moveRight 0.4s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes moveDown {
@@ -601,36 +609,6 @@ i:hover, i:focus, .skill:hover, .skill:focus {
   100% {
     -webkit-transform: translateX(0.7rem);
             transform: translateX(0.7rem);
-  }
-}
-@-webkit-keyframes moveUp {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  }
-}
-@keyframes moveUp {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  }
-}
-@keyframes moveDown {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
   }
 }
 nav {
@@ -809,29 +787,34 @@ header .greeting h1, header .greeting h3 {
   width: 100%;
   margin-bottom: 6rem;
   margin-top: 0;
+  padding-left: 0;
 }
 .skills li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 7.5%;
-      flex-basis: 7.5%;
-  height: 13rem;
-  width: 11rem;
+  -ms-flex-preferred-size: 8%;
+      flex-basis: 8%;
+  height: 12rem;
+  margin-left: 1rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: #262626;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 3px solid #EEEBE5;
+  border: 1.5px solid #EEEBE5;
   border-radius: 50%;
   background-color: #EBB861;
+  -webkit-filter: brightness(130%) grayscale(50%);
+          filter: brightness(130%) grayscale(50%);
+  -webkit-box-shadow: -8px 2px 5px rgba(191, 191, 191, 0.5);
+          box-shadow: -8px 2px 5px rgba(191, 191, 191, 0.5);
 }
 .skills li p {
   margin: 0;
@@ -841,30 +824,26 @@ header .greeting h1, header .greeting h3 {
 .skills li:nth-child(even) {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.7s ease-in-out;
-  transition: -webkit-transform 0.7s ease-in-out;
-  transition: transform 0.7s ease-in-out;
-  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
-  -webkit-animation: moveUp 1s ease-in-out infinite alternate;
-          animation: moveUp 1s ease-in-out infinite alternate;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 .skills li:nth-child(even):hover, .skills li:nth-child(even):focus {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  -webkit-transform: translateY(-20px) scale(1.1);
+          transform: translateY(-20px) scale(1.1);
 }
 .skills li:nth-child(odd) {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  -webkit-animation: moveDown 1s ease-in-out infinite alternate;
-          animation: moveDown 1s ease-in-out infinite alternate;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 .skills li:nth-child(odd):hover, .skills li:nth-child(odd):focus {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  -webkit-transform: translateY(20px) scale(1.1);
+          transform: translateY(20px) scale(1.1);
 }
 
 .projects {
@@ -903,14 +882,6 @@ header .greeting h1, header .greeting h3 {
 .projects img {
   margin-right: 3rem;
   margin-left: 3rem;
-}
-.projects a .left {
-  -webkit-animation: moveLeft 0.4s ease-in-out infinite alternate;
-          animation: moveLeft 0.4s ease-in-out infinite alternate;
-}
-.projects a .right {
-  -webkit-animation: moveRight 0.4s ease-in-out infinite alternate;
-          animation: moveRight 0.4s ease-in-out infinite alternate;
 }
 .projects .carouselNumDisplay {
   background-color: pink;
@@ -1039,22 +1010,32 @@ header .greeting h1, header .greeting h3 {
 
 /* Large tablet and medium desktops */
 @media (max-width: 1200px) {
-  header nav {
-    height: 13vh;
-  }
-  header h1 {
+  h1 {
     font-size: 10rem;
   }
-  header h2 {
-    font-size: 8rem;
+  h2 {
+    font-size: 7rem;
   }
-  header h3 {
+  h3 {
     font-size: 2.5rem;
   }
+  p {
+    font-size: 1.7rem;
+  }
+  header nav {
+    height: 12vh;
+  }
+  header .headerContent {
+    margin-top: 25rem;
+  }
   header .doubleArrowDown {
-    margin-top: 7.5rem;
+    margin-top: 7rem;
     width: 7rem;
     height: 7rem;
+  }
+  .aboutMe {
+    padding-top: 3rem;
+    padding-bottom: 14rem;
   }
   .aboutMe .wrapper {
     -webkit-box-orient: vertical;
@@ -1063,10 +1044,52 @@ header .greeting h1, header .greeting h3 {
             flex-direction: column;
     width: 70%;
   }
+  .aboutMe .wrapper .frame1 {
+    max-width: 380px;
+    min-width: 300px;
+    width: auto;
+    height: 32rem;
+    margin-bottom: 0;
+  }
+  .aboutMe .wrapper .greeting {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .aboutMe h2 {
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
   .aboutMe mark {
     font-size: 9rem;
-    right: -0.3em;
-    top: -0.15em;
+    right: -0.38em;
+    top: -0.38em;
+  }
+  .skills {
+    padding-bottom: 29rem;
+  }
+  .skills li {
+    -ms-flex-preferred-size: 7%;
+        flex-basis: 7%;
+    height: 9rem;
+  }
+  .skills li p {
+    font-size: 1rem;
+  }
+  .skills li i {
+    font-size: 3rem;
+  }
+  .projects .carousel {
+    width: 75%;
+    margin-top: -14rem;
+  }
+  .projects .carousel .carouselPhotos {
+    width: 40vw;
+    height: 50vh;
+    margin-bottom: 5rem;
+  }
+  .projects .carousel button img {
+    width: 8rem;
+    height: 8rem;
   }
 }
 /* Portrait tablet and small desktops */

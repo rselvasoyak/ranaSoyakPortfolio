@@ -43,21 +43,3 @@
         }
     }
 
-    // Skills Moving Up and Down 
-        @keyframes moveUp {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(-20px);
-            }
-        }
-
-        @keyframes moveDown {
-            0% {
-            transform: translateY(0);
-            }
-            100% {
-                transform: translateY(20px);
-            }
-        }

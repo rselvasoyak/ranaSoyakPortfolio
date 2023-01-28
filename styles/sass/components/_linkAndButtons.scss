@@ -84,3 +84,12 @@ i, .skill{
 		transform: scale(1.1);
     }
 }
+
+
+// Projects Section Carousel Buttons
+button .left{
+    animation: moveLeft 0.4s ease-in-out infinite alternate;
+}
+button .right {
+    animation: moveRight 0.4s ease-in-out infinite alternate;
+}

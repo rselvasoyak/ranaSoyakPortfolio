@@ -1,40 +1,95 @@
 @use "./variables" as *;
 /* Large tablet and medium desktops */
 @media (max-width: 1200px) {
+    // General Typography
+    h1{
+        font-size: 10rem;
+    }
+    h2{
+        font-size: 7rem;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.7rem;
+    }
+
+    // Header Section
     header{
         nav{
-            height: 13vh;
+            height: 12vh;
         }
-        h1{
-            font-size: 10rem;
-        }
-        h2{
-            font-size: 8rem;
-        }
-        h3{
-            font-size: 2.5rem;
+        .headerContent{
+            margin-top: 25rem;
         }
         .doubleArrowDown{
-            margin-top: 7.5rem;
+            margin-top: 7rem;
             width: 7rem;
             height: 7rem;
         }
     }
+    // About Me Section
     .aboutMe{
+        padding-top: 3rem;
+        padding-bottom: 14rem;
         .wrapper{
             flex-direction: column;
             width: 70%;
+            .frame1{
+                max-width: 380px;
+                min-width: 300px;
+                width: auto;
+                height: 32rem;
+                margin-bottom: 0;
+            }
+            .greeting{
+                margin-top: 0;
+                padding-top: 0;
+            }
+        }
+        h2{
+            margin-bottom: 0;
+            margin-top: 1rem;
         }
         mark{
             font-size: 9rem;
-            right: -.3em;
-            top: -.15em;
+            right: -.38em;
+            top: -.38em;
         }
     }
+    // Skills Section
     .skills{
-        
+            padding-bottom: 29rem;
+        li{
+            flex-basis: 7%;
+            height: 9rem;
+            p{
+                font-size: 1rem;
+            }
+            i{
+                font-size: 3rem;
+            }
+        }
     }
-    
+    // Projects Section
+    .projects{
+        .carousel{
+        width: 75%;
+        margin-top: -14rem;
+        .carouselPhotos{
+        width: 40vw;
+        height: 50vh;
+        margin-bottom: 5rem;
+        }
+        button {
+            img {
+                width: 8rem;
+                height: 8rem;
+            }
+        }
+        }
+    }
 }
 
 /* Portrait tablet and small desktops */
