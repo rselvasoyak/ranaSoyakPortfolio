@@ -15,11 +15,15 @@
     }
     .formContent{
         flex-direction: column;
+        margin-top: 2rem;
     }
     form{
         width: 50%;
         margin-top: 5rem;
         margin-bottom: 3rem;
+        p{
+            margin-top: 2rem;
+        }
     }
     fieldset{
         display: flex;
