@@ -1014,7 +1014,7 @@ header .greeting h1, header .greeting h3 {
     font-size: 10rem;
   }
   h2 {
-    font-size: 7rem;
+    font-size: 8rem;
   }
   h3 {
     font-size: 2.5rem;
@@ -1026,12 +1026,12 @@ header .greeting h1, header .greeting h3 {
     height: 12vh;
   }
   header .headerContent {
-    margin-top: 25rem;
+    margin-top: 20rem;
   }
   header .doubleArrowDown {
-    margin-top: 7rem;
-    width: 7rem;
-    height: 7rem;
+    margin-top: 6rem;
+    width: 9rem;
+    height: 9rem;
   }
   .aboutMe {
     padding-top: 3rem;
@@ -1093,6 +1093,182 @@ header .greeting h1, header .greeting h3 {
   }
 }
 /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  h1 {
+    font-size: 9rem;
+  }
+  h2 {
+    font-size: 7rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  header nav {
+    height: 10vh;
+  }
+  header .headerContent {
+    margin-top: 20rem;
+  }
+  header .doubleArrowDown {
+    margin-top: 5rem;
+    width: 8rem;
+    height: 8rem;
+  }
+  .aboutMe {
+    padding-top: 3rem;
+    padding-bottom: 14rem;
+  }
+  .aboutMe .wrapper {
+    width: 75%;
+  }
+  .aboutMe .wrapper .frame1 {
+    max-width: 330px;
+    min-width: 270px;
+    height: 30rem;
+  }
+  .aboutMe mark {
+    font-size: 7rem;
+    right: -0.1em;
+    top: -0.3em;
+  }
+  .skills li {
+    -ms-flex-preferred-size: 7%;
+        flex-basis: 7%;
+    margin-top: 2rem;
+  }
+  .skills li i {
+    font-size: 3.5rem;
+  }
+  .projects .carousel {
+    width: 80%;
+  }
+  .projects .carousel .carouselPhotos {
+    width: 42vw;
+    height: 47vh;
+  }
+  .projects .carousel button img {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+}
 /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 5.5rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  .skills li {
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+  }
+  .skills li i {
+    font-size: 3.5rem;
+  }
+  .projects .carousel {
+    width: 87%;
+  }
+  .projects .carousel .carouselPhotos {
+    width: 47vw;
+    height: 42vh;
+  }
+  .projects .carousel button img {
+    width: 6rem;
+    height: 6rem;
+  }
+}
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  header nav {
+    height: 8.5vh;
+  }
+  header .headerContent {
+    margin-top: 21rem;
+  }
+  header .doubleArrowDown {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  .aboutMe {
+    padding-top: 3rem;
+    padding-bottom: 14rem;
+  }
+  .aboutMe .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+  .aboutMe .wrapper .frame1 {
+    max-width: 350px;
+    min-width: 270px;
+    height: 29rem;
+  }
+  .aboutMe mark {
+    font-size: 5.5rem;
+    right: 1.1em;
+  }
+  .skills {
+    padding-bottom: 28rem;
+  }
+  .skills li {
+    -ms-flex-preferred-size: 14%;
+        flex-basis: 14%;
+    height: 8rem;
+  }
+  .skills li i {
+    font-size: 2.7rem;
+  }
+  .projects .carousel {
+    width: 95%;
+  }
+  .projects .carousel .carouselNumDisplay {
+    padding-top: 0.5rem;
+  }
+  .projects .carousel .carouselPhotos {
+    width: 52vw;
+    height: 31vh;
+  }
+  .projects .carousel button img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .contactMe .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactMe form {
+    width: 90%;
+  }
+  .contactMe button {
+    width: 90%;
+  }
+  .contactMe button:hover, .contactMe button:focus {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    width: 60%;
+  }
+}
 /* Small Screen phones*/

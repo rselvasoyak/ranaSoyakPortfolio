@@ -1,12 +1,12 @@
 @use "./variables" as *;
 /* Large tablet and medium desktops */
 @media (max-width: 1200px) {
-    // General Typography
+// General Typography
     h1{
         font-size: 10rem;
     }
     h2{
-        font-size: 7rem;
+        font-size: 8rem;
     }
     h3{
         font-size: 2.5rem;
@@ -15,21 +15,21 @@
         font-size: 1.7rem;
     }
 
-    // Header Section
+// Header Section
     header{
         nav{
             height: 12vh;
         }
         .headerContent{
-            margin-top: 25rem;
+            margin-top: 20rem;
         }
         .doubleArrowDown{
-            margin-top: 7rem;
-            width: 7rem;
-            height: 7rem;
+            margin-top: 6rem;
+            width: 9rem;
+            height: 9rem;
         }
     }
-    // About Me Section
+// About Me Section
     .aboutMe{
         padding-top: 3rem;
         padding-bottom: 14rem;
@@ -58,7 +58,7 @@
             top: -.38em;
         }
     }
-    // Skills Section
+// Skills Section
     .skills{
             padding-bottom: 29rem;
         li{
@@ -72,7 +72,7 @@
             }
         }
     }
-    // Projects Section
+// Projects Section
     .projects{
         .carousel{
         width: 75%;
@@ -94,14 +94,213 @@
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+// General Typography
+    h1{
+        font-size: 9rem;
+    }
+    h2{
+        font-size: 7rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+// Header Section
+    header{
+        nav{
+            height: 10vh;
+        }
+        .headerContent{
+            margin-top: 20rem;
+        }
+        .doubleArrowDown{
+            margin-top: 5rem;
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+// About Me Section
+    .aboutMe{
+        padding-top: 3rem;
+        padding-bottom: 14rem;
+        .wrapper{
+            width: 75%;
+            .frame1{
+                max-width: 330px;
+                min-width: 270px;
+                height: 30rem;
+            }
+        }
+        mark{
+            font-size: 7rem;
+            right: -.10em;
+            top: -.30em;
+        }
+    }
+// Skills Section
+    .skills{
+        li{
+            flex-basis: 7%;
+            margin-top: 2rem;
+            i{
+                font-size: 3.5rem;
+            }
+        }
+    }
+// Projects Section
+    .projects{
+        .carousel{
+        width: 80%;
+        .carouselPhotos{
+        width: 42vw;
+        height: 47vh;
+        }
+        button {
+            img {
+                width: 6.5rem;
+                height: 6.5rem;
+            }
+        }
+        }
+    }
+
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+// General Typography
+    h1{
+        font-size: 8rem;
+    }
+    h2{
+        font-size: 5.5rem;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+// Skills Section
+    .skills{
+        li{
+            flex-basis: 10%;
+            i{
+                font-size: 3.5rem;
+            }
+        }
+    }
+// Projects Section
+    .projects{
+        .carousel{
+        width: 87%;
+            .carouselPhotos{
+            width: 47vw;
+            height: 42vh;
+            }
+            button {
+                img {
+                    width: 6rem;
+                    height: 6rem;
+                }
+            }
+        }
+    }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    // General Typography
+    h1{
+        font-size: 7rem;
+    }
+    h2{
+        font-size: 5rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+
+// Header Section
+    header{
+        nav{
+            height: 8.5vh;
+        }
+        .headerContent{
+            margin-top: 21rem;
+        }
+        .doubleArrowDown{
+            width: 7.5rem;
+            height: 7.5rem;
+        }
+    }
+// About Me Section
+    .aboutMe{
+        padding-top: 3rem;
+        padding-bottom: 14rem;
+        .wrapper{
+            flex-direction: column;
+            width: 80%;
+            .frame1{
+                max-width: 350px;
+                min-width: 270px;
+                height: 29rem;
+            }
+        }
+        mark{
+            font-size: 5.5rem;
+            right: 1.1em;
+        }
+    }
+// Skills Section
+    .skills{
+            padding-bottom: 28rem;
+        li{
+            flex-basis: 14%;
+            height: 8rem;
+            i{
+                font-size: 2.7rem;
+            }
+        }
+    }
+// Projects Section
+    .projects{
+        .carousel{
+        width: 95%;
+        .carouselNumDisplay{
+            padding-top: .5rem;
+        }
+        .carouselPhotos{
+        width: 52vw;
+        height: 31vh;
+        }
+        button {
+            img {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+        }
+    }
+// Contact Me Section
+    .contactMe{
+        .wrapper{
+            flex-direction: column;
+        }
+        form{
+            width: 90%;
+        }
+        button{
+            width: 90%;
+            &:hover,
+            &:focus{
+            transform: scale(1.1);
+            width: 60%;
+            }
+        }
+    }
 }
 
 /* Small Screen phones*/
