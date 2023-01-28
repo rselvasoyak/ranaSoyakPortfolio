@@ -2,13 +2,22 @@
 
 .contactMe{
     background-color: $peach;
+    text-align: center;
+    h2{
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-right: 2rem;
+    }
     .wrapper {
         display: flex;
-        flex-direction: column;
         align-items: center;
     }
+    .formContent{
+        flex-direction: column;
+    }
     form{
-        width: 60%;
+        width: 50%;
         margin-top: 5rem;
         margin-bottom: 3rem;
     }
@@ -16,21 +25,34 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-radius: 15px;
+        border: 3px solid #a8657a;
+        &:hover, 
+        &:focus{
+            transition: 0.4s;
+            border: 4px solid #a8657a;
+            transform: scale(1.02);
+        }
         .topRow{
             display: flex;
             justify-content: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             height: 3rem;
         }
         input{
-            width: 50%;
+            flex-basis: 100%;
             padding-left: 1.2rem;
+            &:first-of-type {
+            margin-right: 1rem;
+            }
         }
         textarea{
-            padding-top: 1.2rem;
-            padding-left: 1.2rem;
+            flex-basis: 100%;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            resize: none;
         }
         button{
             width: 50%;
@@ -38,8 +60,14 @@
             align-self: center;
         }
         textarea, input{
+            font-style: italic;
+            font-weight: 500;
+            text-shadow: .6px .6px .3px;
+            font-size: 1.1rem;
+            border-radius: 15px;
             &:hover, &:focus {
-                border: $babyLilac 7px solid;
+                outline: none;
+                border-color: #e67e22;
                 transition: 0.4s;
             }
         }
