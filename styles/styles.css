@@ -671,7 +671,7 @@ header .wrapper {
       justify-content: space-around;
   width: 100%;
 }
-header .headerContent {
+header .wrapper .headerContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -687,7 +687,7 @@ header .headerContent {
   background-color: rgba(249, 249, 249, 0.7);
   border-radius: 5%;
 }
-header .greeting {
+header .wrapper .greeting {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,7 +702,7 @@ header .greeting {
   text-align: center;
   margin: 0;
 }
-header .greeting h1, header .greeting h3 {
+header .wrapper .greeting h1, header .wrapper .greeting h3 {
   margin: 1rem;
 }
 
