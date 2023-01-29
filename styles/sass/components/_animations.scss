@@ -1,6 +1,16 @@
 @use "../abstract/variables" as *;
 
 // Header 
+    // Nav - Hamburger Menu Slide Open
+    @keyframes slideDown {
+        from{
+            transform: translateY(-50%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
     // Downward Button - moving up and down 
     @keyframes moveDown {
     0% { transform: translateY(50px); }
