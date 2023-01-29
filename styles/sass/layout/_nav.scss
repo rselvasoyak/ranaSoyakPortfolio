@@ -9,13 +9,13 @@ nav{
         justify-content: space-around;
         align-items: center;
         box-sizing: border-box;
-        height: 15vh;
+        height: 12vh;
         width: 100%;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba($color: $lightPeach, $alpha: 0.5);
         backdrop-filter: blur(4px);
-        box-shadow: 8px 8px 8px  $darkSemiSand;
+        box-shadow: 8px 8px 7px  $darkSemiSand;
         .navList{
             display: flex;
             list-style-type: none;
