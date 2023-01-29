@@ -418,25 +418,40 @@ button:hover, button:focus {
   color: rgb(203, 136, 136);
 }
 
-.formButton {
-  border-radius: 10px;
-  background-color: #EEEBE5;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+a {
   cursor: pointer;
-  text-shadow: 0.6px 0.6px 0.3px;
+  text-decoration: none;
+  color: black;
 }
-.formButton:hover, .formButton:focus {
-  border: 2px solid #CEE1ED;
-  background-color: #b28c99;
+a:hover, a:focus {
+  color: rgb(203, 136, 136);
+  padding-bottom: 0.5rem;
+}
+
+i, .skill {
+  cursor: pointer;
+}
+i:hover, i:focus, .skill:hover, .skill:focus {
+  color: #545629;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+}
+
+.navLinks a {
+  width: 100%;
+}
+.navLinks a:hover, .navLinks a:focus {
+  border-bottom: 2px solid #A2A2A2;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .doubleArrowDown {
@@ -479,27 +494,25 @@ button:hover, button:focus {
   height: 9rem;
 }
 
-a {
-  cursor: pointer;
+.formButton {
+  border-radius: 10px;
+  background-color: #EEEBE5;
+  padding: 16px 32px;
+  text-align: center;
   text-decoration: none;
-  color: black;
-}
-a:hover, a:focus {
-  color: rgb(203, 136, 136);
-  padding-bottom: 0.5rem;
-}
-
-i, .skill {
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
   cursor: pointer;
+  text-shadow: 0.6px 0.6px 0.3px;
 }
-i:hover, i:focus, .skill:hover, .skill:focus {
-  color: #545629;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+.formButton:hover, .formButton:focus {
+  border: 2px solid #CEE1ED;
+  background-color: #b28c99;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 button .left {
@@ -512,6 +525,27 @@ button .right {
           animation: moveRight 0.4s ease-in-out infinite alternate;
 }
 
+@-webkit-keyframes slideDown {
+  from {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 @-webkit-keyframes moveDown {
   0% {
     -webkit-transform: translateY(50px);
@@ -522,7 +556,6 @@ button .right {
             transform: translateY(20px);
   }
 }
-
 @keyframes moveDown {
   0% {
     -webkit-transform: translateY(50px);
@@ -636,20 +669,55 @@ nav {
   width: 100%;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  background: rgba(246, 229, 189, 0.6);
+  background: rgba(246, 229, 189, 0.9);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   -webkit-box-shadow: 8px 8px 9px #BFBFBF;
           box-shadow: 8px 8px 9px #BFBFBF;
 }
-nav .navList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+nav .navLinks {
+  display: none;
   list-style-type: none;
+  -webkit-animation: slideDown 0.5s ease-in-out;
+          animation: slideDown 0.5s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+nav .navLinks li {
+  border-left: 2px solid #A2A2A2;
+  border-right: 2px solid #A2A2A2;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  margin: 2rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 nav .hamburgerMenu {
   padding: 0.3em;
+}
+nav .showNav {
+  display: block;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 96%;
+  width: 78%;
+  background: rgba(235, 184, 97, 0.8);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px #A2A2A2;
+          box-shadow: 0px 0px 10px #A2A2A2;
+  z-index: 1;
+}
+nav .closing {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 header {
