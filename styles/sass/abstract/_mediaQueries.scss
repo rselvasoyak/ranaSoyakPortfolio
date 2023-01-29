@@ -1,6 +1,9 @@
 @use "./variables" as *;
 /* Large tablet and medium desktops */
 @media (max-width: 1200px) {
+    body{
+        overflow-x: hidden;
+    };
 // General Typography
     h1{
         font-size: 10rem;
@@ -212,7 +215,7 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    // General Typography
+// General Typography
     h1{
         font-size: 7rem;
     }
@@ -244,7 +247,7 @@
             flex-direction: column;
             width: 80%;
             .frame1{
-                max-width: 350px;
+                max-width: 320px;
                 min-width: 270px;
                 height: 29rem;
             }
@@ -289,9 +292,6 @@
         .wrapper{
             flex-direction: column;
         }
-        form{
-            width: 90%;
-        }
         button{
             width: 90%;
             &:hover,
@@ -304,6 +304,87 @@
 }
 
 /* Small Screen phones*/
-// @media (min-width: 330px) {
+@media (max-width: 330px) {
+// General Typography
+    h1{
+        font-size: 4.7rem;
+    }
+    h2{
+        font-size: 4.2rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
 
-// }
+// Header Section
+    header{
+        nav{
+            height: 8vh;
+        }
+        .headerContent{
+            margin-top: 21rem;
+        }
+        .doubleArrowDown{
+            width: 6.5rem;
+            height: 6.5rem;
+        }
+    }
+// About Me Section
+    .aboutMe{
+        padding-top: 3rem;
+        padding-bottom: 14rem;
+        .wrapper{
+            flex-direction: column;
+            width: 80%;
+            .frame1{
+                max-width: 250px;
+                min-width: 200px;
+                height: 29rem;
+            }
+        }
+        mark{
+            font-size: 5.5rem;
+            right: 1.1em;
+        }
+    }
+// Skills Section
+    .skills{
+            padding-bottom: 28rem;
+        li{
+            flex-basis: 24%;
+            height: 8.5rem;
+            margin-top: 3rem;
+        }
+    }
+// Projects Section
+    .projects{
+        .carousel{
+        .carouselNumDisplay{
+            padding-top: 0;
+        }
+        .carouselPhotos{
+        width: 52vw;
+        height: 24vh;
+        }
+        button {
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+        }
+    }
+// Contact Me Section
+    .contactMe{
+        .wrapper{
+        }
+        button{
+            width: 100%;
+            &:hover,
+            &:focus{
+            transform: scale(1.1);
+            width: 60%;
+            }
+        }
+    }
+}

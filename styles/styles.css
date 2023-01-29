@@ -933,9 +933,6 @@ header .greeting h1, header .greeting h3 {
           flex-direction: column;
   margin-top: 1rem;
 }
-.contactMe form {
-  width: 50%;
-}
 .contactMe form p {
   margin-top: 2rem;
 }
@@ -951,6 +948,7 @@ header .greeting h1, header .greeting h3 {
       justify-content: space-around;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  width: 40vw;
   border-radius: 15px;
   border: 3px solid #a8657a;
   padding: 1rem;
@@ -984,6 +982,7 @@ header .greeting h1, header .greeting h3 {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   padding-top: 1rem;
+  padding-bottom: 6rem;
   padding-left: 1rem;
   resize: none;
 }
@@ -1010,6 +1009,9 @@ header .greeting h1, header .greeting h3 {
 
 /* Large tablet and medium desktops */
 @media (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
   h1 {
     font-size: 10rem;
   }
@@ -1220,7 +1222,7 @@ header .greeting h1, header .greeting h3 {
     width: 80%;
   }
   .aboutMe .wrapper .frame1 {
-    max-width: 350px;
+    max-width: 320px;
     min-width: 270px;
     height: 29rem;
   }
@@ -1259,9 +1261,6 @@ header .greeting h1, header .greeting h3 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contactMe form {
-    width: 90%;
-  }
   .contactMe button {
     width: 90%;
   }
@@ -1272,3 +1271,72 @@ header .greeting h1, header .greeting h3 {
   }
 }
 /* Small Screen phones*/
+@media (max-width: 330px) {
+  h1 {
+    font-size: 4.7rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  header nav {
+    height: 8vh;
+  }
+  header .headerContent {
+    margin-top: 21rem;
+  }
+  header .doubleArrowDown {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .aboutMe {
+    padding-top: 3rem;
+    padding-bottom: 14rem;
+  }
+  .aboutMe .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+  .aboutMe .wrapper .frame1 {
+    max-width: 250px;
+    min-width: 200px;
+    height: 29rem;
+  }
+  .aboutMe mark {
+    font-size: 5.5rem;
+    right: 1.1em;
+  }
+  .skills {
+    padding-bottom: 28rem;
+  }
+  .skills li {
+    -ms-flex-preferred-size: 24%;
+        flex-basis: 24%;
+    height: 8.5rem;
+    margin-top: 3rem;
+  }
+  .projects .carousel .carouselNumDisplay {
+    padding-top: 0;
+  }
+  .projects .carousel .carouselPhotos {
+    width: 52vw;
+    height: 24vh;
+  }
+  .projects .carousel button img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .contactMe button {
+    width: 100%;
+  }
+  .contactMe button:hover, .contactMe button:focus {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    width: 60%;
+  }
+}
