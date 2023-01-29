@@ -1,5 +1,6 @@
 @use "../abstract/variables" as *;
 
+// About Me
 .frame1{ 
       max-width: 450px;
       min-width: 350px;
@@ -17,6 +18,8 @@
             width: 100%;
       }
 }
+
+// Projects
 .carouselPhotos{
       width: 30vw;
       height: 60vh;

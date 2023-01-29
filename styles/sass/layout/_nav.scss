@@ -13,9 +13,9 @@ nav{
         width: 100%;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-        background: rgba($color: $lightPeach, $alpha: 0.5);
+        background: rgba($color: $lightPeach, $alpha: 0.6);
         backdrop-filter: blur(4px);
-        box-shadow: 8px 8px 7px  $darkSemiSand;
+        box-shadow: 8px 8px 9px  $darkSand;
         .navList{
             display: flex;
             list-style-type: none;

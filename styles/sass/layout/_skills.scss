@@ -32,7 +32,7 @@
     li{
         display: flex;
         flex-basis: 8%;
-        height: 12rem;
+        height: 17rem;
         margin-left: 1rem;
         flex-direction: column;
         justify-content: center;
@@ -41,7 +41,7 @@
         border: 1.5px solid $lightSand;
         border-radius: 50%;
         background-color: $peach;
-        filter: brightness(130%) grayscale(50%);
+        filter: brightness(130%) grayscale(30%);
         // touch-action: manipulation;
         box-shadow: -8px 2px 5px rgba($darkSand,0.5);
             p{
@@ -68,5 +68,5 @@
         &:nth-child(odd):focus {
         transform: translateY(20px) scale(1.1);
         }
-        }
     }
+}
