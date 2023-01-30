@@ -6,14 +6,16 @@ nav{
 	    top: 0;
         z-index: 50;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
         height: 12vh;
         width: 100%;
         padding-top: 1.5rem;
+        padding-right: 24rem;
         padding-bottom: 1.5rem;
-        background: rgba($color: $lightPeach, $alpha: 0.9);
+        padding-left: 24rem;
+        background: rgba($color: $lightPeach, $alpha: 0.6);
         backdrop-filter: blur(4px);
         box-shadow: 8px 8px 9px  $darkSand;
         .navLinks{
@@ -40,7 +42,7 @@ nav{
             align-items: center;
             top: 96%; 
             width: 78%; 
-            background: rgba($color: $peach, $alpha: 0.8);
+            background: rgba($color: $peach, $alpha: 0.6);
             backdrop-filter: blur(4px);
             padding: 1rem; 
             border-radius: 10px;

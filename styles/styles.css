@@ -397,10 +397,16 @@ mark:before {
 
 .carouselPhotos {
   width: 30vw;
-  height: 60vh;
-  margin-bottom: 5rem;
-  background-color: olive;
-  border-radius: 5%;
+  height: 50vh;
+  scroll-behavior: smooth;
+  -ms-overflow-style: smooth;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  /* WebKit */
+}
+.carouselPhotos::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 button {
@@ -658,8 +664,9 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -668,8 +675,10 @@ nav {
   height: 12vh;
   width: 100%;
   padding-top: 1.5rem;
+  padding-right: 24rem;
   padding-bottom: 1.5rem;
-  background: rgba(246, 229, 189, 0.9);
+  padding-left: 24rem;
+  background: rgba(246, 229, 189, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   -webkit-box-shadow: 8px 8px 9px #BFBFBF;
@@ -706,7 +715,7 @@ nav .showNav {
           align-items: center;
   top: 96%;
   width: 78%;
-  background: rgba(235, 184, 97, 0.8);
+  background: rgba(235, 184, 97, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   padding: 1rem;
@@ -926,7 +935,7 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
   border-top: 2px solid rgba(220, 217, 210, 0.8);
-  margin-top: -14rem;
+  margin-top: -17rem;
   padding-bottom: 1rem;
 }
 .projects .wrapper {
@@ -954,19 +963,6 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   border-radius: 5%;
   margin-top: -15rem;
 }
-.projects img {
-  margin-right: 3rem;
-  margin-left: 3rem;
-}
-.projects .carouselNumDisplay {
-  border: 2px solid #EBB861;
-  border-radius: 12px;
-  text-align: center;
-  width: 40%;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-  margin-top: 5rem;
-}
 .projects .newCarousel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -977,6 +973,40 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
+}
+.projects .project {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 100;
+  -webkit-transition: opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
+  transition: transform 0.5s, opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
+}
+.projects .initial {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+.projects .initial img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 7%;
+}
+.projects .carouselNumDisplay {
+  border: 2px solid #EBB861;
+  border-radius: 12px;
+  text-align: center;
+  width: 40%;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  margin-top: 5rem;
 }
 
 .contactMe {
