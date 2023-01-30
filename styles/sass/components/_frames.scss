@@ -22,8 +22,13 @@
 // Projects
 .carouselPhotos{
       width: 30vw;
-      height: 60vh;
-      margin-bottom: 5rem;
-      background-color: olive;
-      border-radius: 5%;
-   }
+      height: 50vh;
+      scroll-behavior: smooth;
+      -ms-overflow-style: smooth; 
+      transform-style: preserve-3d;
+      /* WebKit */
+      &::-webkit-scrollbar { 
+            width: 0;
+            height: 0;
+      }
+}

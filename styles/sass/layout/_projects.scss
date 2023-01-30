@@ -5,7 +5,7 @@
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
     border-top: 2px solid $darkSemiSand;
-    margin-top: -14rem;
+    margin-top: -17rem;
     padding-bottom: 1rem;
     .wrapper{
         flex-direction: column;
@@ -20,12 +20,33 @@
         border-radius: 5%;
         margin-top: -15rem;
     }
-    img{
-            margin-right: 3rem;
-            margin-left: 3rem;
-        }
+    .newCarousel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .project {
+        opacity: 0;
+        position: absolute;
+        top:0;
+        width: 100%;
+        margin: auto;
+        padding: 1rem 4rem;
+        z-index: 100;
+        transition: transform .5s, opacity .5s, z-index .5s;
+    }
+    .initial {
+        opacity: 1;
+        position: relative;
+        z-index: 900;
+        img{
+                width: 100%;
+                object-fit: contain;
+                border-radius: 7%;
+            }
+    }
     .carouselNumDisplay{
-        // background-color: pink;
         border: 2px solid $peach;
         border-radius: 12px;
         text-align: center;
@@ -34,9 +55,4 @@
         padding-bottom: 1.2rem;
         margin-top: 5rem;
     }
-    .newCarousel{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    }
+}
