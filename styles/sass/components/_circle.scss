@@ -1,0 +1,60 @@
+@use "../abstract/variables" as *;
+
+mark{
+  position: relative;
+  background-color: transparent;
+}
+mark:after{
+  border: .10em solid $peach;
+  border-top: none;
+  border-radius: 1.5em 1em 2em 1.5em;
+  bottom: -.3em;
+  content: '';
+  left: -.2em;
+  position: absolute;
+  right: -.3em;
+  top: -.1em;
+}
+mark:before {
+  border-top: .10em solid $peach;
+  border-radius: .5em;
+  border-top-left-radius: 600em;
+  border-top-right-radius: 300em;;
+  content: '';
+  height: 1em;
+  left: -.30em;;
+  position: absolute;
+  top: -.28em;
+  transform: rotate(-10deg);
+  width: 1.5em;
+}
+
+
+// Dark Purple color - hand drawn circle
+.circle2{
+  position: relative;
+  background-color: transparent;
+}
+.circle2:after{
+  border: .10em solid #a8657a;
+  border-top: none;
+  border-radius: 1.5em 1em 2em 1.5em;
+  bottom: -.3em;
+  content: '';
+  left: -.2em;
+  position: absolute;
+  right: -.3em;
+  top: -.1em;
+}
+.circle2:before {
+  border-top: .10em solid #a8657a;
+  border-radius: .5em;
+  border-top-left-radius: 500em;
+  content: '';
+  height: 1em;
+  left: -.25em;;
+  position: absolute;
+  top: -.28em;
+  transform: rotate(-10deg);
+  width: 2em;
+}

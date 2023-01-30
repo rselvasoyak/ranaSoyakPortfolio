@@ -1,0 +1,71 @@
+@use "../abstract/variables" as *;
+
+// Third party Font - Dopperganger
+
+@font-face {
+    font-family: 'Doppelganger';
+    src: url('/fonts/Doppelganger-Display.eot');
+    src: url('/fonts/Doppelganger-Display.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Doppelganger-Display.woff2') format('woff2'),
+         url('/fonts/Doppelganger-Display.woff') format('woff'),
+         url('/fonts/Doppelganger-Display.ttf')  format('truetype'),
+         url('/fonts/Doppelganger-Display.svg#Display') format('svg');
+}
+
+// General
+html, body{
+    font-size: 62.5%;
+}
+
+p{
+    font-size: 2.2rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+}
+
+// Headings
+h1{
+    text-transform: uppercase;
+    font-size: 12rem;
+    font-family: 'Doppelganger';
+    font-weight: 800;
+    text-shadow: $darkGray 2px 1px 1px;
+}
+
+h2{
+    font-size: 11rem;
+    text-transform: uppercase;
+    font-family: 'Doppelganger';
+    text-shadow: $darkGray 2px 1px 1.5px;
+    font-weight: 700;
+}
+
+h3{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 4rem; 
+    font-family: 'Roboto', sans-serif;
+    text-shadow: $darkGray 2px 1px 2px;
+    font-weight: 400;
+}
+h4{
+    font-size: 2rem;
+}
+
+// Other Elements 
+li{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+i{
+    font-size: 4rem;
+}
+
+.carouselNumDisplay {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: italic;
+}

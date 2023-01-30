@@ -1,0 +1,168 @@
+@use "../abstract/variables" as *;
+// General 
+    // Buttons 
+    button {
+        text-transform: uppercase;
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        color: black;
+        &:hover,
+        &:focus{
+            color: rgb(203, 136, 136)
+        }
+    }
+    // General Anchor Element styling 
+    a{
+        cursor:pointer;  
+        text-decoration: none;
+        color: black;
+        &:hover,
+        &:focus{
+            color: rgb(203, 136, 136);
+            padding-bottom: 0.5rem;
+        }
+    }
+
+    // General Icon Styling
+    i, .skill{
+        cursor: pointer;
+        &:hover, 
+        &:focus{
+            color: #545629;
+            transition-duration: .5s;
+            transition-timing-function: ease-in-out;
+            transform: scale(1.1);
+        }
+    }
+
+// Section Specific
+    // Navigation Links
+    .navLinks{
+        a{
+            width: 100%;
+            &:hover, 
+            &:focus {
+                border-bottom: 2px solid $boxShadow;
+                transition-duration: .5s;
+                transition-timing-function: ease-in-out;
+                transform: scale(1.1);
+            }
+        }
+    }
+    // Header Down Indicating Button
+    .doubleArrowDown{
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4rem;
+            padding: 1.3rem;
+            border: 2px solid $peach;
+            background-color: $lightSand;
+            border-radius: 70%;
+            box-shadow: -6px 4px $lightPeach;
+            animation: moveDown 0.5s infinite alternate;
+            &:hover,
+            &:focus{
+            border: 2px solid $peach;
+            background-color: $lightPeach;
+            border-radius: 50%;
+            transform: scale(1.1);
+            transition-duration: .1s;
+            animation: shake 0.7s;
+            }
+            img{
+                object-position: center;
+                width: 100%;
+                width: 9rem;
+                height: 9rem;
+            }
+    }        
+
+    // Projects Section Buttons 
+        // Live Link 
+            .liveLink {
+                display: inline-block;
+                outline: none;
+                cursor: pointer;
+                font-size: 1.6rem;
+                font-weight: 600;
+                font-style: italic;
+                border-radius: 10px;
+                padding: 14px 24px;
+                margin-right: 1rem;
+                border: none;
+                transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+                background: linear-gradient(to right,  rgb(220, 85, 116) 0%, rgb(179, 98, 125) 50%, rgb(192, 106, 146) 100%);
+                color: $lightSand;
+                 &:hover,
+                 &:focus{
+                    transform: scale(1.1);
+                    transition-duration: .1s;
+                 }
+            }
+                
+        // GitHub Repo 
+         .gitRepo {
+                display: inline-block;
+                outline: none;
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 600;
+                font-style: italic;
+                border-radius: 8px;
+                padding: 14px 24px;
+                border: none;
+                transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+                background: linear-gradient(to right, rgb(220, 85, 116) 0%, rgb(179, 98, 125) 50%, rgb(192, 106, 146) 100%);
+                color: $lightSand;
+                 &:hover,
+                 &:focus{
+                    transform: scale(1.1);
+                    transition-duration: .1s;
+                 }
+            }
+        // Project Section Anchor Tag 
+            a{
+                color: #b28c99;
+                border-bottom: 1px solid rgb(230, 30, 77);
+                font-style: italic;
+            }
+
+    // Form Submit Button
+    .formButton{
+        border-radius: 10px;
+        background-color: $lightSand;
+        width: 50%;
+        margin-top: 2rem;
+        align-self: center;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        text-shadow: .6px .6px .3px;
+        &:hover,
+        &:focus{
+            border: 2px solid $babyBlue;
+            background-color: #b28c99;
+            transform: scale(1.1);
+            transition-duration: .4s;
+        }
+    }
+
+    // Projects Section Carousel Buttons
+    button .left{
+        animation: moveLeft 0.4s ease-in-out infinite alternate;
+    }
+    button .right {
+        animation: moveRight 0.4s ease-in-out infinite alternate;
+    }

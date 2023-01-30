@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<title>Rana Codes - Home</title>
+	<script src="https://kit.fontawesome.com/cc9eab2ece.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<nav>
+				<div class="codeLogo">
+					<a href="#projects" tabindex="0">
+						<i class="fa-solid fa-code"></i>
+					</a>
+				</div><!-- Code Logo Ending -->
+				<button class="hamburgerMenu"><i class="fa-solid fa-bars" alt="hamburger menu" aria-label="dropdown hamburger menu icon"></i></button>
+				<ul class="navLinks">
+					<li><a href="" tabindex="0" role="link" aria-label="Link that takes you to about me section">about</a></li>
+					<li><a href="" tabindex="0" role="link" aria-label="Link that takes you to skills section">skills</a></li>
+					<li><a href="" tabindex="0" role="link" aria-label="Link that takes you to interests section">interest</a></li>
+					<li><a href="" tabindex="0" role="link" aria-label="Link that takes you to projects section">project</a></li>
+					<li><a href="" tabindex="0" role="link" aria-label="Link that takes you to connect me section">connect</a></li>
+				</ul>
+			</nav><!-- Nav Bar Ending -->
+	
+			<section class="headerContent">
+				<div class="greeting">
+					<h3>Welcome!</h3>
+					<h1>i am rana soyak</h1>
+					<h3>& i am a front-end developer</h3>
+				</div>
+			</section> <!-- Content Section Ending -->
+			<button role="button" class="doubleArrowDown" aria-label="press to continue down the site">
+				<img src="./styles/sass/assets/doubleArrowDown.svg" alt="Double orange arrow pointing downwards to lead to following sections of the page">
+			</button>
+		</div><!-- Wrapper Ending -->
+	</header>
+	<main>
+		<!-- position sticky? -->
+		<section class="aboutMe">
+			<h2 class="aboutMeHeading">about <span><mark>me</mark></span></h2>
+			<div class="wrapper">
+				<div class="frame1"></div>
+				<div class="aboutMeContent">
+					<p>Hello, my name is Rana Soyak and I am a Web Developer with a passion for making information accessible to all through responsive and user-friendly apps. I bring my experience in retail management and my interest in different cultures to my coding mindset, always prioritizing customer needs and never giving up on learning. </p>
+					<p>My technical skills include JavaScript, React.js, HTML, CSS, SCSS, RESTful APIs, Bootstrap, jQuery, and AJAX. I am currently enrolled in a Web Development Bootcamp and have completed Accelerated JS Courses. My recent projects include a meditation app and a clone website based off of a design pattern provided by the client. Thank you for considering me for the web developer position.</p>
+				</div>
+		</section>
+		<section class="skills">
+			<div class="wrapper">
+				<h2 class="skillsHeading">skills</h2>
+				<ul>
+					<!-- nth child -->
+					<li><i class="fa-brands fa-html5" alt="html" aria-label="html icon"></i></li>
+					<li><p aria-label="rest Api text">rest api</p><i class="fa-solid fa-arrow-right-arrow-left" alt="Rest API" aria-label="Rest Api icon"></i></li>
+					<li><i class="fa-brands fa-square-js"alt="javascript" aria-label="Javascript icon"></i></li>
+					<li><i class="fa-brands fa-react" alt="react" aria-label="React icon"></i></li>
+					<li><i class="devicon-jquery-plain-wordmark" alt="jQuery" aria-label="JQuery icon"></i></li>
+					<li><p aria-label="responsive design text">responsive design</p><i class="fa-solid fa-laptop-file" alt="responsive design" aria-label="Responsive Design icon"></i></li>
+					<li><i class="fa-brands fa-sass" alt="sass" aria-label="Sass icon"></i></li>
+					<li><i class="fa-brands fa-css3-alt" alt="css" aria-label="css icon"></i></li>
+					<li><i class="fa-brands fa-square-git" alt="git" aria-label="git icon"></i></li>
+					<li><p aria-label="pair programming text">pair programming</p><i class="fa-solid fa-people-group" alt="pair programming" aria-label="pair programming icon"></i></li>
+					<li><i class="devicon-firebase-plain-wordmark" alt="firebase" aria-label="firebase icon"></i></li>	
+				</ul>
+			</div>
+		</section>
+		<section class="projects" id="projects">
+			<div class="wrapper">
+				<div class="carousel">
+					<!-- carousel slideshow with infinite loop -->
+					<div class="carouselNumDisplay">01/05</div>
+					<h3 class="projectName">Meditation Minute</h3>
+					<div class="newCarousel">
+						<button>
+							<img class="left" src="./styles/sass/assets/arrowLeft.svg" alt="previous slide arrow" aria-label="Previous Slide">
+						</button>
+						<div class="carouselPhotos">
+						  <!-- list of carousel images -->
+						  <div class="project initial">
+							  <img class="projectImg" src="./styles/sass/assets/meditationMinuteContentPage.png" alt="content page of Meditation Minute App">
+						  </div>
+						  <div class="project">
+							  <img class="projectImg" src="./styles/sass/assets/meditationMinuteHomePage.png" alt="content page of Meditation Minute App">
+						  </div>
+					  	</div>
+					  	<button>
+							<img class="right"src="./styles/sass/assets/arrowRight.svg" alt="next slide arrow" aria-label="Next Slide">
+						</button>
+					</div><!-- New carousel ending -->
+					<h4>Created by Rana Soyak & <a href="https://classy-kashata-567633.netlify.app/"> Olivia Sparks</a></h4>
+					<div class="buttons">
+						<button class="liveLink">Live Link</button>
+						<button class="gitRepo">Github Repo</button>
+					</div>
+					<div class="projectLangs">
+						<!-- The icons of languages used goes here -->
+					</div>
+				</div>
+				<h2><mark class="headingCircle">projects</mark></h2>
+			</div>
+		</section>
+		<section class="contactMe">
+			<div class="wrapper">
+				<div class="formContent">
+					<h2>
+						<span>let's connect &</span> 
+						say 
+						<mark class="circle2">hello!</mark>
+					</h2>
+					<p> Being from Turkey, I love coffee! Let's connect and talk over coffee about possible collaboration options or why you should buy an Air Fryer! </p>
+				</div>
+				<form action="#" method="GET" class="contactForm" name="contactForm" netlify>
+					<fieldset class="roundCorners">
+						<div class="topRow" >
+							<label for="name" class="sr-only"></label>
+							<input class="roundCorners" type="text" id="name" placeholder="Name" required>
+							
+							<label for="email" class="sr-only"></label>
+							<input  class="roundCorners" type="email" id="email" placeholder="E-Mail" required>
+						</div>
+						
+						<label for="message" class="sr-only"></label>
+						<textarea name="userMessage" id="message" cols="30" rows="10" placeholder="Hi Rana! Would love to chat over coffee about a project idea I have! Also, excited to hear about what you think about 'air fryers'!" required></textarea>
+		
+						<button tabindex="0" role="button" class="formButton" type="submit" aria-label="submit the form"><mark>get in touch</mark></button>
+					</fieldset>
+				</form>
+			</div>
+		</section>
+	</main>
+	<script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@use "../abstract/variables" as *;
+
+.skills {
+    background-color: $lightSand;
+    border-top: 2px solid $darkSemiSand;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    margin-top: -10rem;
+    padding-top: 5rem;
+    padding-bottom: 35rem;
+    .wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        margin-bottom: 1.8rem;
+        margin-top: 2.5rem;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        width: 100%;
+        margin-bottom: 6rem;
+        margin-top: 0;
+        padding-left: 0;
+    }
+    li{
+        display: flex;
+        flex-basis: 8%;
+        height: 17rem;
+        margin-left: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $darkGray;
+        border: 1.5px solid $lightSand;
+        border-radius: 50%;
+        background-color: $peach;
+        filter: brightness(110%) grayscale(10%);
+        // touch-action: manipulation;
+        box-shadow: -8px 2px 5px rgba($darkSand,0.5);
+            p{
+                margin:0;
+                font-size: 1.2rem;
+                width: 50%;
+            }
+        &:nth-child(even) {
+        transform: translateY(0); 
+        transition: transform 0.5s ease-in-out; 
+        }
+
+        &:nth-child(even):hover,
+        &:nth-child(even):focus {
+        transform: translateY(-20px) scale(1.1); 
+        }
+
+        &:nth-child(odd) {
+        transform: translateY(0); 
+        transition: transform 0.5s ease-in-out; 
+        }
+
+        &:nth-child(odd):hover,
+        &:nth-child(odd):focus {
+        transform: translateY(20px) scale(1.1);
+        }
+    }
+}

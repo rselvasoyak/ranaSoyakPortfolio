@@ -1,0 +1,28 @@
+@use "../abstract/variables" as *;
+// General Page 
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $lightSand;
+    color: $mainBlack;
+    background-image: url("./sass/assets/layered-waves-haikei(3).svg");
+    background-repeat: repeat-y;
+    object-fit: contain;
+}
+.wrapper {
+    display: flex;
+    max-width: 2000px;
+    width: 90%;
+    margin: 0 auto; 
+}
+
+// Specific Elements
+span {
+    display: block;
+    margin-top: 2rem;
+}
+
+li {
+    list-style-type: none;
+}
