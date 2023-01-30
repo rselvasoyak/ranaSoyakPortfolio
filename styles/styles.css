@@ -269,6 +269,8 @@ html, body {
 p {
   font-size: 2.2rem;
   font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1.5;
 }
 
 h1 {
@@ -294,6 +296,10 @@ h3 {
   font-family: "Roboto", sans-serif;
   text-shadow: #262626 2px 1px 2px;
   font-weight: 400;
+}
+
+h4 {
+  font-size: 2rem;
 }
 
 li {
@@ -384,7 +390,7 @@ mark:before {
           transform: rotate(1deg);
   background-color: red;
   border-radius: 40%;
-  background-image: url("http://placekitten.com/200/300");
+  background-image: url("../../../styles/sass/assets/profile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: -8px 8px #9C6DA5;
@@ -397,7 +403,7 @@ mark:before {
 
 .carouselPhotos {
   width: 30vw;
-  height: 50vh;
+  height: 40vh;
   scroll-behavior: smooth;
   -ms-overflow-style: smooth;
   -webkit-transform-style: preserve-3d;
@@ -500,9 +506,65 @@ i:hover, i:focus, .skill:hover, .skill:focus {
   height: 9rem;
 }
 
+.liveLink {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-style: italic;
+  border-radius: 10px;
+  padding: 14px 24px;
+  margin-right: 1rem;
+  border: none;
+  transition: box-shadow 0.2s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(220, 85, 116)), color-stop(50%, rgb(179, 98, 125)), to(rgb(192, 106, 146)));
+  background: linear-gradient(to right, rgb(220, 85, 116) 0%, rgb(179, 98, 125) 50%, rgb(192, 106, 146) 100%);
+  color: #EEEBE5;
+}
+.liveLink:hover, .liveLink:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.gitRepo {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  font-style: italic;
+  border-radius: 8px;
+  padding: 14px 24px;
+  border: none;
+  transition: box-shadow 0.2s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(220, 85, 116)), color-stop(50%, rgb(179, 98, 125)), to(rgb(192, 106, 146)));
+  background: linear-gradient(to right, rgb(220, 85, 116) 0%, rgb(179, 98, 125) 50%, rgb(192, 106, 146) 100%);
+  color: #EEEBE5;
+}
+.gitRepo:hover, .gitRepo:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+a {
+  color: #b28c99;
+  border-bottom: 1px solid rgb(230, 30, 77);
+  font-style: italic;
+}
+
 .formButton {
   border-radius: 10px;
   background-color: #EEEBE5;
+  width: 50%;
+  margin-top: 2rem;
+  -ms-flex-item-align: center;
+      align-self: center;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -684,6 +746,10 @@ nav {
   -webkit-box-shadow: 8px 8px 9px #BFBFBF;
           box-shadow: 8px 8px 9px #BFBFBF;
 }
+nav a {
+  color: #262626;
+  border: none;
+}
 nav .navLinks {
   display: none;
   list-style-type: none;
@@ -791,6 +857,11 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   border-top: 2px solid rgba(220, 217, 210, 0.8);
   background-color: #e9d5fd;
 }
+.aboutMe h2 {
+  margin: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 .aboutMe .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -806,16 +877,21 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   margin-top: -3rem;
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
-  font-size: 5rem;
+  font-size: 10rem;
   font-family: inherit;
 }
 .aboutMe .aboutMeContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-indent: 4rem;
   padding-top: 2rem;
   margin: 3rem;
   z-index: 30;
@@ -824,11 +900,7 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   float: left;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-}
-.aboutMe h2 {
-  margin: 0;
-  margin-bottom: 2rem;
-  text-align: center;
+  line-height: 1.7;
 }
 
 .skills {
@@ -895,8 +967,8 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   border: 1.5px solid #EEEBE5;
   border-radius: 50%;
   background-color: #EBB861;
-  -webkit-filter: brightness(130%) grayscale(30%);
-          filter: brightness(130%) grayscale(30%);
+  -webkit-filter: brightness(110%) grayscale(10%);
+          filter: brightness(110%) grayscale(10%);
   -webkit-box-shadow: -8px 2px 5px rgba(191, 191, 191, 0.5);
           box-shadow: -8px 2px 5px rgba(191, 191, 191, 0.5);
 }
@@ -963,7 +1035,7 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   border-radius: 5%;
   margin-top: -15rem;
 }
-.projects .newCarousel {
+.projects .carousel .newCarousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,18 +1047,34 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
           justify-content: center;
   overflow: hidden;
 }
+.projects .carousel .carouselNumDisplay {
+  border: 2px solid #EBB861;
+  border-radius: 12px;
+  text-align: center;
+  width: 40%;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  margin-top: 5rem;
+}
 .projects .project {
   opacity: 0;
   position: absolute;
   top: 0;
   width: 100%;
   margin: auto;
-  padding: 1rem 4rem;
+  padding: 1rem 4rem 0 4rem;
   z-index: 100;
   -webkit-transition: opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
   transition: transform 0.5s, opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
+}
+.projects .buttons {
+  padding-bottom: 4rem;
+}
+.projects h4 {
+  margin-top: 0;
+  font-style: italic;
 }
 .projects .initial {
   opacity: 1;
@@ -998,15 +1086,6 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 7%;
-}
-.projects .carouselNumDisplay {
-  border: 2px solid #EBB861;
-  border-radius: 12px;
-  text-align: center;
-  width: 40%;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-  margin-top: 5rem;
 }
 
 .contactMe {
@@ -1033,16 +1112,28 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   padding-top: 5rem;
 }
 .contactMe .formContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 1rem;
 }
-.contactMe form p {
-  margin-top: 2rem;
+.contactMe p {
+  width: 80%;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  font-style: italic;
 }
-.contactMe fieldset {
+.contactMe form fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1059,14 +1150,14 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   border: 3px solid #a8657a;
   padding: 1rem;
 }
-.contactMe fieldset:hover, .contactMe fieldset:focus {
+.contactMe form fieldset:hover, .contactMe form fieldset:focus {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 4px solid #a8657a;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
-.contactMe fieldset .topRow {
+.contactMe form fieldset .topRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,15 +1167,15 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   margin-bottom: 1rem;
   height: 3rem;
 }
-.contactMe fieldset input {
+.contactMe form fieldset .topRow input {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   padding-left: 1.2rem;
 }
-.contactMe fieldset input:first-of-type {
+.contactMe form fieldset .topRow input:first-of-type {
   margin-right: 1rem;
 }
-.contactMe fieldset textarea {
+.contactMe form fieldset textarea {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   padding-top: 1rem;
@@ -1092,13 +1183,7 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   padding-left: 1rem;
   resize: none;
 }
-.contactMe fieldset button {
-  width: 50%;
-  margin-top: 2rem;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-.contactMe fieldset textarea, .contactMe fieldset input {
+.contactMe form fieldset textarea, .contactMe form fieldset input {
   font-style: italic;
   font-weight: 500;
   text-shadow: 0.4px 0.4px 0.3px;
@@ -1106,7 +1191,7 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   border-radius: 13px;
   padding: 1.4rem;
 }
-.contactMe fieldset textarea:hover, .contactMe fieldset textarea:focus, .contactMe fieldset input:hover, .contactMe fieldset input:focus {
+.contactMe form fieldset textarea:hover, .contactMe form fieldset textarea:focus, .contactMe form fieldset input:hover, .contactMe form fieldset input:focus {
   outline: none;
   border-color: #e67e22;
   -webkit-transition: 0.4s;
@@ -1132,6 +1217,8 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   }
   header nav {
     height: 12vh;
+    padding-right: 11rem;
+    padding-left: 11rem;
   }
   header .headerContent {
     margin-top: 20rem;
@@ -1216,6 +1303,8 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   }
   header nav {
     height: 10vh;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
   header .headerContent {
     margin-top: 20rem;
@@ -1276,6 +1365,10 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   p {
     font-size: 1.6rem;
   }
+  nav {
+    padding-right: 7rem;
+    padding-left: 7rem;
+  }
   .skills li {
     -ms-flex-preferred-size: 10%;
         flex-basis: 10%;
@@ -1308,6 +1401,8 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   }
   header nav {
     height: 8.5vh;
+    padding-right: 6rem;
+    padding-left: 6rem;
   }
   header .headerContent {
     margin-top: 21rem;
@@ -1315,6 +1410,9 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   header .doubleArrowDown {
     width: 7.5rem;
     height: 7.5rem;
+  }
+  header .doubleArrowDown img {
+    width: 95%;
   }
   .aboutMe {
     padding-top: 3rem;
@@ -1389,6 +1487,8 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   }
   header nav {
     height: 8vh;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
   header .headerContent {
     margin-top: 21rem;
@@ -1396,6 +1496,9 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   header .doubleArrowDown {
     width: 6.5rem;
     height: 6.5rem;
+  }
+  header .doubleArrowDown img {
+    width: 95%;
   }
   .aboutMe {
     padding-top: 3rem;
@@ -1431,18 +1534,52 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   }
   .projects .carousel .carouselPhotos {
     width: 52vw;
-    height: 24vh;
+    height: 15vh;
   }
-  .projects .carousel button img {
-    width: 2.5rem;
-    height: 2.5rem;
+  .projects .carousel .carouselPhotos .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .contactMe button {
+  .projects .carousel .carouselPhotos img {
+    width: 100%;
+    height: 100%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .projects .carousel a {
+    display: block;
+    text-align: center;
+    border-bottom: none;
+  }
+  .projects .carousel .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects .carousel .buttons button {
+    margin-top: 1rem;
+    padding: 8px 16px;
+  }
+  .contactMe .wrapper button {
     width: 100%;
   }
-  .contactMe button:hover, .contactMe button:focus {
+  .contactMe .wrapper button:hover, .contactMe .wrapper button:focus {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     width: 60%;
+  }
+  .contactMe .wrapper .h2 {
+    margin-right: 0;
   }
 }

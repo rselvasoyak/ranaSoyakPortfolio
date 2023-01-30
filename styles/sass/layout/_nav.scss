@@ -18,10 +18,13 @@ nav{
         background: rgba($color: $lightPeach, $alpha: 0.6);
         backdrop-filter: blur(4px);
         box-shadow: 8px 8px 9px  $darkSand;
+        a{
+            color: $darkGray;
+            border: none;
+        }
         .navLinks{
             display: none;
             list-style-type: none;
-            // transition: all 0.6s ease-in-out;
             animation: slideDown 0.5s ease-in-out;
             animation-fill-mode: forwards;
             li{

@@ -22,6 +22,9 @@
     header{
         nav{
             height: 12vh;
+            padding-right: 11rem;
+            padding-left: 11rem;
+
         }
         .headerContent{
             margin-top: 20rem;
@@ -114,6 +117,8 @@
     header{
         nav{
             height: 10vh;
+            padding-right: 8rem;
+            padding-left: 8rem;
         }
         .headerContent{
             margin-top: 20rem;
@@ -186,6 +191,11 @@
     p{
         font-size: 1.6rem;
     }
+// Header
+    nav{
+    padding-right: 7rem;
+    padding-left: 7rem;
+    }
 // Skills Section
     .skills{
         li{
@@ -230,6 +240,8 @@
     header{
         nav{
             height: 8.5vh;
+            padding-right: 6rem;
+            padding-left: 6rem;
         }
         .headerContent{
             margin-top: 21rem;
@@ -237,6 +249,9 @@
         .doubleArrowDown{
             width: 7.5rem;
             height: 7.5rem;
+            img{
+                width: 95%;
+            }
         }
     }
 // About Me Section
@@ -320,6 +335,9 @@
     header{
         nav{
             height: 8vh;
+            padding-right: 4rem;
+            padding-left: 4rem;
+
         }
         .headerContent{
             margin-top: 21rem;
@@ -327,6 +345,9 @@
         .doubleArrowDown{
             width: 6.5rem;
             height: 6.5rem;
+            img{
+                width: 95%;
+            }
         }
     }
 // About Me Section
@@ -364,12 +385,29 @@
         }
         .carouselPhotos{
         width: 52vw;
-        height: 24vh;
+        height: 15vh;
+        .project{
+            display: flex;
+            justify-content: center;
         }
-        button {
-            img {
-                width: 2.5rem;
-                height: 2.5rem;
+        img{
+            width: 100%;
+            height: 100%;
+            align-self: center;
+        }
+        }
+        a{
+            display: block;
+            text-align: center;
+            border-bottom: none;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            button{
+                margin-top: 1rem;
+                padding: 8px 16px;
             }
         }
         }
@@ -377,14 +415,17 @@
 // Contact Me Section
     .contactMe{
         .wrapper{
-        }
-        button{
-            width: 100%;
-            &:hover,
-            &:focus{
-            transform: scale(1.1);
-            width: 60%;
+            button{
+                width: 100%;
+                &:hover,
+                &:focus{
+                transform: scale(1.1);
+                width: 60%;
+                }
+            }
+            .h2{
+                margin-right: 0;
             }
         }
-    }
+        }
 }

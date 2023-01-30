@@ -12,8 +12,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // margin-left: 0;
-        // margin-right: 0;
     }
     h2{
         margin-bottom: 1.8rem;
@@ -41,7 +39,7 @@
         border: 1.5px solid $lightSand;
         border-radius: 50%;
         background-color: $peach;
-        filter: brightness(130%) grayscale(30%);
+        filter: brightness(110%) grayscale(10%);
         // touch-action: manipulation;
         box-shadow: -8px 2px 5px rgba($darkSand,0.5);
             p{

@@ -9,7 +9,7 @@
       transform: rotate(1deg);
       background-color: red;
       border-radius: 40%;
-      background-image: url("http://placekitten.com/200/300");
+      background-image: url("../../../styles/sass/assets/profile.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       box-shadow: -8px 8px #9C6DA5;
@@ -22,7 +22,7 @@
 // Projects
 .carouselPhotos{
       width: 30vw;
-      height: 50vh;
+      height: 40vh;
       scroll-behavior: smooth;
       -ms-overflow-style: smooth; 
       transform-style: preserve-3d;
