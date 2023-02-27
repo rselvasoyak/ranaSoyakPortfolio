@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Greatly Desired';
+    src: url('fonts/GreatlyDesiredRegular-JR47m.eot');
+    src: url('fonts/GreatlyDesiredRegular-JR47m.eot?#iefix') format('embedded-opentype'),
+         url('fonts/GreatlyDesiredRegular-JR47m.woff2') format('woff2'),
+         url('fonts/GreatlyDesiredRegular-JR47m.woff') format('woff'),
+         url('fonts/GreatlyDesiredRegular-JR47m.ttf')  format('truetype'),
+         url('fonts/GreatlyDesiredRegular-JR47m.svg#Greatly Desired') format('svg');
+}
