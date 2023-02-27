@@ -2,10 +2,6 @@
 
 .projects {
     background-color: $babyBlue;
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
-    border-top: 2px solid $darkSemiSand;
-    margin-top: -17rem;
     padding-bottom: 1rem;
     .wrapper{
         flex-direction: column;
@@ -18,7 +14,7 @@
         width: 57%;
         background-color: $darkSemiSand;
         border-radius: 5%;
-        margin-top: -15rem;
+        // margin-top: -15rem;
         .newCarousel{
             display: flex;
             align-items: center;

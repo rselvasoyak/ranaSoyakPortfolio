@@ -3,9 +3,6 @@
 .aboutMe{
     padding-top: 7rem;
     padding-bottom: 17rem;
-    border-top-left-radius: 15%;
-    border-top-right-radius: 15%;
-    border-top: 2px solid $darkSemiSand;
     background-color: $babyLilac;
     h2{
         margin: 0;
@@ -18,13 +15,6 @@
         border-radius: 15px;
         box-shadow: -12px 12px 8px $boxShadow;
         width: 60%;
-    }
-    span{
-        margin-left: 30rem;
-        margin-top: -3rem;
-        transform: rotate(-25deg);
-        font-size: 10rem;
-        font-family: inherit;
     }
     .aboutMeContent{
         display: flex;

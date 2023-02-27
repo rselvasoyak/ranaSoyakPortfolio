@@ -518,8 +518,6 @@ i:hover, i:focus, .skill:hover, .skill:focus {
   margin-right: 1rem;
   border: none;
   transition: box-shadow 0.2s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
-  background: -webkit-gradient(linear, left top, right top, from(rgb(220, 85, 116)), color-stop(50%, rgb(179, 98, 125)), to(rgb(192, 106, 146)));
-  background: linear-gradient(to right, rgb(220, 85, 116) 0%, rgb(179, 98, 125) 50%, rgb(192, 106, 146) 100%);
   color: #EEEBE5;
 }
 .liveLink:hover, .liveLink:focus {
@@ -852,9 +850,6 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
 .aboutMe {
   padding-top: 7rem;
   padding-bottom: 17rem;
-  border-top-left-radius: 15%;
-  border-top-right-radius: 15%;
-  border-top: 2px solid rgba(220, 217, 210, 0.8);
   background-color: #e9d5fd;
 }
 .aboutMe h2 {
@@ -871,14 +866,6 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   -webkit-box-shadow: -12px 12px 8px #A2A2A2;
           box-shadow: -12px 12px 8px #A2A2A2;
   width: 60%;
-}
-.aboutMe span {
-  margin-left: 30rem;
-  margin-top: -3rem;
-  -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg);
-  font-size: 10rem;
-  font-family: inherit;
 }
 .aboutMe .aboutMeContent {
   display: -webkit-box;
@@ -905,12 +892,8 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
 
 .skills {
   background-color: #EEEBE5;
-  border-top: 2px solid rgba(220, 217, 210, 0.8);
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
-  margin-top: -10rem;
   padding-top: 5rem;
-  padding-bottom: 35rem;
+  padding-bottom: 5rem;
 }
 .skills .wrapper {
   -webkit-box-orient: vertical;
@@ -949,10 +932,7 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 8%;
-      flex-basis: 8%;
-  height: 17rem;
-  margin-left: 1rem;
+  width: 7%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -964,50 +944,25 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
       -ms-flex-align: center;
           align-items: center;
   color: #262626;
-  border: 1.5px solid #EEEBE5;
   border-radius: 50%;
-  background-color: #EBB861;
-  -webkit-filter: brightness(110%) grayscale(10%);
-          filter: brightness(110%) grayscale(10%);
-  -webkit-box-shadow: -8px 2px 5px rgba(191, 191, 191, 0.5);
-          box-shadow: -8px 2px 5px rgba(191, 191, 191, 0.5);
+}
+.skills li i {
+  font-size: 6rem;
 }
 .skills li p {
+  opacity: 0;
   margin: 0;
   font-size: 1.2rem;
   width: 50%;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
-.skills li:nth-child(even) {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-}
-.skills li:nth-child(even):hover, .skills li:nth-child(even):focus {
-  -webkit-transform: translateY(-20px) scale(1.1);
-          transform: translateY(-20px) scale(1.1);
-}
-.skills li:nth-child(odd) {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-}
-.skills li:nth-child(odd):hover, .skills li:nth-child(odd):focus {
-  -webkit-transform: translateY(20px) scale(1.1);
-          transform: translateY(20px) scale(1.1);
+.skills li:hover p, .skills li:focus p {
+  opacity: 1;
 }
 
 .projects {
   background-color: #CEE1ED;
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
-  border-top: 2px solid rgba(220, 217, 210, 0.8);
-  margin-top: -17rem;
   padding-bottom: 1rem;
 }
 .projects .wrapper {
@@ -1033,7 +988,6 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   width: 57%;
   background-color: rgba(220, 217, 210, 0.8);
   border-radius: 5%;
-  margin-top: -15rem;
 }
 .projects .carousel .newCarousel {
   display: -webkit-box;
