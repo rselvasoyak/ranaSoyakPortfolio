@@ -1,17 +1,5 @@
 @use "../abstract/variables" as *;
 
-// Third party Font - Dopperganger
-
-@font-face {
-    font-family: 'Doppelganger';
-    src: url('/fonts/Doppelganger-Display.eot');
-    src: url('/fonts/Doppelganger-Display.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Doppelganger-Display.woff2') format('woff2'),
-         url('/fonts/Doppelganger-Display.woff') format('woff'),
-         url('/fonts/Doppelganger-Display.ttf')  format('truetype'),
-         url('/fonts/Doppelganger-Display.svg#Display') format('svg');
-}
-
 @font-face {
     font-family: 'Greatly Desired';
     src: url('/newFonts/GreatlyDesiredRegular-JR47m.eot');
@@ -45,8 +33,7 @@ h1{
 h2{
     font-size: 11rem;
     text-transform: uppercase;
-    // font-family: 'Doppelganger';
-        font-family: 'Greatly Desired', sans-serif;
+    font-family: 'Greatly Desired', sans-serif;
     text-shadow: $darkGray 2px 1px 1.5px;
     font-weight: 300;
 }
@@ -61,7 +48,6 @@ h3{
 }
 h4{
     font-size: 2rem;
-        // font-family: 'Greatly Desired', sans-serif;
 }
 
 // Other Elements 
