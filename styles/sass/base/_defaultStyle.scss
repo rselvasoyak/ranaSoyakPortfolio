@@ -6,9 +6,11 @@ html{
 body{
     background-color: $lightSand;
     color: $mainBlack;
-    background-image: url("./sass/assets/layered-waves-haikei(3).svg");
-    background-repeat: repeat-y;
-    object-fit: contain;
+    background-image: url("./sass/assets/layered-waves-haikei(8).svg");
+    background-position: left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .wrapper {
     display: flex;

@@ -6,18 +6,12 @@
 	    top: 0;
         z-index: 50;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         box-sizing: border-box;
         height: 7vh;
         width: 100%;
-        padding-top: 1.5rem;
-        padding-right: 24rem;
-        padding-bottom: 1.5rem;
-        padding-left: 24rem;
-        background: rgba($color: $lightPeach, $alpha: 0.6);
-        backdrop-filter: blur(4px);
-        box-shadow: 8px 8px 9px  $darkSand;
+        padding-top: 2rem;
         a{
             color: $darkGray;
             border: none;
@@ -62,7 +56,7 @@
     border-radius: 15px;
     background-color: $lightPeach;
     position: fixed;
-    top: 90%;
+    top: 88%;
     right: 20px;
     transform: translateY(-50%);
     ul{
