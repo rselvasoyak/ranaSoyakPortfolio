@@ -96,57 +96,50 @@
                 height: 9rem;
             }
     }        
-
     // Projects Section Buttons 
-        // Live Link 
-            .liveLink {
-                display: inline-block;
-                outline: none;
-                cursor: pointer;
-                font-size: 1.6rem;
-                font-weight: 600;
-                font-style: italic;
-                border-radius: 10px;
-                padding: 14px 24px;
-                margin-right: 1rem;
-                border: none;
-                transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
-                // background: linear-gradient(to right,  rgb(220, 85, 116) 0%, rgb(179, 98, 125) 50%, rgb(192, 106, 146) 100%);
-                color: $lightSand;
-                 &:hover,
-                 &:focus{
-                    transform: scale(1.1);
-                    transition-duration: .1s;
-                 }
-            }
-                
-        // GitHub Repo 
-         .gitRepo {
-                display: inline-block;
-                outline: none;
-                cursor: pointer;
-                font-size: 16px;
-                line-height: 20px;
-                font-weight: 600;
-                font-style: italic;
-                border-radius: 8px;
-                padding: 14px 24px;
-                border: none;
-                transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
-                background: linear-gradient(to right, rgb(220, 85, 116) 0%, rgb(179, 98, 125) 50%, rgb(192, 106, 146) 100%);
-                color: $lightSand;
-                 &:hover,
-                 &:focus{
-                    transform: scale(1.1);
-                    transition-duration: .1s;
-                 }
-            }
-        // Project Section Anchor Tag 
-            a{
-                color: #b28c99;
-                border-bottom: 1px solid rgb(230, 30, 77);
-                font-style: italic;
-            }
+    
+        .links{
+            display: flex;
+        }
+        .link {
+            background-image: linear-gradient(135deg, #008aff, #86d472);
+            border-radius: 6px;
+            box-sizing: border-box;
+            color: #ffffff;
+            display: block;
+            height: 50px;
+            font-size: 1.4em;
+            font-weight: 600;
+            padding: 4px;
+            margin-left: 1.2rem;
+            margin-right: 0;
+            position: relative;
+            text-decoration: none;
+            width: 7em;
+            z-index: 2;
+        }
+
+        .link:hover, 
+        .link:focus {
+            color: #fff;
+        }
+
+        .span {
+            align-items: center;
+            background: #0e0e10;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            transition: background 0.5s ease;
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .link:hover .span, 
+        .link:focus .span{
+            background: transparent;
+        }  
 
     // Form Submit Button
     .formButton{
