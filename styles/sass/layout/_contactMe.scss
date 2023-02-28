@@ -3,7 +3,9 @@
 .contactMe{
     background-color: $peach;
     text-align: center;
-    // margin: 5rem 2rem;
+    margin: 4rem 5rem 0 5rem;
+    box-shadow: -2px 1px 15px $boxShadow;
+    border-radius: 15px;
     h2{
         text-align: center;
         margin-bottom: 0;

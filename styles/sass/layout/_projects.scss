@@ -2,7 +2,9 @@
 
 .projects {
     background-color: $babyBlue;
-    margin: 5rem 5rem;
+    margin: 4rem 5rem;
+    box-shadow: -2px 1px 15px $boxShadow;
+    border-radius: 15px;
    .wrapper{
         flex-direction: column;
         align-items: center; 
