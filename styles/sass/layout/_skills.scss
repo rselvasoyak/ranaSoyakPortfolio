@@ -22,29 +22,29 @@
         margin-bottom: 6rem;
         margin-top: 0;
         padding-left: 0;
-    }
-    li{
-        display: flex;
-        width: 7%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: $darkGray;
-        border-radius: 50%;
-        i{
-            font-size: 6rem;
-        }
-        p{
-            opacity: 0;
-            margin:0;
-            font-size: 1.2rem;
-            width: 50%;
-            transition: opacity 0.3s ease-in-out;
-        }
-        &:hover, 
-        &:focus{
+        li{
+            display: flex;
+            width: 7%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $darkGray;
+            border-radius: 50%;
+            i{
+                font-size: 6rem;
+            }
             p{
-                opacity: 1;
+                opacity: 0;
+                margin:0;
+                font-size: 1.2rem;
+                width: 50%;
+                transition: opacity 0.3s ease-in-out;
+            }
+            &:hover, 
+            &:focus{
+                p{
+                    opacity: 1;
+                }
             }
         }
     }

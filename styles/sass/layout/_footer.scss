@@ -1,0 +1,10 @@
+@use "../abstract/variables" as *;
+
+footer{
+    height: 2vh;
+    p{
+        font-size: 1.6rem;
+        text-align: center;
+        font-style: italic;
+    }
+}

@@ -1,4 +1,17 @@
 @use "../abstract/variables" as *;
+
+// Social Media Nav
+.mediaNav{
+    a{
+        border: none;
+        color: inherit;
+        cursor: pointer;
+            &:hover,
+            &:focus{
+                border-bottom: 2px solid #b28c99;           
+            }
+    }
+}
 // General 
     // Buttons 
     button {

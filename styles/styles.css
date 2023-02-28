@@ -275,9 +275,9 @@ p {
 
 h1 {
   text-transform: uppercase;
-  font-size: 14rem;
+  font-size: 19rem;
   font-family: "Greatly Desired", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   text-shadow: #262626 2px 1px 1px;
 }
 
@@ -292,7 +292,7 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-style: italic;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "Roboto", sans-serif;
   text-shadow: #262626 2px 1px 2px;
   font-weight: 400;
@@ -413,6 +413,15 @@ mark:before {
 .carouselPhotos::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+
+.mediaNav a {
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+.mediaNav a:hover, .mediaNav a:focus {
+  border-bottom: 2px solid #b28c99;
 }
 
 button {
@@ -827,10 +836,12 @@ button .right {
 
 header {
   height: 100vh;
-  background-image: url("./sass/assets/layered-waves-haikei.svg");
+  background-image: url("./sass/assets/layered-waves-haikei(8).svg");
   background-color: #EEEBE5;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: left;
+  background-attachment: fixed;
 }
 header .wrapper {
   -webkit-box-orient: vertical;
@@ -855,9 +866,7 @@ header .wrapper .headerContent {
   -ms-flex-line-pack: end;
       align-content: flex-end;
   width: 80%;
-  margin-top: 23rem;
-  height: 50vh;
-  background-color: rgba(249, 249, 249, 0.7);
+  margin-top: 40vh;
   border-radius: 5%;
 }
 header .wrapper .greeting {
@@ -871,17 +880,16 @@ header .wrapper .greeting {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
-  text-align: center;
+  text-align: right;
   margin: 0;
 }
 header .wrapper .greeting h1, header .wrapper .greeting h3 {
-  margin: 1rem;
+  margin: 0.6rem;
 }
 
 .aboutMe {
   padding-top: 7rem;
-  padding-bottom: 17rem;
+  padding-bottom: 7rem;
   background-color: #e9d5fd;
 }
 .aboutMe h2 {
@@ -960,7 +968,7 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   margin-top: 0;
   padding-left: 0;
 }
-.skills li {
+.skills ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -978,10 +986,10 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   color: #262626;
   border-radius: 50%;
 }
-.skills li i {
+.skills ul li i {
   font-size: 6rem;
 }
-.skills li p {
+.skills ul li p {
   opacity: 0;
   margin: 0;
   font-size: 1.2rem;
@@ -989,7 +997,7 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
-.skills li:hover p, .skills li:focus p {
+.skills ul li:hover p, .skills ul li:focus p {
   opacity: 1;
 }
 
@@ -998,10 +1006,6 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   padding-bottom: 1rem;
 }
 .projects .wrapper {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1182,6 +1186,15 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   border-color: #e67e22;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+footer {
+  height: 2vh;
+}
+footer p {
+  font-size: 1.6rem;
+  text-align: center;
+  font-style: italic;
 }
 
 /* Large tablet and medium desktops */
