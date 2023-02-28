@@ -886,6 +886,7 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-color: #e9d5fd;
+  margin: 5rem 5rem;
 }
 .aboutMe h2 {
   margin: 0;
@@ -994,6 +995,7 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
 
 .projects {
   background-color: #CEE1ED;
+  margin: 5rem 5rem;
 }
 .projects .wrapper {
   -webkit-box-orient: vertical;
@@ -1008,10 +1010,14 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 2px solid red;
   width: 97%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .projects .bottomContentRow2 {
   display: -webkit-box;
@@ -1021,26 +1027,34 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  border: 2px solid red;
   width: 97%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  justify-self: flex-start;
 }
 .projects .projectEven {
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 1rem 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-top: 4px solid #EEEBE5;
+  border-bottom: 4px solid #EEEBE5;
+  border-radius: 15px;
 }
 .projects .projectEven .projectImage {
   width: 80rem;
+  height: 40rem;
+  overflow: hidden;
 }
 .projects .projectEven .projectImage img {
   width: 100%;
+  height: auto;
 }
 .projects .projectEven .projectContent {
-  border: 2px solid red;
   -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
   margin-left: -8rem;
@@ -1062,12 +1076,45 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-.projects .projectEven .projectContent i {
+.projects .projectEven .projectContent p {
+  margin: 0.5rem 0;
+}
+.projects .projectEven ul {
+  margin: 0;
+}
+.projects .projectEven li {
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 17%;
+}
+.projects .projectEven li i {
   margin: 0 0.8rem;
 }
+.projects .projectEven li p {
+  opacity: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  width: 50%;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.projects .projectEven li:hover p, .projects .projectEven li:focus p {
+  opacity: 1;
+}
 .projects .projectOdd {
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,15 +1123,22 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   margin: 1rem 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-top: 4px solid #EEEBE5;
+  border-bottom: 4px solid #EEEBE5;
+  border-radius: 15px;
 }
 .projects .projectOdd .projectImage {
   width: 80rem;
+  height: 40rem;
+  overflow: hidden;
 }
 .projects .projectOdd .projectImage img {
   width: 100%;
+  height: auto;
 }
 .projects .projectOdd .projectContent {
-  border: 2px solid red;
   -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
   margin-right: -8rem;
@@ -1107,9 +1161,40 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .projects .projectOdd .projectContent i {
   margin: 0 1rem;
+}
+.projects .projectOdd li {
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 17%;
+}
+.projects .projectOdd li i {
+  margin: 0 0.8rem;
+}
+.projects .projectOdd li p {
+  opacity: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  width: 50%;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.projects .projectOdd li:hover p, .projects .projectOdd li:focus p {
+  opacity: 1;
 }
 
 .contactMe {
