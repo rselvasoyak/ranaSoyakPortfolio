@@ -288,6 +288,7 @@ h2 {
   font-family: "Greatly Desired", sans-serif;
   text-shadow: #A2A2A2 -2px 1px 3px;
   font-weight: 300;
+  color: #000;
 }
 
 h3 {
@@ -520,37 +521,45 @@ i:hover, i:focus, .skill:hover, .skill:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25.5%;
 }
 
 .link {
-  background-image: linear-gradient(135deg, #008aff, #86d472);
+  background-image: linear-gradient(135deg, #008aff, #EBB861);
   border-radius: 6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #ffffff;
   display: block;
-  height: 50px;
-  font-size: 1.4em;
-  font-weight: 600;
+  padding: 2rem 3.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  letter-spacing: 1.2px;
   padding: 4px;
-  margin-left: 1.2rem;
   margin-right: 0;
   position: relative;
   text-decoration: none;
-  width: 7em;
+  width: 13rem;
+  height: 4vh;
   z-index: 2;
 }
 
 .link:hover,
 .link:focus {
-  color: #fff;
+  color: #000;
+  font-weight: 600;
 }
 
 .span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #0e0e10;
+  background: #262626;
   border-radius: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -879,7 +888,7 @@ header .wrapper .greeting {
   margin: 0;
 }
 header .wrapper .greeting h1, header .wrapper .greeting h3 {
-  margin: 0.6rem;
+  margin: 0.3rem;
 }
 
 .aboutMe {
@@ -1020,7 +1029,7 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid red;
+  margin: 1rem 0;
   width: 97%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1037,36 +1046,37 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  border: 2px solid red;
+  margin: 1rem 0;
   width: 97%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  justify-self: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .projects .projectEven {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem 0;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
   border-top: 4px solid #EEEBE5;
   border-bottom: 4px solid #EEEBE5;
   border-radius: 15px;
 }
 .projects .projectEven .projectImage {
   width: 80rem;
-  height: 40rem;
+  height: 35rem;
   overflow: hidden;
 }
 .projects .projectEven .projectImage img {
   width: 100%;
-  height: auto;
+  -o-object-position: 0 -32px;
+     object-position: 0 -32px;
 }
 .projects .projectEven .projectContent {
-  -ms-flex-preferred-size: 65%;
-      flex-basis: 65%;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
   margin-left: -8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1078,9 +1088,12 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .projects .projectEven .projectContent h3 {
-  margin-bottom: 0;
+  margin: 1.5rem 0;
 }
 .projects .projectEven .projectContent .languages {
   display: -webkit-box;
@@ -1091,27 +1104,26 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
           justify-content: flex-end;
 }
 .projects .projectEven .projectContent p {
+  font-size: 1.7rem;
   margin: 0.5rem 0;
 }
 .projects .projectEven ul {
   margin: 0;
+  padding: 0;
 }
 .projects .projectEven li {
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 17%;
+  -ms-flex-preferred-size: 12%;
+      flex-basis: 12%;
 }
 .projects .projectEven li i {
   margin: 0 0.8rem;
+  font-size: 3.5rem;
 }
 .projects .projectEven li p {
   opacity: 0;
@@ -1132,25 +1144,25 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  margin: 1rem 0;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
   border-top: 4px solid #EEEBE5;
   border-bottom: 4px solid #EEEBE5;
   border-radius: 15px;
 }
 .projects .projectOdd .projectImage {
   width: 80rem;
-  height: 40rem;
+  height: 35rem;
   overflow: hidden;
 }
 .projects .projectOdd .projectImage img {
   width: 100%;
   height: auto;
+  -o-object-position: 0 -32px;
+     object-position: 0 -32px;
 }
 .projects .projectOdd .projectContent {
-  -ms-flex-preferred-size: 65%;
-      flex-basis: 65%;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
   margin-right: -8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1159,12 +1171,19 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.projects .projectOdd .projectContent h3 {
+  margin: 1.5rem 0;
 }
 .projects .projectOdd .projectContent p {
-  text-align: right;
+  text-align: left;
+  font-size: 1.7rem;
   margin: 0;
 }
 .projects .projectOdd .projectContent .languages {
@@ -1175,11 +1194,11 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
-.projects .projectOdd .projectContent i {
-  margin: 0 1rem;
+.projects .projectOdd ul {
+  margin: 0;
+  padding: 0;
 }
 .projects .projectOdd li {
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1190,10 +1209,12 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 17%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
 }
 .projects .projectOdd li i {
   margin: 0 0.8rem;
+  font-size: 3.5rem;
 }
 .projects .projectOdd li p {
   opacity: 0;

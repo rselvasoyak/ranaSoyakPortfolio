@@ -100,33 +100,39 @@
     
         .links{
             display: flex;
+            justify-content: space-between;
+            width: 25.5%;
         }
         .link {
-            background-image: linear-gradient(135deg, #008aff, #86d472);
+            background-image: linear-gradient(135deg, #008aff, $peach);
             border-radius: 6px;
             box-sizing: border-box;
             color: #ffffff;
             display: block;
-            height: 50px;
-            font-size: 1.4em;
-            font-weight: 600;
+            padding: 2rem 3.5rem;
+            font-size: 1.4rem;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
+            letter-spacing: 1.2px;
             padding: 4px;
-            margin-left: 1.2rem;
             margin-right: 0;
             position: relative;
             text-decoration: none;
-            width: 7em;
+            width: 13rem;
+            height: 4vh;
             z-index: 2;
         }
 
         .link:hover, 
         .link:focus {
-            color: #fff;
+            color: $black;
+            font-weight: 600;
         }
 
         .span {
             align-items: center;
-            background: #0e0e10;
+            background: $darkGray;
             border-radius: 6px;
             display: flex;
             justify-content: center;
