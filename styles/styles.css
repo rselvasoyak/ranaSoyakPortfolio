@@ -279,15 +279,16 @@ h1 {
   font-size: 20rem;
   font-family: "Greatly Desired", sans-serif;
   font-weight: 400;
-  text-shadow: #262626 2px 1px 1px;
+  text-shadow: #A2A2A2 -2px 1px 3px;
 }
 
 h2 {
   font-size: 11rem;
   text-transform: uppercase;
   font-family: "Greatly Desired", sans-serif;
-  text-shadow: #262626 2px 1px 1.5px;
+  text-shadow: #A2A2A2 -2px 1px 3px;
   font-weight: 300;
+  color: #000;
 }
 
 h3 {
@@ -516,54 +517,66 @@ i:hover, i:focus, .skill:hover, .skill:focus {
   height: 9rem;
 }
 
-.liveLink {
-  display: inline-block;
-  outline: none;
-  cursor: pointer;
-  font-size: 1.6rem;
-  font-weight: 600;
-  font-style: italic;
-  border-radius: 10px;
-  padding: 14px 24px;
-  margin-right: 1rem;
-  border: none;
-  transition: box-shadow 0.2s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
-  color: #EEEBE5;
-}
-.liveLink:hover, .liveLink:focus {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25.5%;
 }
 
-.gitRepo {
-  display: inline-block;
-  outline: none;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
+.link {
+  background-image: linear-gradient(135deg, #008aff, #EBB861);
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+  display: block;
+  padding: 2rem 3.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
-  border-radius: 8px;
-  padding: 14px 24px;
-  border: none;
-  transition: box-shadow 0.2s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
-  background: -webkit-gradient(linear, left top, right top, from(rgb(220, 85, 116)), color-stop(50%, rgb(179, 98, 125)), to(rgb(192, 106, 146)));
-  background: linear-gradient(to right, rgb(220, 85, 116) 0%, rgb(179, 98, 125) 50%, rgb(192, 106, 146) 100%);
-  color: #EEEBE5;
-}
-.gitRepo:hover, .gitRepo:focus {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  letter-spacing: 1.2px;
+  padding: 4px;
+  margin-right: 0;
+  position: relative;
+  text-decoration: none;
+  width: 13rem;
+  height: 4vh;
+  z-index: 2;
 }
 
-a {
-  color: #b28c99;
-  border-bottom: 1px solid rgb(230, 30, 77);
-  font-style: italic;
+.link:hover,
+.link:focus {
+  color: #000;
+  font-weight: 600;
+}
+
+.span {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #262626;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+  width: 100%;
+  margin-top: 0;
+}
+
+.link:hover .span,
+.link:focus .span {
+  background: transparent;
 }
 
 .formButton {
@@ -801,12 +814,12 @@ button .right {
   background-color: #F6E5BD;
   position: fixed;
   top: 88%;
-  right: 20px;
+  right: 50px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 .mediaNav ul {
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.2rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -857,7 +870,7 @@ header .wrapper .headerContent {
   -ms-flex-line-pack: end;
       align-content: flex-end;
   width: 100%;
-  margin-top: 40vh;
+  margin-top: 55vh;
   border-radius: 5%;
 }
 header .wrapper .greeting {
@@ -875,13 +888,17 @@ header .wrapper .greeting {
   margin: 0;
 }
 header .wrapper .greeting h1, header .wrapper .greeting h3 {
-  margin: 0.6rem;
+  margin: 0.3rem;
 }
 
 .aboutMe {
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-color: #e9d5fd;
+  margin: 4rem 5rem;
+  -webkit-box-shadow: -2px 1px 15px #A2A2A2;
+          box-shadow: -2px 1px 15px #A2A2A2;
+  border-radius: 15px;
 }
 .aboutMe h2 {
   margin: 0;
@@ -921,6 +938,10 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   background-color: #EEEBE5;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  margin: 4rem 5rem;
+  -webkit-box-shadow: -2px 1px 15px #A2A2A2;
+          box-shadow: -2px 1px 15px #A2A2A2;
+  border-radius: 15px;
 }
 .skills .wrapper {
   -webkit-box-orient: vertical;
@@ -990,17 +1011,12 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
 
 .projects {
   background-color: #CEE1ED;
-  padding-bottom: 1rem;
+  margin: 4rem 5rem;
+  -webkit-box-shadow: -2px 1px 15px #A2A2A2;
+          box-shadow: -2px 1px 15px #A2A2A2;
+  border-radius: 15px;
 }
 .projects .wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.projects .carousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1008,66 +1024,217 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 57%;
-  background-color: rgba(220, 217, 210, 0.8);
-  border-radius: 5%;
 }
-.projects .carousel .newCarousel {
+.projects .bottomContentRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 1rem 0;
+  width: 97%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.projects .bottomContentRow2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 1rem 0;
+  width: 97%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects .projectEven {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+  border-top: 4px solid #EEEBE5;
+  border-bottom: 4px solid #EEEBE5;
+  border-radius: 15px;
+}
+.projects .projectEven .projectImage {
+  width: 80rem;
+  height: 35rem;
+  overflow: hidden;
+}
+.projects .projectEven .projectImage img {
+  width: 100%;
+  -o-object-position: 0 -32px;
+     object-position: 0 -32px;
+}
+.projects .projectEven .projectContent {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  margin-left: -8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.projects .projectEven .projectContent h3 {
+  margin: 1.5rem 0;
+}
+.projects .projectEven .projectContent .languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.projects .projectEven .projectContent p {
+  font-size: 1.7rem;
+  margin: 0.5rem 0;
+}
+.projects .projectEven ul {
+  margin: 0;
+  padding: 0;
+}
+.projects .projectEven li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-preferred-size: 12%;
+      flex-basis: 12%;
+}
+.projects .projectEven li i {
+  margin: 0 0.8rem;
+  font-size: 3.5rem;
+}
+.projects .projectEven li p {
+  opacity: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  width: 50%;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.projects .projectEven li:hover p, .projects .projectEven li:focus p {
+  opacity: 1;
+}
+.projects .projectOdd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 2rem;
+  border-top: 4px solid #EEEBE5;
+  border-bottom: 4px solid #EEEBE5;
+  border-radius: 15px;
+}
+.projects .projectOdd .projectImage {
+  width: 80rem;
+  height: 35rem;
   overflow: hidden;
 }
-.projects .carousel .carouselNumDisplay {
-  border: 2px solid #EBB861;
-  border-radius: 12px;
-  text-align: center;
-  width: 40%;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-  margin-top: 5rem;
+.projects .projectOdd .projectImage img {
+  width: 100%;
+  height: auto;
+  -o-object-position: 0 -32px;
+     object-position: 0 -32px;
 }
-.projects .project {
+.projects .projectOdd .projectContent {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  margin-right: -8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.projects .projectOdd .projectContent h3 {
+  margin: 1.5rem 0;
+}
+.projects .projectOdd .projectContent p {
+  text-align: left;
+  font-size: 1.7rem;
+  margin: 0;
+}
+.projects .projectOdd .projectContent .languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.projects .projectOdd ul {
+  margin: 0;
+  padding: 0;
+}
+.projects .projectOdd li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+.projects .projectOdd li i {
+  margin: 0 0.8rem;
+  font-size: 3.5rem;
+}
+.projects .projectOdd li p {
   opacity: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  margin: auto;
-  padding: 1rem 4rem 0 4rem;
-  z-index: 100;
-  -webkit-transition: opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
-  transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
-  transition: transform 0.5s, opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
+  margin: 0;
+  font-size: 1.2rem;
+  width: 50%;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
-.projects .buttons {
-  padding-bottom: 4rem;
-}
-.projects h4 {
-  margin-top: 0;
-  font-style: italic;
-}
-.projects .initial {
+.projects .projectOdd li:hover p, .projects .projectOdd li:focus p {
   opacity: 1;
-  position: relative;
-  z-index: 900;
-}
-.projects .initial img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 7%;
 }
 
 .contactMe {
   background-color: #EBB861;
   text-align: center;
+  margin: 4rem 5rem 0 5rem;
+  -webkit-box-shadow: -2px 1px 15px #A2A2A2;
+          box-shadow: -2px 1px 15px #A2A2A2;
+  border-radius: 15px;
 }
 .contactMe h2 {
   text-align: center;
@@ -1176,7 +1343,8 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
 }
 
 footer {
-  height: 2vh;
+  height: 1vh;
+  margin: 0 0 1rem 0;
 }
 footer p {
   font-size: 1.6rem;

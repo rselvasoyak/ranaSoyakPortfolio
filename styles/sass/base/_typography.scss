@@ -27,15 +27,16 @@ h1{
     font-size: 20rem;
     font-family: 'Greatly Desired', sans-serif;
     font-weight: 400;
-    text-shadow: $darkGray 2px 1px 1px;
+    text-shadow: $boxShadow -2px 1px 3px;
 }
 
 h2{
     font-size: 11rem;
     text-transform: uppercase;
     font-family: 'Greatly Desired', sans-serif;
-    text-shadow: $darkGray 2px 1px 1.5px;
+    text-shadow: $boxShadow -2px 1px 3px;
     font-weight: 300;
+    color: $black;
 }
 
 h3{

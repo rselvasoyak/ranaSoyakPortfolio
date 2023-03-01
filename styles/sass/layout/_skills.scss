@@ -4,6 +4,9 @@
     background-color: $lightSand;
     padding-top: 6rem;
     padding-bottom: 6rem;
+    margin: 4rem 5rem;
+    box-shadow: -2px 1px 15px $boxShadow;
+    border-radius: 15px;
     .wrapper{
         flex-direction: column;
         justify-content: center;
