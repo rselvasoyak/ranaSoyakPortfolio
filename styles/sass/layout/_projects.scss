@@ -71,19 +71,6 @@
                 margin: 0 .8rem;
                 font-size: 3.5rem;
             }
-            p{
-                opacity: 0;
-                margin:0;
-                font-size: 1.2rem;
-                width: 50%;
-                transition: opacity 0.3s ease-in-out;
-            }
-            &:hover, 
-            &:focus{
-                p{
-                    opacity: 1;
-                }
-            }
         }
     }
     .projectOdd{
@@ -136,76 +123,6 @@
                 margin: 0 .8rem;
                 font-size: 3.5rem;
             }
-            p{
-                opacity: 0;
-                margin:0;
-                font-size: 1.2rem;
-                width: 50%;
-                transition: opacity 0.3s ease-in-out;
-            }
-            &:hover, 
-            &:focus{
-                p{
-                    opacity: 1;
-                }
-            }
         }
     }
-    // padding-bottom: 1rem;
-    // .wrapper{
-    //     // flex-direction: column;
-    //     align-items: center; 
-    // }
-    // .carousel{
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     width: 57%;
-    //     background-color: $darkSemiSand;
-    //     border-radius: 5%;
-    //     // margin-top: -15rem;
-    //     .newCarousel{
-    //         display: flex;
-    //         align-items: center;
-    //         justify-content: center;
-    //         overflow: hidden;
-    //     }
-    //     .carouselNumDisplay{
-    //         border: 2px solid $peach;
-    //         border-radius: 12px;
-    //         text-align: center;
-    //         width: 40%;
-    //         padding-top: 1.2rem;
-    //         padding-bottom: 1.2rem;
-    //         margin-top: 5rem;
-    //     }
-    // }
-    // .project {
-    //     opacity: 0;
-    //     position: absolute;
-    //     top:0;
-    //     width: 100%;
-    //     margin: auto;
-    //     padding: 1rem 4rem 0 4rem;
-    //     z-index: 100;
-    //     transition: transform .5s, opacity .5s, z-index .5s;
-    // }
-    // .buttons {
-    //     padding-bottom: 4rem;
-    // }
-    // h4{
-    //     margin-top: 0;
-    //     font-style: italic;
-    // }
-    // // Carousel CSS Classes
-    // .initial {
-    //     opacity: 1;
-    //     position: relative;
-    //     z-index: 900;
-    //     img{
-    //             width: 100%;
-    //             object-fit: contain;
-    //             border-radius: 7%;
-    //         }
-    // }
 }
