@@ -51,7 +51,6 @@ header{
     .aboutMe{
         padding: 3rem 0;
         .wrapper{
-            flex-direction: column;
             width: 90%;
             .frame1{
                 max-width: 380px;
@@ -72,17 +71,17 @@ header{
     }
 // Skills Section
     .skills{
-            padding-bottom: 29rem;
-        li{
-            flex-basis: 7%;
-            height: 9rem;
-            p{
-                font-size: 1rem;
-            }
-            i{
-                font-size: 3rem;
-            }
-        }
+        //     padding-bottom: 29rem;
+        // li{
+        //     flex-basis: 7%;
+        //     height: 9rem;
+        //     p{
+        //         font-size: 1rem;
+        //     }
+        //     i{
+        //         font-size: 3rem;
+        //     }
+        // }
     }
 // Projects Section
     .projects{
@@ -162,6 +161,7 @@ header{
 // About Me Section
     .aboutMe{
         .wrapper{
+            flex-direction: column;
             .frame1{
                 max-width: 330px;
                 min-width: 270px;

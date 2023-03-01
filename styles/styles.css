@@ -1405,10 +1405,6 @@ footer i:hover, footer i:focus {
     padding: 3rem 0;
   }
   .aboutMe .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     width: 90%;
   }
   .aboutMe .wrapper .frame1 {
@@ -1425,20 +1421,6 @@ footer i:hover, footer i:focus {
   .aboutMe h2 {
     margin-bottom: 0;
     margin-top: 1rem;
-  }
-  .skills {
-    padding-bottom: 29rem;
-  }
-  .skills li {
-    -ms-flex-preferred-size: 7%;
-        flex-basis: 7%;
-    height: 9rem;
-  }
-  .skills li p {
-    font-size: 1rem;
-  }
-  .skills li i {
-    font-size: 3rem;
   }
   .projects .carousel {
     width: 75%;
@@ -1499,6 +1481,12 @@ footer i:hover, footer i:focus {
   }
   header .wrapper .headerContent {
     margin-top: 68vh;
+  }
+  .aboutMe .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .aboutMe .wrapper .frame1 {
     max-width: 330px;
