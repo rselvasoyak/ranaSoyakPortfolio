@@ -814,7 +814,7 @@ button .right {
   background-color: #F6E5BD;
   position: fixed;
   top: 88%;
-  right: 20px;
+  right: 50px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
