@@ -1,18 +1,31 @@
 @use "./variables" as *;
+
+/*Very Large Desktops */
+@media (max-width: 1550px) {
+// Header
+header{
+    h1{
+        font-size: 17rem;
+    }
+    h3{
+        font-size: 2.8rem;
+    }
+    .wrapper{
+        .headerContent{
+            margin-top: 61vh;
+        }
+    }
+}
+}
+
 /* Large tablet and medium desktops */
 @media (max-width: 1200px) {
     body{
         overflow-x: hidden;
     };
 // General Typography
-    h1{
-        font-size: 10rem;
-    }
     h2{
         font-size: 8rem;
-    }
-    h3{
-        font-size: 2.5rem;
     }
     p{
         font-size: 1.7rem;
@@ -20,28 +33,26 @@
 
 // Header Section
     header{
+        h1{
+            font-size: 12.5rem;
+        }
         nav{
             height: 12vh;
             padding-right: 11rem;
             padding-left: 11rem;
-
         }
-        .headerContent{
-            margin-top: 20rem;
-        }
-        .doubleArrowDown{
-            margin-top: 6rem;
-            width: 9rem;
-            height: 9rem;
+        .wrapper{
+            .headerContent{
+                margin-top: 65vh;
+            }
         }
     }
 // About Me Section
     .aboutMe{
-        padding-top: 3rem;
-        padding-bottom: 14rem;
+        padding: 3rem 0;
         .wrapper{
             flex-direction: column;
-            width: 70%;
+            width: 90%;
             .frame1{
                 max-width: 380px;
                 min-width: 300px;
@@ -57,11 +68,6 @@
         h2{
             margin-bottom: 0;
             margin-top: 1rem;
-        }
-        mark{
-            font-size: 9rem;
-            right: -.38em;
-            top: -.38em;
         }
     }
 // Skills Section
@@ -98,53 +104,69 @@
     }
 }
 
+/* Design Specific Break Point */
+@media (max-width: 1030px) {
+// Body 
+body{
+    background-position: 5%;
+}
+//  Header 
+header{
+    background-position: 5%;
+    .wrapper{
+        .headerContent{
+            padding-right: 2rem;
+        }
+        h1{
+            font-size: 11.7rem;
+        }
+        .mainNav{
+            padding: 0;
+        }
+        .hamburgerMenu{
+            padding: 0.3em 2.5rem;
+        }
+    }
+}
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
 // General Typography
-    h1{
-        font-size: 9rem;
-    }
     h2{
         font-size: 7rem;
-    }
-    h3{
-        font-size: 2rem;
     }
     p{
         font-size: 1.6rem;
     }
+    body{
+        background-position: 8%;
+    }
 // Header Section
     header{
-        nav{
-            height: 10vh;
-            padding-right: 8rem;
-            padding-left: 8rem;
-        }
-        .headerContent{
-            margin-top: 20rem;
-        }
-        .doubleArrowDown{
-            margin-top: 5rem;
-            width: 8rem;
-            height: 8rem;
+        background-position: 8%;
+        .wrapper{
+            h1{
+                font-size: 10rem;
+                padding-right: 1rem;
+            }
+            h3{
+                font-size: 2rem;
+                padding-right: 0;
+            }
+            .headerContent{
+                margin-top: 68vh;
+            }
         }
     }
 // About Me Section
     .aboutMe{
-        padding-top: 3rem;
-        padding-bottom: 14rem;
         .wrapper{
-            width: 75%;
             .frame1{
                 max-width: 330px;
                 min-width: 270px;
                 height: 30rem;
             }
-        }
-        mark{
-            font-size: 7rem;
-            right: -.10em;
-            top: -.30em;
         }
     }
 // Skills Section
@@ -191,13 +213,20 @@
     p{
         font-size: 1.6rem;
     }
+    body{
+        background-position: 15%;
+    }
 // Header
-    nav{
-    padding-right: 7rem;
-    padding-left: 7rem;
+    header{
+       background-position: 15%; 
+    }
+// About Me 
+    .aboutMe{
+        margin: 4rem 3rem;
     }
 // Skills Section
     .skills{
+        margin: 4rem 3rem;
         li{
             flex-basis: 10%;
             i{
@@ -207,28 +236,37 @@
     }
 // Projects Section
     .projects{
-        .carousel{
-        width: 87%;
-            .carouselPhotos{
-            width: 47vw;
-            height: 42vh;
-            }
-            button {
-                img {
-                    width: 6rem;
-                    height: 6rem;
-                }
-            }
-        }
+        margin: 4rem 3rem;
+    }
+// Contact Me
+    .contactMe{
+        margin: 4rem 3rem;
     }
 }
 
+
+/* Style Specific Breakpoint */
+@media (max-width: 670px) {
+    // Body 
+    body{
+        background-position: 22%;
+    }
+  header{
+       background-position: 22%; 
+       .wrapper{
+        h1{
+            font-size: 8rem;
+        }
+        h3{
+            font-size: 1.6rem;
+        }
+       }
+    }
+}
 /* Landscape phones and down */
 @media (max-width: 480px) {
 // General Typography
-    h1{
-        font-size: 7rem;
-    }
+
     h2{
         font-size: 5rem;
     }
@@ -238,38 +276,20 @@
 
 // Header Section
     header{
-        nav{
-            height: 8.5vh;
-            padding-right: 6rem;
-            padding-left: 6rem;
-        }
         .headerContent{
-            margin-top: 21rem;
-        }
-        .doubleArrowDown{
-            width: 7.5rem;
-            height: 7.5rem;
-            img{
-                width: 95%;
+            h1{
+                font-size: 6.5rem;
             }
         }
     }
 // About Me Section
     .aboutMe{
-        padding-top: 3rem;
-        padding-bottom: 14rem;
         .wrapper{
-            flex-direction: column;
-            width: 80%;
             .frame1{
-                max-width: 320px;
-                min-width: 270px;
+                max-width: 280px;
+                min-width: 250px;
                 height: 29rem;
             }
-        }
-        mark{
-            font-size: 5.5rem;
-            right: 1.1em;
         }
     }
 // Skills Section
@@ -318,6 +338,18 @@
     }
 }
 
+/* Design Specific Breakpoint */
+@media (max-width: 390px) {
+    .aboutMe{
+        .wrapper{
+            .frame1{
+                  max-width: 255px;
+                  min-width: 195px;
+                  height: 26rem;
+              }
+        }
+  }
+    }
 /* Small Screen phones*/
 @media (max-width: 320px) {
 // General Typography
@@ -348,24 +380,6 @@
             img{
                 width: 95%;
             }
-        }
-    }
-// About Me Section
-    .aboutMe{
-        padding-top: 3rem;
-        padding-bottom: 14rem;
-        .wrapper{
-            flex-direction: column;
-            width: 80%;
-            .frame1{
-                max-width: 250px;
-                min-width: 200px;
-                height: 29rem;
-            }
-        }
-        mark{
-            font-size: 5.5rem;
-            right: 1.1em;
         }
     }
 // Skills Section

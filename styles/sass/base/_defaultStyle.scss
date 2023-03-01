@@ -10,12 +10,12 @@ body{
     background-position: left;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 .wrapper {
     display: flex;
-    max-width: 2000px;
-    width: 90%;
+    max-width: 1800px;
+    width: 95%;
     margin: 0 auto; 
 }
 
