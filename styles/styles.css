@@ -758,7 +758,7 @@ button .right {
       -ms-flex-align: center;
           align-items: center;
   top: 96%;
-  width: 9%;
+  width: 15rem;
   background: rgba(235, 184, 97, 0.75);
   padding: 1rem;
   border-radius: 10px;
