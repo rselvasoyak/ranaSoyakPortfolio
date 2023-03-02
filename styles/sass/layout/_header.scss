@@ -32,6 +32,8 @@ header {
             }
             h3{
                 padding-right: 2rem;
+                text-decoration: none;
+                text-shadow: $boxShadow -2px 1px 3px;
             }
         }
     }          
