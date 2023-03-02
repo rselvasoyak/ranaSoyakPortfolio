@@ -244,7 +244,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1800px;
+  max-width: 2000px;
   width: 95%;
   margin: 0 auto;
 }
@@ -841,6 +841,8 @@ header .wrapper .greeting h1, header .wrapper .greeting h3 {
 }
 header .wrapper .greeting h3 {
   padding-right: 2rem;
+  text-decoration: none;
+  text-shadow: #A2A2A2 -2px 1px 3px;
 }
 
 .aboutMe {
@@ -968,7 +970,7 @@ header .wrapper .greeting h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 87%;
+  width: 100%;
 }
 .projects .bottomContentRow {
   display: -webkit-box;
@@ -1135,7 +1137,7 @@ header .wrapper .greeting h3 {
 .projects .projectOdd .projectContent p {
   text-align: left;
   font-size: 1.7rem;
-  margin: 0;
+  margin: 0.5rem;
 }
 .projects .projectOdd .projectContent .languages {
   display: -webkit-box;
@@ -1253,7 +1255,6 @@ header .wrapper .greeting h3 {
 .contactMe form fieldset .topRow input {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  padding-left: 1.2rem;
 }
 .contactMe form fieldset .topRow input:first-of-type {
   margin-right: 1rem;
@@ -1454,7 +1455,20 @@ footer i:hover, footer i:focus {
   }
   .skills ul li {
     width: 13%; /* Update width to 3 columns */
-    margin: 1%; /* Add margin to create gap between columns */
+    margin: 1%;
+  }
+  .contactMe .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactMe .wrapper form {
+    width: 100%;
+    margin: 0.5rem;
+  }
+  .contactMe .wrapper form .roundCorners {
+    width: auto;
   }
 }
 /* Portrait tablet and small desktops */
@@ -1496,9 +1510,6 @@ footer i:hover, footer i:focus {
   .skills ul li {
     width: 23%; /* Update width to 3 columns */
     margin: 1%; /* Add margin to create gap between columns */
-  }
-  .contactMe h2 {
-    font-size: 3rem;
   }
 }
 /* Landscape phone to portrait tablet */
@@ -1596,6 +1607,9 @@ footer i:hover, footer i:focus {
   header .wrapper h1 {
     font-size: 8rem;
   }
+  header .wrapper h2 {
+    font-size: 4rem;
+  }
   header .wrapper h3 {
     font-size: 1.6rem;
   }
@@ -1645,6 +1659,22 @@ footer i:hover, footer i:focus {
   }
   .projects .bottomContentRow .links, .projects .bottomContentRow2 .links {
     margin-top: 0.6rem;
+  }
+}
+@media (max-width: 596px) {
+  .contactMe .wrapper .topRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    height: auto;
+  }
+  .contactMe .wrapper input {
+    margin: 0.5rem;
+  }
+  .contactMe .wrapper textarea {
+    margin: 0.5rem;
   }
 }
 /* Landscape phones and down */
@@ -1721,23 +1751,9 @@ footer i:hover, footer i:focus {
   .projects .bottomContentRow .links, .projects .bottomContentRow2 .links {
     margin-top: 0.6rem;
   }
-  .contactMe .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contactMe button {
-    width: 90%;
-  }
-  .contactMe button:hover, .contactMe button:focus {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    width: 60%;
-  }
 }
 /* Design Specific Breakpoint */
-@media (max-width: 390px) {
+@media (max-width: 405px) {
   .aboutMe .wrapper .frame1 {
     max-width: 255px;
     min-width: 195px;
@@ -1807,6 +1823,27 @@ footer i:hover, footer i:focus {
   .projects .bottomContentRow .links .link, .projects .bottomContentRow2 .links .link {
     font-size: 1.1rem;
   }
+  .contactMe .wrapper form {
+    width: auto;
+    margin: 0;
+  }
+  .contactMe .wrapper form fieldset {
+    padding: 0.2rem;
+  }
+  .contactMe .wrapper form input, .contactMe .wrapper form textarea {
+    margin: 0.4rem 0;
+    width: 95%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .contactMe .wrapper .topRow input {
+    width: 95%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .contactMe .wrapper .topRow input:first-of-type {
+    margin-right: 0;
+  }
 }
 /* Small Screen phones*/
 @media (max-width: 320px) {
@@ -1830,16 +1867,5 @@ footer i:hover, footer i:focus {
         flex-basis: 24%;
     height: 8.5rem;
     margin-top: 3rem;
-  }
-  .contactMe .wrapper button {
-    width: 100%;
-  }
-  .contactMe .wrapper button:hover, .contactMe .wrapper button:focus {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    width: 60%;
-  }
-  .contactMe .wrapper .h2 {
-    margin-right: 0;
   }
 }

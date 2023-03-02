@@ -183,7 +183,21 @@
         ul{
             li{
                 width: calc(15% - 2%); /* Update width to 3 columns */
-                margin: 1%; /* Add margin to create gap between columns */
+                margin: 1%;
+            }
+        }
+    }
+
+    // ContactMe 
+    .contactMe{
+        .wrapper{
+            flex-direction: column;
+            form{
+                width: 100%;
+                margin: .5rem;
+                .roundCorners{
+                    width: auto;
+                }
             }
         }
     }
@@ -236,12 +250,6 @@
                 width: calc(25% - 2%); /* Update width to 3 columns */
                 margin: 1%; /* Add margin to create gap between columns */
             }
-        }
-    }
-    // Contact Me
-    .contactMe{
-        h2{
-            font-size: 3rem;
         }
     }
 }
@@ -336,6 +344,9 @@
         h1{
             font-size: 8rem;
         }
+        h2{
+            font-size: 4rem;
+        }
         h3{
             font-size: 1.6rem;
         }
@@ -388,9 +399,29 @@
     }
 }
 }
+
+@media (max-width: 596px) {
+    // Contact Me Section 
+    .contactMe{
+        .wrapper{
+            .topRow{
+                flex-direction: column;
+                margin: 0;
+                height: auto;
+            }
+            input {
+                margin: .5rem;
+            }
+            textarea {
+                margin: .5rem;
+            }
+        }
+    }
+}
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
-// General Typography
+// General
     h2{
         font-size: 5rem;
     }
@@ -476,24 +507,10 @@
         }
     }
 }
-// Contact Me Section
-    .contactMe{
-        .wrapper{
-            flex-direction: column;
-        }
-        button{
-            width: 90%;
-            &:hover,
-            &:focus{
-            transform: scale(1.1);
-            width: 60%;
-            }
-        }
-    }
 }
 
 /* Design Specific Breakpoint */
-@media (max-width: 390px) {
+@media (max-width: 405px) {
     // About Me Section 
     .aboutMe{
         .wrapper{
@@ -571,6 +588,29 @@
         }
     }
 }
+.contactMe{
+    .wrapper{
+        form{
+            width: auto;
+            margin: 0;
+            fieldset{
+                padding: .2rem;
+            }
+            input, textarea{
+                margin: 0.4rem 0;
+                width: 95%;
+                align-self: center;
+            }
+        }
+        .topRow input{
+            width: 95%;
+            align-self: center;
+            &:first-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
 }
 
 /* Small Screen phones*/
@@ -601,20 +641,5 @@
             margin-top: 3rem;
         }
     }
-// Contact Me Section
-    .contactMe{
-        .wrapper{
-            button{
-                width: 100%;
-                &:hover,
-                &:focus{
-                transform: scale(1.1);
-                width: 60%;
-                }
-            }
-            .h2{
-                margin-right: 0;
-            }
-        }
-    }
+
 }
