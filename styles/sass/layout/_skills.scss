@@ -4,7 +4,7 @@
     background-color: $lightSand;
     padding-top: 6rem;
     padding-bottom: 6rem;
-    margin: 4rem 6rem;
+    margin: 3rem 5rem;
     box-shadow: -2px 1px 15px $boxShadow;
     border-radius: 15px;
     .wrapper{
@@ -28,7 +28,7 @@
         li{
             display: flex;
             flex-direction: column;
-            // flex: 1;
+            margin: .5rem;
             width: 7%;
             i{
                 font-size: 6rem;

@@ -2,8 +2,8 @@
 
 .projects {
     background-color: $babyBlue;
-    margin: 4rem 6rem;
-    box-shadow: -2px 1px 15px $boxShadow;
+    margin: 3rem 5rem;
+    box-shadow: -2px 1px 30px $darkSand;
     border-radius: 15px;
    .wrapper{
         flex-direction: column;
@@ -17,33 +17,30 @@
         justify-content: space-between;
         align-items: center;
     }
-    .bottomContentRow2{
-        display: flex;
-        flex-direction: row-reverse;
-        margin: 1rem 0;
-        width: 97%;
-        justify-content: space-between;
-        align-items: center;
-    }
     .projectEven{
         display: flex;
         margin-bottom: 2rem;
-        border-top: 4px solid $lightSand;
-        border-bottom: 4px solid $lightSand;
+        box-shadow: -1px 1px 10px 1px $boxShadow;
         border-radius: 15px;
+        max-width: 97%;
         .projectImage{
-            width: 80rem;
-            height: 35rem;
+            max-width: 70rem;
+            min-height: 35rem;
             overflow: hidden;
             img{
                 width: 100%;
-                object-position: 0 -32px;
+                height: 100%;
+                object-fit: cover;
+                object-position: -60px 20px;
             }
         }
         .projectContent{
             flex-basis: 55%;
-            margin-left: -6rem;
+            min-width: 60rem;
+            margin-left: -10rem;
+            padding-right: 4rem;
             display: flex;
+            flex: 1;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
@@ -68,35 +65,48 @@
             justify-content: flex-end;
             flex-basis: 12%;
             i{
-                margin: 0 .8rem;
+                margin: 0 .5rem;
                 font-size: 3.5rem;
             }
         }
+    }
+
+    .bottomContentRow2{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 1rem 0;
+        width: 97%;
+        justify-content: space-between;
+        align-items: center;
     }
     .projectOdd{
         display: flex;
         flex-direction: row-reverse;
         margin-bottom: 2rem;
-        border-top: 4px solid $lightSand;
-        border-bottom: 4px solid $lightSand;
+        box-shadow: -1px 1px 10px 1px $boxShadow;
         border-radius: 15px;
+        max-width: 97%;
         .projectImage{
-            width: 80rem;
-            height: 35rem;
+            max-width: 70rem;
+            min-height: 35rem;
             overflow: hidden;
             img{
                 width: 100%;
-                height: auto;
-                object-position: 0 -32px;
+                height: 100%;
+                object-fit: cover;
+                object-position: 60px 20px;
             }
         }
         .projectContent{
-            flex-basis: 54%;
-            margin-right: -6rem;
+            flex-basis: 55%;
+            min-width: 60rem;
+            flex: 1;
+            margin-right: -15rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            padding-left: 5rem;
             h3{
                 margin: 1.5rem 0;
             }

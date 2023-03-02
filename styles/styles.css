@@ -294,10 +294,10 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-style: italic;
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: "Roboto", sans-serif;
-  text-shadow: #262626 2px 1px 2px;
-  font-weight: 400;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 h4 {
@@ -477,46 +477,6 @@ i:hover, i:focus, .skill:hover, .skill:focus {
           transform: scale(1.1);
 }
 
-.doubleArrowDown {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 4rem;
-  padding: 1.3rem;
-  border: 2px solid #EBB861;
-  background-color: #EEEBE5;
-  border-radius: 70%;
-  -webkit-box-shadow: -6px 4px #F6E5BD;
-          box-shadow: -6px 4px #F6E5BD;
-  -webkit-animation: moveDown 0.5s infinite alternate;
-          animation: moveDown 0.5s infinite alternate;
-}
-.doubleArrowDown:hover, .doubleArrowDown:focus {
-  border: 2px solid #EBB861;
-  background-color: #F6E5BD;
-  border-radius: 50%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
-  -webkit-animation: shake 0.7s;
-          animation: shake 0.7s;
-}
-.doubleArrowDown img {
-  -o-object-position: center;
-     object-position: center;
-  width: 100%;
-  width: 9rem;
-  height: 9rem;
-}
-
 .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,7 +484,9 @@ i:hover, i:focus, .skill:hover, .skill:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 25.5%;
+  max-width: 27rem;
+  min-width: 25rem;
+  min-height: 6vh;
 }
 
 .link {
@@ -541,11 +503,10 @@ i:hover, i:focus, .skill:hover, .skill:focus {
   font-style: italic;
   letter-spacing: 1.2px;
   padding: 4px;
-  margin-right: 0;
+  margin: 0.5rem;
   position: relative;
   text-decoration: none;
-  width: 13rem;
-  height: 4vh;
+  width: 80%;
   z-index: 2;
 }
 
@@ -582,7 +543,7 @@ i:hover, i:focus, .skill:hover, .skill:focus {
 .formButton {
   border-radius: 10px;
   background-color: #EEEBE5;
-  width: 23%;
+  width: 20rem;
   margin-top: 2rem;
   -ms-flex-item-align: center;
       align-self: center;
@@ -590,7 +551,7 @@ i:hover, i:focus, .skill:hover, .skill:focus {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.6rem;
   margin: 4px 2px;
   cursor: pointer;
   text-shadow: 0.6px 0.6px 0.3px;
@@ -810,32 +771,17 @@ button .right {
           transform: rotate(180deg);
 }
 
-.mediaNav {
-  border: 2px solid #EBB861;
-  border-radius: 15px;
-  background-color: #F6E5BD;
-  position: fixed;
-  top: 90%;
-  right: 5px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
 .mediaNav ul {
-  padding: 1rem 0.2rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .mediaNav li {
-  margin: 0.6rem;
+  margin: 0 0.6rem;
   width: 100%;
 }
 .mediaNav li i {
@@ -901,7 +847,7 @@ header .wrapper .greeting h3 {
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-color: #e9d5fd;
-  margin: 4rem 6rem;
+  margin: 3rem 5rem;
   -webkit-box-shadow: -2px 1px 15px #A2A2A2;
           box-shadow: -2px 1px 15px #A2A2A2;
   border-radius: 15px;
@@ -943,7 +889,7 @@ header .wrapper .greeting h3 {
   background-color: #EEEBE5;
   padding-top: 6rem;
   padding-bottom: 6rem;
-  margin: 4rem 6rem;
+  margin: 3rem 5rem;
   -webkit-box-shadow: -2px 1px 15px #A2A2A2;
           box-shadow: -2px 1px 15px #A2A2A2;
   border-radius: 15px;
@@ -989,6 +935,7 @@ header .wrapper .greeting h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0.5rem;
   width: 7%;
 }
 .skills ul li i {
@@ -1008,9 +955,9 @@ header .wrapper .greeting h3 {
 
 .projects {
   background-color: #CEE1ED;
-  margin: 4rem 6rem;
-  -webkit-box-shadow: -2px 1px 15px #A2A2A2;
-          box-shadow: -2px 1px 15px #A2A2A2;
+  margin: 3rem 5rem;
+  -webkit-box-shadow: -2px 1px 30px #BFBFBF;
+          box-shadow: -2px 1px 30px #BFBFBF;
   border-radius: 15px;
 }
 .projects .wrapper {
@@ -1036,49 +983,41 @@ header .wrapper .greeting h3 {
       -ms-flex-align: center;
           align-items: center;
 }
-.projects .bottomContentRow2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 1rem 0;
-  width: 97%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 .projects .projectEven {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2rem;
-  border-top: 4px solid #EEEBE5;
-  border-bottom: 4px solid #EEEBE5;
+  -webkit-box-shadow: -1px 1px 10px 1px #A2A2A2;
+          box-shadow: -1px 1px 10px 1px #A2A2A2;
   border-radius: 15px;
+  max-width: 97%;
 }
 .projects .projectEven .projectImage {
-  width: 80rem;
-  height: 35rem;
+  max-width: 70rem;
+  min-height: 35rem;
   overflow: hidden;
 }
 .projects .projectEven .projectImage img {
   width: 100%;
-  -o-object-position: 0 -32px;
-     object-position: 0 -32px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -60px 20px;
+     object-position: -60px 20px;
 }
 .projects .projectEven .projectContent {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
-  margin-left: -6rem;
+  min-width: 60rem;
+  margin-left: -10rem;
+  padding-right: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1120,8 +1059,25 @@ header .wrapper .greeting h3 {
       flex-basis: 12%;
 }
 .projects .projectEven li i {
-  margin: 0 0.8rem;
+  margin: 0 0.5rem;
   font-size: 3.5rem;
+}
+.projects .bottomContentRow2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 1rem 0;
+  width: 97%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .projects .projectOdd {
   display: -webkit-box;
@@ -1132,25 +1088,32 @@ header .wrapper .greeting h3 {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   margin-bottom: 2rem;
-  border-top: 4px solid #EEEBE5;
-  border-bottom: 4px solid #EEEBE5;
+  -webkit-box-shadow: -1px 1px 10px 1px #A2A2A2;
+          box-shadow: -1px 1px 10px 1px #A2A2A2;
   border-radius: 15px;
+  max-width: 97%;
 }
 .projects .projectOdd .projectImage {
-  width: 80rem;
-  height: 35rem;
+  max-width: 70rem;
+  min-height: 35rem;
   overflow: hidden;
 }
 .projects .projectOdd .projectImage img {
   width: 100%;
-  height: auto;
-  -o-object-position: 0 -32px;
-     object-position: 0 -32px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 60px 20px;
+     object-position: 60px 20px;
 }
 .projects .projectOdd .projectContent {
-  -ms-flex-preferred-size: 54%;
-      flex-basis: 54%;
-  margin-right: -6rem;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  min-width: 60rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: -15rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1164,6 +1127,7 @@ header .wrapper .greeting h3 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 5rem;
 }
 .projects .projectOdd .projectContent h3 {
   margin: 1.5rem 0;
@@ -1207,7 +1171,7 @@ header .wrapper .greeting h3 {
 .contactMe {
   background-color: #EBB861;
   text-align: center;
-  margin: 4rem 6rem 0 6rem;
+  margin: 3rem 5rem 0 5rem;
   -webkit-box-shadow: -2px 1px 15px #A2A2A2;
           box-shadow: -2px 1px 15px #A2A2A2;
   border-radius: 15px;
@@ -1347,13 +1311,12 @@ footer i:hover, footer i:focus {
   header .wrapper .headerContent {
     margin-top: 61vh;
   }
-  .projects .projectEven .projectImage {
-    width: 70rem;
-    height: 30rem;
+  .projects .links a {
+    width: 80%;
   }
-  .projects .projectEven .projectImage img {
-    -o-object-position: -50px -15px;
-       object-position: -50px -15px;
+  .projects .projectEven .projectImage {
+    max-width: 70rem;
+    min-height: 30rem;
   }
   .projects .projectEven .projectContent {
     margin-left: -11rem;
@@ -1367,12 +1330,8 @@ footer i:hover, footer i:focus {
     font-size: 3.4rem;
   }
   .projects .projectOdd .projectImage {
-    width: 70rem;
-    height: 30rem;
-  }
-  .projects .projectOdd .projectImage img {
-    -o-object-position: 60px -30px;
-       object-position: 60px -30px;
+    max-width: 70rem;
+    min-height: 30rem;
   }
   .projects .projectOdd .projectContent {
     margin-right: -14rem;
@@ -1387,7 +1346,7 @@ footer i:hover, footer i:focus {
   }
 }
 /* Large tablet and medium desktops */
-@media (max-width: 1200px) {
+@media (max-width: 1270px) {
   body {
     overflow-x: hidden;
   }
@@ -1429,18 +1388,48 @@ footer i:hover, footer i:focus {
     margin-bottom: 0;
     margin-top: 1rem;
   }
-  .projects .carousel {
-    width: 75%;
-    margin-top: -14rem;
+  .projects .projectEven, .projects .projectOdd {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .projects .carousel .carouselPhotos {
-    width: 40vw;
-    height: 50vh;
-    margin-bottom: 5rem;
+  .projects .projectEven .projectImage, .projects .projectOdd .projectImage {
+    min-height: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
-  .projects .carousel button img {
-    width: 8rem;
-    height: 8rem;
+  .projects .projectEven .projectImage img, .projects .projectOdd .projectImage img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 -25px;
+       object-position: 0 -25px;
+  }
+  .projects .projectEven .projectContent, .projects .projectOdd .projectContent {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 10rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 2rem;
+    margin-top: -10rem;
+  }
+  .projects .projectEven .projectContent h3, .projects .projectEven .projectContent p, .projects .projectOdd .projectContent h3, .projects .projectOdd .projectContent p {
+    width: 100%;
+    text-align: center;
+  }
+  .projects .bottomContentRow, .projects .bottomContentRow2 {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 /* Design Specific Break Point */
@@ -1508,31 +1497,20 @@ footer i:hover, footer i:focus {
     width: 23%; /* Update width to 3 columns */
     margin: 1%; /* Add margin to create gap between columns */
   }
-  .projects .carousel {
-    width: 80%;
-  }
-  .projects .carousel .carouselPhotos {
-    width: 42vw;
-    height: 47vh;
-  }
-  .projects .carousel button img {
-    width: 6.5rem;
-    height: 6.5rem;
-  }
   .contactMe h2 {
     font-size: 3rem;
   }
 }
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   h1 {
     font-size: 8rem;
   }
   h2 {
-    font-size: 5.5rem;
+    font-size: 6rem;
   }
   h3 {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
   }
   p {
     font-size: 1.6rem;
@@ -1544,22 +1522,73 @@ footer i:hover, footer i:focus {
     background-position: 15%;
   }
   .aboutMe {
-    margin: 4rem 3rem;
+    margin: 3rem 3rem;
   }
   .skills {
-    margin: 4rem 3rem;
+    margin: 3rem 3rem;
   }
   .projects {
-    margin: 4rem 3rem;
+    margin: 3rem 3rem;
+  }
+  .projects .projectEven, .projects .projectOdd {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .projectEven .projectImage, .projects .projectOdd .projectImage {
+    min-height: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .projects .projectEven .projectImage img, .projects .projectOdd .projectImage img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 -25px;
+       object-position: 0 -25px;
+  }
+  .projects .projectEven .projectContent, .projects .projectOdd .projectContent {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 10rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 2rem;
+    margin-top: -10rem;
+  }
+  .projects .projectEven .projectContent h3, .projects .projectEven .projectContent p, .projects .projectOdd .projectContent h3, .projects .projectOdd .projectContent p {
+    width: 100%;
+    text-align: center;
+  }
+  .projects .bottomContentRow, .projects .bottomContentRow2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .projects .bottomContentRow .links, .projects .bottomContentRow2 .links {
+    margin-top: 0.6rem;
   }
   .contactMe {
-    margin: 4rem 3rem;
+    margin: 3rem 3rem;
   }
 }
 /* Style Specific Breakpoint */
 @media (max-width: 670px) {
   body {
     background-position: 22%;
+  }
+  p {
+    font-size: 1.6rem;
   }
   header {
     background-position: 22%;
@@ -1573,6 +1602,49 @@ footer i:hover, footer i:focus {
   .skills ul li {
     width: 31.33%; /* Update width to 4 columns */
     margin: 0.6rem 0;
+  }
+  .projects .projectEven .projectImage, .projects .projectOdd .projectImage {
+    min-height: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .projects .projectEven .projectImage img, .projects .projectOdd .projectImage img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 -25px;
+       object-position: 0 -25px;
+  }
+  .projects .projectEven .projectContent, .projects .projectOdd .projectContent {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 10rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -8.3rem;
+    padding: 0 1.8rem;
+  }
+  .projects .projectEven .projectContent h3, .projects .projectEven .projectContent p, .projects .projectOdd .projectContent h3, .projects .projectOdd .projectContent p {
+    width: 100%;
+    text-align: center;
+  }
+  .projects .bottomContentRow, .projects .bottomContentRow2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 2rem;
+  }
+  .projects .bottomContentRow .links, .projects .bottomContentRow2 .links {
+    margin-top: 0.6rem;
   }
 }
 /* Landscape phones and down */
@@ -1596,6 +1668,58 @@ footer i:hover, footer i:focus {
   }
   .skills ul li i {
     font-size: 5rem;
+  }
+  .projects .projectEven .projectImage, .projects .projectOdd .projectImage {
+    min-height: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .projects .projectEven .projectImage img, .projects .projectOdd .projectImage img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 -10px;
+       object-position: 0 -10px;
+  }
+  .projects .projectEven .projectContent, .projects .projectOdd .projectContent {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 10rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -9rem;
+    padding: 0 1.8rem;
+  }
+  .projects .projectEven .projectContent h3, .projects .projectEven .projectContent p, .projects .projectOdd .projectContent h3, .projects .projectOdd .projectContent p {
+    width: 100%;
+    text-align: center;
+  }
+  .projects .projectEven .projectContent h3, .projects .projectOdd .projectContent h3 {
+    font-size: 2.2rem;
+  }
+  .projects .projectEven .projectContent p, .projects .projectOdd .projectContent p {
+    font-size: 1.6rem;
+  }
+  .projects .bottomContentRow, .projects .bottomContentRow2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 2rem;
+  }
+  .projects .bottomContentRow .languages i, .projects .bottomContentRow2 .languages i {
+    font-size: 2.8rem;
+  }
+  .projects .bottomContentRow .links, .projects .bottomContentRow2 .links {
+    margin-top: 0.6rem;
   }
   .contactMe .wrapper {
     -webkit-box-orient: vertical;
@@ -1621,6 +1745,67 @@ footer i:hover, footer i:focus {
   }
   .skills ul li i {
     font-size: 5rem;
+  }
+  .projects .projectEven .projectImage, .projects .projectOdd .projectImage {
+    min-height: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .projects .projectEven .projectImage img, .projects .projectOdd .projectImage img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 10px;
+       object-position: 0 10px;
+  }
+  .projects .projectEven .projectContent, .projects .projectOdd .projectContent {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 10rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -10rem;
+    padding: 0 1.8rem;
+  }
+  .projects .projectEven .projectContent h3, .projects .projectEven .projectContent p, .projects .projectOdd .projectContent h3, .projects .projectOdd .projectContent p {
+    width: 100%;
+    text-align: center;
+  }
+  .projects .projectEven .projectContent h3, .projects .projectOdd .projectContent h3 {
+    font-size: 2.2rem;
+  }
+  .projects .projectEven .projectContent p, .projects .projectOdd .projectContent p {
+    font-size: 1.6rem;
+  }
+  .projects .bottomContentRow .languages, .projects .bottomContentRow2 .languages {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects .bottomContentRow .languages li, .projects .bottomContentRow2 .languages li {
+    -ms-flex-preferred-size: 5%;
+        flex-basis: 5%;
+  }
+  .projects .bottomContentRow .languages i, .projects .bottomContentRow2 .languages i {
+    font-size: 2.2rem;
+    margin: 0 0.3rem;
+  }
+  .projects .bottomContentRow .links, .projects .bottomContentRow2 .links {
+    margin-top: 0.6rem;
+    min-width: 20rem;
+  }
+  .projects .bottomContentRow .links .link, .projects .bottomContentRow2 .links .link {
+    font-size: 1.1rem;
   }
 }
 /* Small Screen phones*/
