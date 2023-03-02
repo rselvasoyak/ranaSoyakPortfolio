@@ -1,18 +1,78 @@
 @use "./variables" as *;
+
+/*Very Large Desktops */
+@media (max-width: 1550px) {
+    // Header
+    header{
+        h1{
+            font-size: 17rem;
+        }
+        h3{
+            font-size: 2.8rem;
+        }
+        .wrapper{
+            .headerContent{
+                margin-top: 61vh;
+            }
+        }
+    }
+
+    // Projects
+    .projects{
+        .links{
+            a{
+                width: 80%;
+            }
+        }
+        .projectEven{
+            .projectImage{
+                max-width: 70rem;
+                min-height: 30rem;
+            }
+            .projectContent{
+                margin-left: -11rem;
+                p{
+                    font-size: 1.6rem;
+                    margin: .5rem 0;
+                }
+            }
+            li{
+                i{
+                    margin: 0 .7rem;
+                    font-size: 3.4rem;
+                }
+            }
+        }
+        .projectOdd{
+            .projectImage{
+                max-width: 70rem;
+                min-height: 30rem; 
+            }
+            .projectContent{
+                  margin-right: -14rem;
+                p{
+                    font-size: 1.6rem;
+                    margin: .5rem 0;
+                }
+            }
+            li{
+                i{
+                    margin: 0 .7rem;
+                    font-size: 3.4rem;
+                }
+            }
+        }
+    }
+}
+
 /* Large tablet and medium desktops */
-@media (max-width: 1200px) {
+@media (max-width: 1270px) {
     body{
         overflow-x: hidden;
     };
 // General Typography
-    h1{
-        font-size: 10rem;
-    }
     h2{
-        font-size: 8rem;
-    }
-    h3{
-        font-size: 2.5rem;
+        font-size: 9rem;
     }
     p{
         font-size: 1.7rem;
@@ -20,28 +80,25 @@
 
 // Header Section
     header{
+        h1{
+            font-size: 12.5rem;
+        }
         nav{
             height: 12vh;
             padding-right: 11rem;
             padding-left: 11rem;
-
         }
-        .headerContent{
-            margin-top: 20rem;
-        }
-        .doubleArrowDown{
-            margin-top: 6rem;
-            width: 9rem;
-            height: 9rem;
+        .wrapper{
+            .headerContent{
+                margin-top: 65vh;
+            }
         }
     }
 // About Me Section
     .aboutMe{
-        padding-top: 3rem;
-        padding-bottom: 14rem;
+        padding: 3rem 0;
         .wrapper{
-            flex-direction: column;
-            width: 70%;
+            width: 90%;
             .frame1{
                 max-width: 380px;
                 min-width: 300px;
@@ -58,177 +115,282 @@
             margin-bottom: 0;
             margin-top: 1rem;
         }
-        mark{
-            font-size: 9rem;
-            right: -.38em;
-            top: -.38em;
+    }
+// Projects Section 
+ .projects{
+    .projectEven, .projectOdd{
+        flex-direction: column;
+        .projectImage{
+            // border: 2px solid red;
+            min-height: 25rem;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0 -25px;
+            }
+        }
+        .projectContent{
+            align-items: center;
+            min-width: 10rem;
+            // border: solid 2px blue;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0 2rem;
+            margin-top: -10rem;
+            h3, p{    
+                width: 100%;
+                text-align: center;
+            }
         }
     }
-// Skills Section
+    .bottomContentRow, .bottomContentRow2{
+        justify-content: space-around;
+    }
+ }
+}
+
+/* Design Specific Break Point */
+@media (max-width: 1030px) {
+    // Body 
+    body{
+        background-position: 5%;
+    }
+    // Header 
+    header{
+        background-position: 5%;
+        .wrapper{
+            .headerContent{
+                padding-right: 2rem;
+            }
+            h1{
+                font-size: 11.7rem;
+            }
+            .mainNav{
+                padding: 0;
+            }
+            .hamburgerMenu{
+                padding: 0.3em 2.5rem;
+            }
+        }
+    }
+
+    // Skills
     .skills{
-            padding-bottom: 29rem;
-        li{
-            flex-basis: 7%;
-            height: 9rem;
-            p{
-                font-size: 1rem;
+        ul{
+            li{
+                width: calc(15% - 2%); /* Update width to 3 columns */
+                margin: 1%; /* Add margin to create gap between columns */
             }
-            i{
-                font-size: 3rem;
-            }
-        }
-    }
-// Projects Section
-    .projects{
-        .carousel{
-        width: 75%;
-        margin-top: -14rem;
-        .carouselPhotos{
-        width: 40vw;
-        height: 50vh;
-        margin-bottom: 5rem;
-        }
-        button {
-            img {
-                width: 8rem;
-                height: 8rem;
-            }
-        }
         }
     }
 }
 
 /* Portrait tablet and small desktops */
-@media (max-width: 940px) {
+@media (max-width: 950px) {
 // General Typography
-    h1{
-        font-size: 9rem;
-    }
     h2{
         font-size: 7rem;
-    }
-    h3{
-        font-size: 2rem;
     }
     p{
         font-size: 1.6rem;
     }
+    body{
+        background-position: 8%;
+    }
 // Header Section
     header{
-        nav{
-            height: 10vh;
-            padding-right: 8rem;
-            padding-left: 8rem;
-        }
-        .headerContent{
-            margin-top: 20rem;
-        }
-        .doubleArrowDown{
-            margin-top: 5rem;
-            width: 8rem;
-            height: 8rem;
+        background-position: 8%;
+        .wrapper{
+            h1{
+                font-size: 10rem;
+                padding-right: 1rem;
+            }
+            h3{
+                font-size: 2rem;
+                padding-right: 0;
+            }
+            .headerContent{
+                margin-top: 68vh;
+            }
         }
     }
 // About Me Section
     .aboutMe{
-        padding-top: 3rem;
-        padding-bottom: 14rem;
         .wrapper{
-            width: 75%;
+            flex-direction: column;
             .frame1{
                 max-width: 330px;
                 min-width: 270px;
                 height: 30rem;
             }
         }
-        mark{
-            font-size: 7rem;
-            right: -.10em;
-            top: -.30em;
-        }
     }
 // Skills Section
     .skills{
-        li{
-            flex-basis: 7%;
-            margin-top: 2rem;
-            i{
-                font-size: 3.5rem;
+        ul{
+            li{
+                width: calc(25% - 2%); /* Update width to 3 columns */
+                margin: 1%; /* Add margin to create gap between columns */
             }
         }
     }
-// Projects Section
-    .projects{
-        .carousel{
-        width: 80%;
-        .carouselPhotos{
-        width: 42vw;
-        height: 47vh;
-        }
-        button {
-            img {
-                width: 6.5rem;
-                height: 6.5rem;
-            }
-        }
+    // Contact Me
+    .contactMe{
+        h2{
+            font-size: 3rem;
         }
     }
-
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
 // General Typography
     h1{
         font-size: 8rem;
     }
     h2{
-        font-size: 5.5rem;
+        font-size: 6rem;
     }
     h3{
-        font-size: 1.8rem;
+        font-size: 2.6rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+    body{
+        background-position: 15%;
+    }
+// Header
+    header{
+       background-position: 15%; 
+    }
+// About Me 
+    .aboutMe{
+        margin: 3rem 3rem;
+    }
+//Skills: 
+    .skills{
+        margin: 3rem 3rem;
+    }
+// Projects Section
+ .projects{
+    margin: 3rem 3rem;
+    .projectEven, .projectOdd{
+        flex-direction: column;
+        .projectImage{
+            // border: 2px solid red;
+            min-height: 25rem;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0 -25px;
+            }
+        }
+        .projectContent{
+            align-items: center;
+            min-width: 10rem;
+            // border: solid 2px blue;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0 2rem;
+            margin-top: -10rem;
+            h3, p{    
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    .bottomContentRow, .bottomContentRow2{
+        flex-direction: column-reverse;
+        .links{
+            margin-top: .6rem;
+        }
+    }
+ }
+// Contact Me
+    .contactMe{
+        margin: 3rem 3rem;
+    }
+}
+/* Style Specific Breakpoint */
+@media (max-width: 670px) {
+// General
+    body{
+        background-position: 22%;
     }
     p{
         font-size: 1.6rem;
     }
 // Header
-    nav{
-    padding-right: 7rem;
-    padding-left: 7rem;
+    header{
+       background-position: 22%; 
+       .wrapper{
+        h1{
+            font-size: 8rem;
+        }
+        h3{
+            font-size: 1.6rem;
+        }
+       }
     }
-// Skills Section
     .skills{
-        li{
-            flex-basis: 10%;
-            i{
-                font-size: 3.5rem;
+        ul{
+            li{
+                width: calc(33.33% - 2%); /* Update width to 4 columns */
+                margin: .6rem 0;
             }
         }
     }
 // Projects Section
-    .projects{
-        .carousel{
-        width: 87%;
-            .carouselPhotos{
-            width: 47vw;
-            height: 42vh;
+ .projects{
+    .projectEven, .projectOdd{
+        .projectImage{
+            // border: 2px solid red;
+            min-height: 25rem;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0 -25px;
             }
-            button {
-                img {
-                    width: 6rem;
-                    height: 6rem;
-                }
+        }
+        .projectContent{
+            align-items: center;
+            min-width: 10rem;
+            // border: solid 2px blue;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: -8.3rem;
+            padding: 0 1.8rem;
+            h3, p{    
+                width: 100%;
+                text-align: center;
             }
         }
     }
+    .bottomContentRow, .bottomContentRow2{
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+        .links{
+            margin-top: .6rem;
+        }
+    }
 }
-
+}
 /* Landscape phones and down */
 @media (max-width: 480px) {
 // General Typography
-    h1{
-        font-size: 7rem;
-    }
     h2{
         font-size: 5rem;
     }
@@ -238,70 +400,82 @@
 
 // Header Section
     header{
-        nav{
-            height: 8.5vh;
-            padding-right: 6rem;
-            padding-left: 6rem;
-        }
         .headerContent{
-            margin-top: 21rem;
-        }
-        .doubleArrowDown{
-            width: 7.5rem;
-            height: 7.5rem;
-            img{
-                width: 95%;
+            h1{
+                font-size: 6.5rem;
             }
         }
     }
 // About Me Section
     .aboutMe{
-        padding-top: 3rem;
-        padding-bottom: 14rem;
         .wrapper{
-            flex-direction: column;
-            width: 80%;
             .frame1{
-                max-width: 320px;
-                min-width: 270px;
+                max-width: 280px;
+                min-width: 250px;
                 height: 29rem;
             }
         }
-        mark{
-            font-size: 5.5rem;
-            right: 1.1em;
-        }
     }
 // Skills Section
-    .skills{
-            padding-bottom: 28rem;
-        li{
-            flex-basis: 14%;
-            height: 8rem;
-            i{
-                font-size: 2.7rem;
+ .skills{
+        ul{
+            li{
+                width: calc(40% - 2%); /* Update width to 2 columns */
+                i{
+                    font-size: 5rem;
+                }
             }
         }
-    }
+}
 // Projects Section
-    .projects{
-        .carousel{
-        width: 95%;
-        .carouselNumDisplay{
-            padding-top: .5rem;
-        }
-        .carouselPhotos{
-        width: 52vw;
-        height: 31vh;
-        }
-        button {
-            img {
-                width: 4rem;
-                height: 4rem;
+ .projects{
+    .projectEven, .projectOdd{
+        .projectImage{
+            // border: 2px solid red;
+            min-height: 25rem;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0 -10px;
             }
         }
+        .projectContent{
+            align-items: center;
+            min-width: 10rem;
+            // border: solid 2px blue;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: -9rem;
+            padding: 0 1.8rem;
+            h3, p{    
+                width: 100%;
+                text-align: center;
+            }
+            h3{
+                font-size: 2.2rem;
+            }
+            p{
+                font-size: 1.6rem;
+            }
         }
     }
+    .bottomContentRow, .bottomContentRow2{
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+        .languages{
+            i{
+                font-size: 2.8rem;
+            }
+        }
+        .links{
+            margin-top: .6rem;
+        }
+    }
+}
 // Contact Me Section
     .contactMe{
         .wrapper{
@@ -318,8 +492,89 @@
     }
 }
 
+/* Design Specific Breakpoint */
+@media (max-width: 390px) {
+    // About Me Section 
+    .aboutMe{
+        .wrapper{
+            .frame1{
+                  max-width: 255px;
+                  min-width: 195px;
+                  height: 26rem;
+              }
+        }
+    }
+
+    //Skills Section 
+    .skills{
+        ul{
+            li{
+                i{
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+     .projects{
+    .projectEven, .projectOdd{
+        .projectImage{
+            // border: 2px solid red;
+            min-height: 25rem;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0 10px;
+            }
+        }
+        .projectContent{
+            align-items: center;
+            min-width: 10rem;
+            // border: solid 2px blue;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: -10rem;
+            padding: 0 1.8rem;
+            h3, p{    
+                width: 100%;
+                text-align: center;
+            }
+            h3{
+                font-size: 2.2rem;
+            }
+            p{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .bottomContentRow, .bottomContentRow2{
+        .languages{
+            flex-wrap: wrap;
+            justify-content: center;
+            li{
+                flex-basis: 5%;
+            }
+            i{
+                font-size: 2.2rem;
+                margin: 0 0.3rem;
+            }
+        }
+        .links{
+            margin-top: .6rem;
+            min-width: 20rem;
+            .link{
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+}
+
 /* Small Screen phones*/
-@media (max-width: 330px) {
+@media (max-width: 320px) {
 // General Typography
     h1{
         font-size: 4.7rem;
@@ -333,39 +588,8 @@
 
 // Header Section
     header{
-        nav{
-            height: 8vh;
-            padding-right: 4rem;
-            padding-left: 4rem;
-
-        }
         .headerContent{
             margin-top: 21rem;
-        }
-        .doubleArrowDown{
-            width: 6.5rem;
-            height: 6.5rem;
-            img{
-                width: 95%;
-            }
-        }
-    }
-// About Me Section
-    .aboutMe{
-        padding-top: 3rem;
-        padding-bottom: 14rem;
-        .wrapper{
-            flex-direction: column;
-            width: 80%;
-            .frame1{
-                max-width: 250px;
-                min-width: 200px;
-                height: 29rem;
-            }
-        }
-        mark{
-            font-size: 5.5rem;
-            right: 1.1em;
         }
     }
 // Skills Section
@@ -375,41 +599,6 @@
             flex-basis: 24%;
             height: 8.5rem;
             margin-top: 3rem;
-        }
-    }
-// Projects Section
-    .projects{
-        .carousel{
-        .carouselNumDisplay{
-            padding-top: 0;
-        }
-        .carouselPhotos{
-        width: 52vw;
-        height: 15vh;
-        .project{
-            display: flex;
-            justify-content: center;
-        }
-        img{
-            width: 100%;
-            height: 100%;
-            align-self: center;
-        }
-        }
-        a{
-            display: block;
-            text-align: center;
-            border-bottom: none;
-        }
-        .buttons {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            button{
-                margin-top: 1rem;
-                padding: 8px 16px;
-            }
-        }
         }
     }
 // Contact Me Section
@@ -427,5 +616,5 @@
                 margin-right: 0;
             }
         }
-        }
+    }
 }

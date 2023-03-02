@@ -1,0 +1,20 @@
+@use "../abstract/variables" as *;
+
+footer{
+    height: 1vh;
+    margin: 0 0 1rem 0;
+    p{
+        font-size: 1.6rem;
+        text-align: center;
+        font-style: italic;
+    }
+    i{
+        font-size: 1.6rem;
+        font-style: italic;
+        &:hover, 
+        &:focus{
+            transform: scale(1);
+            color: inherit;
+        }
+    }
+}

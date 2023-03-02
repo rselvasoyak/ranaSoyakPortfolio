@@ -6,14 +6,16 @@ html{
 body{
     background-color: $lightSand;
     color: $mainBlack;
-    background-image: url("./sass/assets/layered-waves-haikei(3).svg");
-    background-repeat: repeat-y;
-    object-fit: contain;
+    background-image: url("./sass/assets/layered-waves-haikei(8).svg");
+    background-position: left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .wrapper {
     display: flex;
-    max-width: 2000px;
-    width: 90%;
+    max-width: 1800px;
+    width: 95%;
     margin: 0 auto; 
 }
 

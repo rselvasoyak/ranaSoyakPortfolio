@@ -2,34 +2,36 @@
 
 header {
     height: 100vh;
-    background-image: url("./sass/assets/layered-waves-haikei.svg");
+    background-image: url("./sass/assets/layered-waves-haikei(8).svg");
     background-color: $lightSand;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
     .wrapper{
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        align-items: flex-end;
         width: 100%;
         .headerContent{
             display: flex;
             flex-direction: column;
             align-content: flex-end;
-            width: 80%;
-            margin-top: 23rem;   
-            height: 50vh; 
-            background-color: $headerContent;
+            padding-right: 6rem;
+            width: 100%;
+            margin-top: 58vh; 
             border-radius: 5%;
         }
         .greeting{
             display: flex;
             flex-direction: column;
             justify-content: center;  
-            height: 100%;
-            text-align: center;
+            text-align: right;
             margin: 0;
             h1,h3{
-                margin: 1rem;
+                margin: .3rem;
+            }
+            h3{
+                padding-right: 2rem;
             }
         }
     }          

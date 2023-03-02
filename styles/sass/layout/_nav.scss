@@ -1,23 +1,17 @@
 @use "../abstract/variables" as *;
 
-nav{
+.mainNav{
 	    position: fixed;
         position: -webkit-fixed;
 	    top: 0;
         z-index: 50;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        height: 12vh;
+        height: 7vh;
         width: 100%;
-        padding-top: 1.5rem;
-        padding-right: 24rem;
-        padding-bottom: 1.5rem;
-        padding-left: 24rem;
-        background: rgba($color: $lightPeach, $alpha: 0.6);
-        backdrop-filter: blur(4px);
-        box-shadow: 8px 8px 9px  $darkSand;
+        padding-top: 2rem;
         a{
             color: $darkGray;
             border: none;
@@ -30,13 +24,13 @@ nav{
             li{
                 border-left: 2px solid $boxShadow;
                 border-right: 2px solid $boxShadow;
-                 flex-basis: 20%;
-                 margin: 2rem;
-                 transition: all 0.5s ease-in-out;
+                flex-basis: 20%;
+                margin: 2rem;
+                transition: all 0.5s ease-in-out;
             }
         }
         .hamburgerMenu {
-            padding: 0.3em;
+            padding: 0.3em 8.5rem;
         }
         .showNav {
             display: block;
@@ -56,3 +50,18 @@ nav{
             transform: rotate(180deg);
         }
     }
+
+.mediaNav {
+    ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    li{
+        margin: 0 .6rem;
+        width: 100%;
+        i{
+            font-size: 2.8rem;
+        }
+    }
+}

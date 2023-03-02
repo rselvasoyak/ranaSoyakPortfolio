@@ -1,12 +1,12 @@
 @use '../abstract/variables' as *;
 
 .aboutMe{
-    padding-top: 7rem;
-    padding-bottom: 17rem;
-    border-top-left-radius: 15%;
-    border-top-right-radius: 15%;
-    border-top: 2px solid $darkSemiSand;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     background-color: $babyLilac;
+    margin: 3rem 5rem;
+    box-shadow: -2px 1px 15px $boxShadow;
+    border-radius: 15px;
     h2{
         margin: 0;
         margin-bottom: 2rem;
@@ -14,17 +14,6 @@
     }
     .wrapper{
         align-items: center;
-        border: 2px solid $darkSemiSand;
-        border-radius: 15px;
-        box-shadow: -12px 12px 8px $boxShadow;
-        width: 60%;
-    }
-    span{
-        margin-left: 30rem;
-        margin-top: -3rem;
-        transform: rotate(-25deg);
-        font-size: 10rem;
-        font-family: inherit;
     }
     .aboutMeContent{
         display: flex;

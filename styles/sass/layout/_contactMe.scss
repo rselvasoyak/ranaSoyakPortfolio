@@ -3,6 +3,9 @@
 .contactMe{
     background-color: $peach;
     text-align: center;
+    margin: 3rem 5rem 0 5rem;
+    box-shadow: -2px 1px 15px $boxShadow;
+    border-radius: 15px;
     h2{
         text-align: center;
         margin-bottom: 0;
@@ -34,8 +37,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
+            padding: 2rem 0;
             width: 40vw;
             border-radius: 15px;
             border: 3px solid #a8657a;
@@ -44,12 +46,12 @@
             &:focus{
                 transition: 0.4s;
                 border: 4px solid #a8657a;
-                transform: scale(1.02);
+                transform: scale(1.01);
             }
             .topRow{
                 display: flex;
                 justify-content: center;
-                margin-bottom: 1rem;
+                margin: 1rem 1rem 2.5rem 1rem;
                 height: 3rem;
                 input{
                     flex-basis: 100%;
@@ -64,15 +66,15 @@
                 padding-top: 1rem;
                 padding-bottom: 6rem;
                 padding-left: 1rem;
+                margin: .5rem 1rem 1rem 1rem;
                 resize: none;
             }
             textarea, input{
                 font-style: italic;
-                font-weight: 500;
-                text-shadow: .4px .4px .3px;
-                font-size: 1.1rem;
+                font-weight: 600;
+                font-size: 1.6rem;
                 border-radius: 13px;
-                padding: 1.4rem;
+                padding: 2rem;
                 &:hover, &:focus {
                     outline: none;
                     border-color: #e67e22;
