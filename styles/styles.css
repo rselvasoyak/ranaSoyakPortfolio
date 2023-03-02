@@ -1859,13 +1859,4 @@ footer i:hover, footer i:focus {
   header .headerContent {
     margin-top: 21rem;
   }
-  .skills {
-    padding-bottom: 28rem;
-  }
-  .skills li {
-    -ms-flex-preferred-size: 24%;
-        flex-basis: 24%;
-    height: 8.5rem;
-    margin-top: 3rem;
-  }
 }
